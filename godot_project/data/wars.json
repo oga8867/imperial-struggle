@@ -1,0 +1,254 @@
+{
+  "spanish_succession": {
+    "name": "War of the Spanish Succession",
+    "name_ko": "스페인 왕위계승 전쟁",
+    "war_dot": 1,
+    "theaters": [
+      {
+        "id": "central_europe_wss",
+        "name": "Central Europe",
+        "name_ko": "중부 유럽",
+        "region": "europe",
+        "bonus_strength": ["alliance_europe", "squadron_europe"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "1vp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "2vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "3vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "spain_wss",
+        "name": "Spain",
+        "name_ko": "스페인",
+        "region": "europe",
+        "bonus_strength": ["alliance_spain", "squadron_europe", "fort_europe"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": ["san_agustin", "asiento"]
+      },
+      {
+        "id": "queen_annes_war",
+        "name": "Queen Anne's War",
+        "name_ko": "앤 여왕의 전쟁",
+        "region": "north_america",
+        "bonus_strength": ["conflict_marker", "squadron_north_america", "fort_north_america"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "unflag_market_north_america"], "loser": ["1tp"]},
+          {"margin": "3-4", "winner": ["2cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "first_carnatic_war",
+        "name": "First Carnatic War",
+        "name_ko": "제1차 카르나틱 전쟁",
+        "region": "india",
+        "bonus_strength": ["conflict_marker", "local_alliance_india", "squadron_india"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["1cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      }
+    ]
+  },
+  "austrian_succession": {
+    "name": "War of the Austrian Succession",
+    "name_ko": "오스트리아 왕위계승 전쟁",
+    "war_dot": 2,
+    "theaters": [
+      {
+        "id": "central_europe_was",
+        "name": "Central Europe",
+        "name_ko": "중부 유럽",
+        "region": "europe",
+        "bonus_strength": ["alliance_europe", "squadron_europe"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "1vp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "2vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "3vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "jacobite_rebellion",
+        "name": "Jacobite Rebellion",
+        "name_ko": "재커바이트 반란",
+        "region": "europe",
+        "bonus_strength": ["scotland_ireland_political", "squadron_europe"],
+        "spoils": [
+          {"margin": "br_1+", "winner": ["jacobite_defeat"], "loser": []},
+          {"margin": "fr_1-2", "winner": ["1cp", "1vp"], "loser": []},
+          {"margin": "fr_3+", "winner": ["jacobite_victory"], "loser": []}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "king_georges_war",
+        "name": "King George's War",
+        "name_ko": "조지 왕의 전쟁",
+        "region": "north_america",
+        "bonus_strength": ["conflict_marker", "squadron_north_america", "fort_north_america"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": ["1tp"]},
+          {"margin": "3-4", "winner": ["2cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "second_carnatic_war",
+        "name": "Second Carnatic War",
+        "name_ko": "제2차 카르나틱 전쟁",
+        "region": "india",
+        "bonus_strength": ["conflict_marker", "local_alliance_india", "squadron_india"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["1cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      }
+    ]
+  },
+  "seven_years": {
+    "name": "Seven Years' War",
+    "name_ko": "7년 전쟁",
+    "war_dot": 3,
+    "theaters": [
+      {
+        "id": "central_europe_7yw",
+        "name": "Central Europe",
+        "name_ko": "중부 유럽",
+        "region": "europe",
+        "bonus_strength": ["alliance_europe", "keyword_governance"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "2vp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "3vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "4vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "european_naval",
+        "name": "European Naval",
+        "name_ko": "유럽 해군",
+        "region": "europe",
+        "bonus_strength": ["squadron_europe", "fort_europe", "keyword_finance"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "1vp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "2vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "3vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": ["gibraltar", "minorca"]
+      },
+      {
+        "id": "french_indian_war",
+        "name": "French and Indian War",
+        "name_ko": "프렌치 인디언 전쟁",
+        "region": "north_america",
+        "bonus_strength": ["squadron_north_america", "fort_north_america", "local_alliance_na"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "unflag_market_north_america"], "loser": ["1tp"]},
+          {"margin": "3-4", "winner": ["2cp", "2vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "3vp", "canada"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "third_carnatic_war",
+        "name": "Third Carnatic War",
+        "name_ko": "제3차 카르나틱 전쟁",
+        "region": "india",
+        "bonus_strength": ["squadron_india", "fort_india", "local_alliance_india"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "caribbean_naval",
+        "name": "Caribbean Naval",
+        "name_ko": "카리브 해군",
+        "region": "caribbean",
+        "bonus_strength": ["squadron_caribbean", "fort_caribbean", "conflict_marker"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      }
+    ]
+  },
+  "american_independence": {
+    "name": "American War of Independence",
+    "name_ko": "미국 독립 전쟁",
+    "war_dot": 4,
+    "theaters": [
+      {
+        "id": "european_naval_awi",
+        "name": "European Naval",
+        "name_ko": "유럽 해군",
+        "region": "europe",
+        "bonus_strength": ["squadron_europe", "fort_europe"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp", "1vp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "2vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "3vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": ["gibraltar", "minorca"]
+      },
+      {
+        "id": "american_revolution",
+        "name": "American Revolution",
+        "name_ko": "미국 혁명",
+        "region": "north_america",
+        "bonus_strength": ["squadron_north_america", "fort_north_america", "sons_of_liberty"],
+        "spoils": [
+          {"margin": "br_1-2", "winner": ["1cp", "1vp"], "loser": []},
+          {"margin": "br_3-4", "winner": ["2cp", "2vp"], "loser": ["1tp"]},
+          {"margin": "br_5+", "winner": ["3cp", "3vp"], "loser": ["1tp"]},
+          {"margin": "fr_1-2", "winner": ["usa"], "loser": []},
+          {"margin": "fr_3-4", "winner": ["usa", "1vp"], "loser": ["1tp"]},
+          {"margin": "fr_5+", "winner": ["usa", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "indian_naval",
+        "name": "Indian Naval",
+        "name_ko": "인도 해군",
+        "region": "india",
+        "bonus_strength": ["squadron_india", "fort_india", "local_alliance_india"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["3cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      },
+      {
+        "id": "caribbean_war",
+        "name": "Caribbean War",
+        "name_ko": "카리브 전쟁",
+        "region": "caribbean",
+        "bonus_strength": ["squadron_caribbean", "fort_caribbean", "conflict_marker"],
+        "spoils": [
+          {"margin": "1-2", "winner": ["1cp"], "loser": []},
+          {"margin": "3-4", "winner": ["2cp", "1vp"], "loser": ["1tp"]},
+          {"margin": "5+", "winner": ["2cp", "2vp"], "loser": ["1tp"]}
+        ],
+        "additional_territories": []
+      }
+    ]
+  }
+}

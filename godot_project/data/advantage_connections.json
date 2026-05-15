@@ -1,0 +1,137 @@
+{
+  "comment": "Maps advantage tile IDs to the spaces that must ALL be controlled to acquire the advantage. Sources: rule §8.0 + Vassal map + playbook examples.",
+  "advantages": {
+    "wheat_adv": {
+      "name": "Wheat",
+      "region": "north_america",
+      "connected_spaces": ["mass_bay", "northern_colonies"],
+      "effect": "Reduce a Market shift cost by 1 (once per turn)"
+    },
+    "fur_trade_adv": {
+      "name": "Fur Trade",
+      "region": "north_america",
+      "connected_spaces": ["hudson_valley", "champlain_valley_fort"],
+      "effect": "Reduce a Fur Market shift cost by 1"
+    },
+    "algonquin_raids_adv": {
+      "name": "Algonquin Raids",
+      "region": "north_america",
+      "connected_spaces": ["algonquin_la"],
+      "effect": "Place a Conflict marker on a connected space"
+    },
+    "iroquois_raids_adv": {
+      "name": "Iroquois Raids",
+      "region": "north_america",
+      "connected_spaces": ["iroquois_la"],
+      "effect": "Place a Conflict marker on a connected space"
+    },
+    "patriot_agitation_adv": {
+      "name": "Patriot Agitation",
+      "region": "north_america",
+      "connected_spaces": ["sons_of_liberty_la"],
+      "effect": "Place a Conflict marker in N. American sub-region"
+    },
+    "fruit_adv": {
+      "name": "Fruit",
+      "region": "north_america",
+      "connected_spaces": ["chesapeake", "georgia"],
+      "effect": "Score VP for Tobacco/Fruit markets"
+    },
+    "letters_of_marque_adv": {
+      "name": "Letters of Marque",
+      "region": "caribbean",
+      "connected_spaces": ["windward_passage_naval"],
+      "effect": "Place a Conflict marker in a Caribbean Market"
+    },
+    "pirate_havens_adv": {
+      "name": "Pirate Havens",
+      "region": "caribbean",
+      "connected_spaces": ["jamaica", "barbados"],
+      "effect": "Place Conflict markers in Caribbean"
+    },
+    "rum_adv": {
+      "name": "Rum",
+      "region": "caribbean",
+      "connected_spaces": ["barbados", "antigua"],
+      "effect": "Reduce a Sugar Market shift cost by 1"
+    },
+    "slaving_contracts_adv": {
+      "name": "Slaving Contracts",
+      "region": "caribbean",
+      "connected_spaces": ["jamaica", "saint_domingue"],
+      "effect": "Score additional VP for Caribbean"
+    },
+    "silk_adv": {
+      "name": "Silk",
+      "region": "india",
+      "connected_spaces": ["bengal_alliance"],
+      "effect": "Score VP for Silk markets"
+    },
+    "power_struggle_adv": {
+      "name": "Power Struggle",
+      "region": "india",
+      "connected_spaces": ["mysore_alliance"],
+      "effect": "Place a Conflict marker in India"
+    },
+    "raids_and_incursions_adv": {
+      "name": "Raids & Incursions",
+      "region": "india",
+      "connected_spaces": ["maratha_la"],
+      "effect": "Place a Conflict marker in India"
+    },
+    "separatist_wars_adv": {
+      "name": "Separatist Wars",
+      "region": "india",
+      "connected_spaces": ["nizam_alliance"],
+      "effect": "Place a Conflict marker in India"
+    },
+    "textiles_adv": {
+      "name": "Textiles",
+      "region": "india",
+      "connected_spaces": ["calcutta", "madras"],
+      "effect": "Reduce a Cotton Market shift cost by 1"
+    },
+    "mediterranean_intrigue_adv": {
+      "name": "Mediterranean Intrigue",
+      "region": "europe",
+      "connected_spaces": ["spain_alliance", "savoy_alliance"],
+      "effect": "Place a Conflict marker in Spain/Austria/Sardinia"
+    },
+    "naval_bastion_adv": {
+      "name": "Naval Bastion",
+      "region": "europe",
+      "connected_spaces": ["biscay_naval"],
+      "effect": "Construct a Squadron at reduced cost"
+    },
+    "italy_influence_adv": {
+      "name": "Italy Influence",
+      "region": "europe",
+      "connected_spaces": ["savoy_alliance", "sardinia_alliance"],
+      "effect": "Shift a space in Italy"
+    },
+    "central_europe_conflict_adv": {
+      "name": "Central Europe Conflict",
+      "region": "europe",
+      "connected_spaces": ["austria_alliance", "german_states_saxony_alliance"],
+      "effect": "Place a Conflict marker in Central Europe"
+    },
+    "german_diplomacy_adv": {
+      "name": "German Diplomacy",
+      "region": "europe",
+      "connected_spaces": ["german_states_saxony_alliance_b"],
+      "effect": "Shift a German States space"
+    },
+    "baltic_trade_adv": {
+      "name": "Baltic Trade",
+      "region": "europe",
+      "connected_spaces": ["sweden_alliance", "denmark_norway_alliance"],
+      "effect": "Score VP for Baltic markets"
+    },
+    "silesia_negotiations_adv": {
+      "name": "Silesia Negotiations",
+      "region": "europe",
+      "connected_spaces": ["prussia_1_alliance", "austria_alliance"],
+      "effect": "Shift a Prussia/Austria space"
+    }
+  }
+}

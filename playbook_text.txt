@@ -1,0 +1,2404 @@
+================================================================================
+PLAYBOOK PDF
+================================================================================
+Pages: 28
+
+--- PLAYBOOK PAGE 1 ---
+PLAYBOOK
+GMT Games, LLC • P.O. Box 1308, Hanford, CA 93232-1308 • www.GMTGames.com
+Setup............................................................................... 2
+Extended Example of Play............................................. 3
+Further Examples.......................................................... 12
+Guide for CDG Players................................................ 13
+Historical Background.................................................. 14
+Designer’s Notes........................................................... 27
+Selected Bibliography & Ludography.......................... 28
+Credits........................................................................... 28
+TA B L E  O F  C O N T E N T S
+July 2020
+Living Playbook
+This is the “Living Playbook” document for the game. It includes updates and clarifications to the original rules. 
+ To aid readability, updates and clarifications are indicated in blue text.
+
+
+--- PLAYBOOK PAGE 2 ---
+Imperial Struggle ~ Playbook
+2
+© 2020 GMT Games, LLC
+1.	 Lay out the board.
+2.	 Prepare the Event Deck by separating out the Succession 
+Era Event cards. Shuffle them, and place them on the Draw 
+Pile area of the Event Deck display (A). Put the Empire and 
+Revolution Era Event cards aside; they will be used later.
+3.	 Mix up the Investment Tiles and stack them face down in 
+the Investment Tile Stack section of the Investment Tile 
+Display (B). 
+4.	 Each player takes their Basic War Tiles and mixes them up 
+in a face down pile, placing them in the appropriate box on 
+their Player Mat (C1, C2). Then, each player takes the Bonus 
+War Tiles for the War of the Spanish Succession, mixes them 
+up, then puts them in a face down pile in the Bonus War Tiles 
+box of their Player Mat.
+5.	 Place flags and Squadrons on the map as directed below. 
+(The map itself also indicates where the starting flags should 
+go.) Place the remaining Squadrons for each player in the 
+Unbuilt Squadrons box of their respective Player Mats.
+6.	 Place the War of the Spanish Succession War Display next 
+to the main board (D). Each player then draws four Basic 
+War Tiles and randomly places one in each theater, in order, 
+face down. The players may inspect their own War Tiles after 
+placement.
+7.	 Place the Game Turn marker on turn 1 and the VP marker 
+on the 15 space on the General Records Track (E).
+8.	 Mix up the six Global Demand tiles and place them face 
+down near the Global Demand table (F).
+9.	 Mix up the eight Award tiles and place two in each Region’s 
+Award box, face down.
+10.	Put the Conflict markers and Exhausted markers near the 
+board, ready for use.
+11.	Put the Advantage tiles face up in their spaces on the map 
+(except Wheat and Algonquin Raids).
+12.	Place the Initiative marker in the Initiative space (G), French 
+side up.
+Initial Flag & Player Marker Placement
+ Britain:
+•	 Europe
+o	 Flags in Austria (Alliance 2), Dutch Republic (3-cost 
+Prestige space), German States (Alliance 3)
+•	 North America
+o	 Flags in Massachusetts Bay, Northern Colonies, Hudson 
+Valley, Chesapeake
+•	 Caribbean
+o	 Flags in Carolinas, Georgia, Jamaica, Barbados, St. Lucia
+•	 India
+o	 Flags in Madras, Kanchipuram, Calcutta, Midnapore
+•	 Navy Box: 2 Squadrons
+•	 General Records Track
+o	 Debt Limit: 6; Debt: 0; Treaty Points: 0
+•	 Advantage Box (Playmat)
+o	 Wheat
+  France:
+•	 Europe
+o	 Flags in Spain (Alliance 3), Austria (3-cost Prestige space, 
+lower right), Bavaria, Ireland (Alliance 2)
+•	 North America
+o	 Flags in Quebec & Montreal, Acadia, Cataraqui, Algonquin
+•	 Caribbean
+o	 Flags in Louisiana, St. Domingue, Guadeloupe, Port de 
+Paix, Martinique
+•	 India
+o	 Flags in Chandernagore, Pondicherry, Karaikal, Plassey
+•	 War of the Spanish Succession (Central Europe theater): 
+1 Bonus War Tile
+•	 Navy Box: 1 Squadron
+•	 General Records Track
+o	 Debt Limit: 6; Debt: 0; Treaty Points: 0
+•	 Advantage Box (Playmat)
+o	 Algonquin Raids
+Setup
+
+
+--- PLAYBOOK PAGE 3 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+3
+Extended Example of Play
+Raj and Eliza are playing Imperial Struggle, with Raj as the 
+French player (blue) and Eliza as the British player (red). Dur-
+ing step 6 of setup, Raj and Eliza draw War Tiles for the War of 
+the Spanish Succession as shown on the War Display below. (In 
+this example, all of these tiles are revealed for clarity, but in the 
+actual game each side can only see their own tiles.) Note that 
+the French start with one Bonus War Tile in Europe as well, in 
+this case Maison du Roi:
+Raj is fairly happy with these tiles, although the Jacobites may 
+need some help. Eliza is a little less satisfied, particularly with 
+the prospect of losing ground in North America so early in the 
+game.
+Eliza and Raj are now ready to begin the first turn. They skip 
+the Deck and Debt Limit phases, since these do not occur on 
+turn 1. For the Award phase, they flip the top Award tile in each 
+Award box face up. (The bottom one will be flipped face up in the 
+Award phase of turn 2.) The Regional awards for the turn will be:
+•	 Europe: 1 VP (+1 Treaty Point)
+•	 North America: 2 VP
+•	 India: 1 VP (+1 Treaty Point)
+•	 Caribbean: 0 VP (+1 Treaty Point)
+Eliza grinds her teeth a bit as she sees that North America 
+carries the highest VP award this turn, where she is already 
+nervous about her military preparedness. (She does not know 
+that Raj’s best Basic War tile is also there!) Still, the 2 VP tile 
+requires a margin of 2 flags 
+and/or Squadrons to secure, so 
+it’s a little harder to grab. The 
+players now turn to Global 
+Demand, drawing three tiles: 
+Fish, Tobacco, and Sugar. 
+Just like that, the situation has 
+changed: the Caribbean, with 
+its 0 VP award, seemed likely to 
+be quiet this turn. But with both 
+of its commodities in Global 
+Demand—putting an additional 
+5 VP on the table—the Carib-
+bean is now primed to attract 
+quite a lot of attention. Eliza 
+is also unhappy with the Fish 
+draw, since it adds further value 
+to North American investment. 
+She resolves to address the 
+military situation there with 
+even greater urgency before the 
+outbreak of Queen Anne’s War.
+The players skip the Reset 
+Phase since there are not as yet 
+any Exhausted markers in play, 
+and reveal the turn’s Investment Tiles, taking 9 total tiles and 
+placing them face up in the Available Investment Tiles area. 
+They end up with:
+	
+	
+	
+This Global Demand draw dramatically increases the 
+Caribbean’s economic value for the turn.
+
+
+--- PLAYBOOK PAGE 4 ---
+Imperial Struggle ~ Playbook
+4
+© 2020 GMT Games, LLC
+Both players immediately take note of several considerations 
+in this Investment Tile draw. Only three tiles have the Event 
+symbol, so only three Events will be playable this turn—and 
+being the player who gets to play two may make a big difference. 
+Second, there is only one tile with a Major Military action on 
+it, so most military actions will require Debt (Minor Military 
+Actions, of which there are several, grant only 2 Military Action 
+Points [
+]). Also, only one player will be able to carry out any 
+aggressive naval action, since displacing an enemy squadron 
+requires a Major action or an Event. (Remember that, barring 
+the presence of a Conflict marker, opposing flags and Squadrons 
+can’t be removed with Minor actions, and Conflict markers can’t 
+occupy Naval spaces.) There may be high returns to being first 
+to deploy Squadrons. The flip side of the scarcity of 
+ is the 
+wealth of Diplomatic Action Points (
+). Opportunities to make 
+alliances around the world will be plentiful.
+The players now draw their Event hands. Raj draws #3 Tropi-
+cal Diseases, #12 Military Spending Overruns, and #8 Tax 
+Reform. Eliza draws #6 Native American Alliances, #1 
+Carnatic War, and #15 Interest Payments. Both players know 
+there’s no way they’ll be able to play all of their Events, given 
+the paucity of Event opportunities on the Investment Track, so 
+they turn to their Ministry card choices focused primarily on 
+board position. 
+Raj looks at his cards and the Investment Tiles, and decides that 
+he will focus on Europe this turn. The wealth of Diplomatic ac-
+tions combines well with his Ministry card #M-1 The Cardinal 
+Ministers:
+The Governance keyword is useless to him this turn, since he 
+has no Events whose bonus effects trigger from Governance, but 
+perhaps he’ll draw one next turn, and the extra Diplomatic power 
+this card offers seems worth it. And since he plans to make strong 
+diplomatic moves in Europe, he chooses #M-3 Court Of The 
+Sun King as his second Ministry Card. In addition to offering 
+bonus VP for winning the Europe award, it has the Scholarship 
+keyword, which will enhance the effect of his Tropical Diseases 
+Event—an unpleasant surprise for Eliza should she choose to 
+move aggressively in the Caribbean (which, given the Global 
+Demand situation, seems likely). He places his Ministry cards 
+face down on his player mat, since a Ministry card is not revealed 
+until any of its capabilities are used.
+   
+Eliza is very happy to see Native American Alliances, whose 
+effect is quite powerful—especially if the bonus effect can be 
+triggered. However, to play this Event card, she must select 
+an Investment Tile with not only an Event symbol, but also a 
+Diplomatic Major Action (as indicated by the Diplomatic ac-
+tion icon in the card’s upper left corner). Thankfully, two of the 
+Investment Tiles with Event symbols carry Diplomatic Major 
+Actions, so as long as she gets one of them she’ll be able to play 
+Native American Alliances.
+She wants the bonus effect, so she decides to take #M-7 East 
+India Company as her first Ministry card, since it has the Mer-
+cantilism keyword. It also rewards her for controlling economic 
+Advantages, which may pay in the long term. So, for her second 
+Ministry card, she selects #M-10 Edmond Halley. The plethora 
+of Minor Military actions will ensure she gets to build a cheap 
+Squadron, and establishing the Royal Navy’s presence in North 
+America and the Caribbean will help her protect the Markets 
+she’ll need to capture those regional and commodity awards. 
+Also, since she won’t get to play all of her Event cards, Halley’s 
+ability to trade one Event card for a Treaty Point seems useful.
+   
+With Ministry cards selected, Raj (as the Initiative player) must 
+now decide who will go first. Going first will allow him to select 
+the sole Major Military Action on the Investment Track; or he 
+
+
+--- PLAYBOOK PAGE 5 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+5
+could ensure that he’ll get to play two Events. Ideally he’d like 
+to spring Tropical Diseases on Eliza late in the turn, but with so 
+few Event symbols available, they’re unlikely to last that long. 
+Of course, going second will give him the final word on the 
+board before the Scoring Phase. Raj nonetheless decides to go 
+first, and selects this Investment Tile for his first Action Round:
+First, Raj must decide whether to play an Event, as permitted by 
+the Event symbol on the tile. He chooses Tropical Diseases, 
+and removes a British flag from St. Lucia and one of his own 
+French flags from Martinique. The bonus effect then permits him 
+to remove an additional British flag, so he also removes the flag 
+in Georgia. He flips his Court Of The Sun King Ministry card 
+face up, since he is using its Scholarship keyword.
+Now Raj can take the Actions listed on the Investment Tile—a 
+Major Diplomatic Action worth 3 
+, and a Minor Military 
+Action worth 2 
+. With an eye to improving the effect of The 
+Cardinal Ministers, he spends 3 
+ to place a French flag 
+in the 3-cost Prestige space in Spain. He also decides to take 2 
+
+
+--- PLAYBOOK PAGE 6 ---
+Imperial Struggle ~ Playbook
+6
+© 2020 GMT Games, LLC
+Debt for 2 additional 
+, placing another French flag in Savoy. 
+Since he now controls both spaces connected to the Mediter-
+ranean Intrigue Advantage, he takes that tile, and places it in 
+the Advantages section of his player mat. He can use it on the 
+next Action Round to place a Conflict Marker in Spain, Austria, 
+or Sardinia, provided Eliza does not take away his control of 
+either space connected to Mediterranean Intrigue.
+Now Raj takes his Minor Military Action and spends its 2 
+ 
+along with 1 additional Debt to fund the fort at Louisbourg. This 
+is expensive, and places him at risk of dangerous Events that 
+punish the player with less Available Debt, but Raj feels that 
+Louisbourg will be especially valuable this turn since it provides 
+access to all three Fish markets (and Fish is in Global Demand). 
+That concludes the first French Action Round.
+Eliza decides to take this Investment Tile:
+It has a Military Upgrade symbol—and it is the only one this 
+turn that does! But, first things first: she plays Native American 
+Alliances from her hand. 
+She flips her East India Company Ministry card face up, to take 
+advantage of the Mercantilism keyword. The base effect, Four 
+Mohawk Kings, lets her shift a Local Alliance in North America. 
+She could thereby unflag the Algonquin alliance with the French, 
+but that would leave her without any way of using the bonus 
+effect (since she needs 
+, which she has none of this round, to 
+use Wheat). So she instead shifts the Iroquois alliance, placing 
+a British flag there and taking the Iroquois Raids Advantage 
+tile. Now that she controls an Advantage in North America, she 
+immediately activates it as the Event’s bonus effect (note that it 
+does not matter that she acquired this Advantage just now; the 
+word “immediately” on the Event card supersedes the rule that 
+Advantages cannot be activated on the same Action Round they 
+are acquired) and places a Conflict Marker in Albany (to reduce 
+its cost for future acquisition). Since the Event directs her to 
+ignore Exhaustion, she does not place an Exhausted marker on 
+Iroquois Raids.
+Now, Eliza uses the Military Upgrade on the Investment Tile. 
+She chooses to replace the tile in the “Queen Anne’s War” the-
+ater, and conceals a grin as she draws one of her “+2” Basic War 
+Tiles, placing it in the Queen Anne’s War theater. She removes 
+the incumbent “0” strength tile from the game.
+The tradeoff Eliza incurs for access to these extra capabilities is 
+the relatively low Action Points—only 2—for her Diplomatic 
+Major Action. She decides to make a diplomatic overture in 
+Sardinia and places a British flag there. For her Minor Military 
+Action, she spends 1 
+ to Deploy one of her Squadrons from 
+the Navy Box to the Balearic Naval Space. Unfortunately, the 
+other 
+ is wasted, since only one purchase may be made with 
+a Minor Action. She then decides to use Halley’s second abil-
+ity to discard Carnatic War, moving her Treaty Points marker 
+up to the ‘1’ space on the General Records Track, and placing 
+an Exhausted marker on the bottom half of Halley’s card. That 
+concludes the first British Action Round.
+
+
+--- PLAYBOOK PAGE 7 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+7
+Raj now faces a dilemma. His remaining Events are not strong in 
+the current situation (Military Spending Overruns would be 
+a great play if Eliza had several military assets already in play, 
+like deployed Squadrons or Bonus War Tiles, but she doesn’t 
+yet; Tax Reform will let him recover the Debt he took on his 
+first Action Round, but he won’t get the bonus effect, as neither 
+of his Ministry cards shows the Finance keyword). Nonethe-
+less, by taking the only remaining tile with an Event symbol, he 
+could deny Eliza the opportunity to play an Event—especially 
+one that would punish him for having less Available Debt than 
+she does. Alternately, he could take the single tile with a Major 
+Military Action, to strengthen his position in the upcoming War 
+and deny Eliza the chance to deploy all of her Squadrons in a 
+single Action Round.
+He decides to take the chance that Eliza doesn’t hold any Events 
+that will let her punish him for having less Available Debt than 
+she does, and selects this Investment Tile:
+Raj spends 1 
+ to deploy his only Squadron from the Navy Box 
+to Biscay, a Naval Space in Europe; this will help him in the 
+Spain theater of the upcoming War of the Spanish Succession. It 
+is also a Prestige space, so it will help him win both the Europe 
+award and the Prestige bonus this turn. With his remaining 3 
+, 
+and 1 Debt for a fourth, he decides to build a second Squadron 
+which he places in the Navy Box. French Debt now stands at 4.
+With the 2 Economic Action Points (
+) from the Economic 
+Minor Action, Raj decides to complete the second French Ac-
+tion Round by flagging Georges Bank, a Fish Market that also 
+gives him access to Halifax. If Eliza lets this go unanswered, 
+that could allow a second French fort to be built in this area. The 
+Fish race is now tied at 1 (with Eliza controlling Massachusetts 
+Bay, and Raj controlling Georges Bank).
+Eliza frowns. She could take the last remaining tile with an 
+Event symbol and use it to play Interest Payments, but the 
+bonus effect won’t do anything for her since she has no Debt! 
+Instead, she decides to take this Investment Tile, and begin her 
+economic power play in the Caribbean:
+She spends 4  replacing the flags in Georgia and St. Lucia that 
+she lost to Tropical Diseases. Next, she takes on 1 Debt and 
+spends 1 Treaty Point to flag Santiago, to increase her relative 
+advantage in Sugar markets. Finally, she decides to take 2 ad-
+ditional Debt to flag Albany, in North America. The base cost 
+to take Albany is 1, since it contains a Conflict marker, but she 
+must pay 1 additional  to flag it since she is switching Regions 
+(Diplomatic and Economic purchases in a second Region cost 1 
+extra action point). The Conflict marker in Albany is removed 
+(as always, when a space changes control) and Eliza places a 
+British flag there.
+With the Minor Military Action, she deploys a Squadron to the 
+Antilles Channel. This will increase the cost for Raj to unflag St. 
+Lucia, which will help her avoid getting bottled up in Barbados. 
+This costs 1 
+; the second 
+ is wasted, since Minor actions can 
+only be used for a single purchase.
+Raj is thoroughly unamused by this, but feels more secure in 
+his decision to leave the last Event to Eliza (since she didn’t 
+take it on her previous Action Round, he’s now convinced she 
+holds no Debt threat cards—but, as we know, he’s mistaken). 
+He decides to strike back with a Diplomatic offensive in Europe, 
+selecting this Investment Tile:
+He reveals The Cardinal Ministers and, to Eliza’s dismay, 
+points out that he will get the maximum bonus of 3 
+. He 
+places an Exhausted marker on the card.
+Raj can spend a whopping 7 
+ this Action Round. First, he 
+activates his Mediterranean Intrigue Advantage tile, placing 
+an Exhausted marker on it and placing a Conflict marker in the 
+British-flagged Alliance space in Austria. Next, he pays 3 
+ 
+to remove the British flag from the 3-cost space in the German 
+States, and a further 3 
+ to flag it for himself. This gives him ac-
+cess to the Central Europe Conflict Advantage, which he places 
+in his player mat’s Advantages box. (He can’t use it this Action 
+Round, since he just acquired it.) He then spends his last 
+ to 
+remove the British flag from the Alliance space in Austria; this 
+costs only 1 
+ because of the Conflict marker (which is also 
+removed). Finally, he exhausts his Algonquin Raids Advantage 
+to place a Conflict Marker in Albany, in the hopes of slowing 
+Eliza down in North America.
+With the Minor Military action, Raj looks longingly at Halifax, 
+but doesn’t want to take on any more Debt. Instead, he buys a 
+Bonus War Tile for 2 
+, and hits the jackpot with “de Villars: 
++3”. He places it in the Jacobite Rebellion theater. This con-
+cludes the 3rd French Action Round of turn 1.
+Eliza decides she has waited long enough to teach the French 
+about the importance of good financial management. Taking this 
+Investment Tile, she immediately lays down Interest Payments:
+
+
+--- PLAYBOOK PAGE 8 ---
+Imperial Struggle ~ Playbook
+8
+© 2020 GMT Games, LLC
+   
+Raj has 2 Available Debt, to Eliza’s 3, so the Bonus Effect will 
+trigger. Raj’s Debt Limit is immediately reduced by 1 (from 
+6, where it started, to 5). He wasn’t at his Debt Limit, so Eliza 
+doesn’t get any VP. But now Raj has only 1 Available Debt. 
+Thanks to the Bonus Effect, Eliza reduces her own Debt by 2 
+(to 1), giving her 5 Available Debt to play with.
+With the Major Economic action afforded by the tile, Eliza 
+makes a longer-term investment by flagging the West Bengal 
+cotton market. While Cotton is not in Global Demand, the Silk 
+Advantage this space grants will earn 1 VP from East India 
+Company this turn in addition to its economic discount in India, 
+and the India award this turn, while modest, is not nothing. 
+Rather than take more Debt now, she lets the 3rd    go unspent.
+The situation at the end of Action Round 3.
+
+
+--- PLAYBOOK PAGE 9 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+9
+Now for the Diplomatic Minor action. Eliza sorely needs to 
+mend her position in Europe. The French are up 8-3 in Europe, 
+with Court Of The Sun King showing for bonus VP on the 
+Europe award (if Raj wins it it will be worth 2 VP and a Treaty 
+Point). Additionally, Raj controls 3 Prestige spaces to her 2, so 
+he will score an additional 2 VP if that situation persists through 
+the end of the turn (see illustration at bottom of previous page).
+So, incurring 1 Debt (to 2), she decides to spend 3 
+ on the 
+empty Prestige space in Austria. This ties up the Prestige space 
+count, and will allow her access to the Silesia Negotiations Ad-
+vantage, which might help her further reverse French political 
+gains in Europe. This concludes Action Round 3 - each player 
+will get only one more Action Round before the War of the 
+Spanish Succession.
+Raj surveys the remaining three tiles. The Economic Major ac-
+tions tempt him, as he could contest Eliza’s dominance of the 
+Caribbean commodities, but as she will have the final Action 
+Round, she’ll be able to answer back equally. However, there 
+is only one Diplomatic Major action left on the track. Choosing 
+to accept defeat in the commodity trade this turn, Raj selects 
+that tile, aiming to assemble an unbeatable European coalition 
+to back the duc d’Anjou’s claim to both the Spanish and French 
+crowns.
+First, Raj activates his Central Europe Conflict Advantage, 
+placing a Conflict Marker on British-flagged Sardinia. Eliza 
+groans—with no Military actions remaining on the Investment 
+Track, she won’t be able to remove it before war breaks out.
+Next, using the 2 
+ from the tile’s Minor Military Action, Raj 
+buys a Bonus War Tile (recall that the actions on an Investment 
+Tile can be taken in any order, except that Event play must come 
+first). He does this first because he wants to see what his final 
+tile strengths will be before negotiating additional alliances to 
+bolster weak theaters (or go for a decisive victory where he is al-
+ready strong). Unfortunately, it is “d’Artagnan: +1”—beneficial, 
+but not the strongest in the pool. He assigns it to Central Europe.
+With his 4 
+, he decides to flag Denmark-Norway and Swe-
+den (which puts him back in the lead for the Prestige bonus). 
+Sweden’s alliance is not useful in the upcoming War, but Raj 
+feels—perhaps overconfidently—that he has a sufficiently strong 
+edge already. That concludes the 4th and final French Action 
+Round of the first turn.
+Eliza is left with two of the same tile, so there’s no choice: she 
+takes one of them.
+With 4 
+ from an Economic Major action, Eliza decides to 
+monopolize the Fish trade. She spends 3 
+ to unflag Georges 
+Bank (its cost is increased by 1 due to its being protected by 
+the fort at Louisbourg) and then 2 
+ to flag it herself, taking 1 
+Debt in the process (now she has 3). She spends the 2 
+ from 
+the Diplomatic Minor action on the 2-cost Alliance space in 
+Austria (that Raj had unflagged earlier).
+Action Rounds are now over. The Reduce Treaty Points phase 
+has no effect as neither player has more than 4 Treaty Points. 
+There are no “end of turn” card abilities for either player to 
+resolve, so that phase is skipped as well, prompting the begin-
+ning of the Scoring phase.
+North America is scored first. Eliza has 7 flags to Raj’s 5, but 
+thanks to Algonquin Raids the British flag in Albany does not 
+count for scoring. Since the 2 VP Award tile requires a margin 
+of 2 flags to secure it, neither player wins the Award; it is placed 
+aside, face up (it will not appear again until Turn 3 at the earliest, 
+when each Region will once again receive 2 random Award tiles). 
+The French win the Europe award and score 1 VP plus another 
+for Court of the Sun King (VP = 17), and gain 1 Treaty Point 
+(to 1). They also score the bonus 2 VP for controlling more 
+Prestige spaces, as there are 4 French-flagged Prestige spaces 
+(Sweden, one in Austria, one in Spain, and the Biscay Naval 
+Space) to Britain’s 3 (the Dutch Republic, the Balearic Naval 
+Space, and one space in Austria). The VP marker is moved to 19.
+The Caribbean goes easily to the British (7 flags and Squadrons, 
+to the French’s 4). It is not worth any VP, but the British gain 
+1 Treaty Point (to 1).
+India likewise goes to the British (they have 5 flags to France’s 
+4), scoring 1 VP (VP = 18) and granting them a Treaty Point 
+(they now have 2).
+Next, Global Demand is scored. The British sweep all three 
+awards, with 2 Fish (FR: 0); 2 Sugar (FR: 1), and 1 Tobacco 
+(FR: 0). This yields 7 VP but does increase British Debt by 2 
+(VP = 11, BR Debt = 5). Eliza also gets 1 VP  from East India 
+Company for her Silk Advantage for a total of 8 VP(!). The VP 
+total stands at 10.
+The Victory Check phase yields no results, as the VP total is not 
+0 or 30. Note, though, that had the British somehow been able 
+to win the Europe and North America awards, they would have 
+won an automatic victory during the Scoring Phase! (One of 
+the automatic victory conditions is to win all four Regions and 
+all commodities in Global Demand in a single peace turn.) But 
+since the game continues, the War of the Spanish Succession 
+must now be fought.
+
+
+--- PLAYBOOK PAGE 10 ---
+Imperial Struggle ~ Playbook
+10
+© 2020 GMT Games, LLC
+The players reveal their War Tiles:
+ Britain:
+•	 +1 from tiles
+•	 +1 from the Squadron in the Balearics
+•	 The British alliance in Sardinia grants no strength, since it 
+has a Conflict marker
+•	 Total: 2
+France also wins the Spain theater, by a margin of 2. This scores 
+Raj 1 VP (VP to 13) and 1 CP, whereas Eliza takes another 2 
+Treaty Points (total: 6). Raj spends the CP on Gibraltar, taking 
+the Naval Bastion Advantage.
+In Queen Anne’s War (the North American theater), the strength 
+tallies thus:
+  France:
+•	 +2 from tiles
+•	 +1 for Louisbourg
+•	 +1 for the Conflict marker in British-flagged Albany
+•	 Total: 4
+ Britain:
+•	 +2 from tiles
+•	 Total: 2
+France wins Queen Anne’s War by a margin of 2. Eliza breathes 
+a sigh of relief, as this yields just 1 VP (VP to 14) and no addi-
+tional territorial gains. Her Military Upgrade during the previous 
+Action Phase stopped a French steamroll.
+Finally, the fate of the Jacobite cause must be resolved.
+Eliza winces—while she established a very strong economic 
+position on turn 1, she is fairly outclassed on the battlefield. 
+The first theater to resolve is Central Europe. Britain takes 1 
+Debt immediately from the French “BR Debt +1 / 0” tile. This 
+places Eliza at her Debt Limit, so she has to hope there are no 
+more unexpected military expenses in the other Theaters. The 
+strength ends up as follows:
+  France:
+•	 +2 from tiles
+•	 +4 from alliance spaces (Bavaria, German States, Savoy, 
+Denmark-Norway)
+•	 Total: 6
+ Britain:
+•	 +1 from tiles
+•	 +1 from alliance spaces (Austria)
+•	 Total: 2
+The French win the Central Europe theater by a margin of 4. 
+This yields 2 VP (VP = 12) and 1 Conquest Point. Raj decides 
+to use the Conquest Point to seize San Agustin, whose Fruit 
+Advantage will help him claw back a position in the Caribbean. 
+Eliza gets 2 Treaty Points (for a total of 4).
+In Spain, the strength tallies as follows:
+  France:
+•	 +1 from tiles
+•	 +1 for the Squadron in Biscay
+•	 +1 for the Governance keyword
+•	 +1 for alliance spaces (Spain)
+•	 Total: 4
+
+
+--- PLAYBOOK PAGE 11 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+11
+  France:
+•	 +2 from tiles (and Britain must lose a flag in Europe—Raj 
+chooses the Dutch Republic flag)
+•	 +1 from Alliance spaces (Ireland… but see below!)
+•	 +1 for the Style keyword (the Jacobites are so romantic!)
+•	 +1 for the Conflict marker in British-flagged Sardinia
+•	 Total: 5
+ Britain:
+•	 –1 from tiles (for her tile’s extra effect, Eliza chooses to 
+remove Raj’s flag in Ireland, so he won’t benefit from its 
+strength in this theater)
+•	 Total: –1
+With the adjustment of the French total strength to 4, owing to the 
+loss of the flag in the Ireland alliance space, France nonetheless 
+wins the Jacobite Rebellion of 1715 by a margin of 5. This scores 
+4 VP for the French (VP = 18). Britain receives 2 Treaty Points 
+(total: 8). Raj also places a Jacobite Victory marker on the Turn 
+Track; this will make #M-4 Jacobite Uprisings  more effective.
+The French won all four theaters in the War, but they do not 
+win an automatic victory (since to do so they would have had 
+to win all four theaters with the maximum possible margin of 
+victory). In the Victory Check Phase following the war, no 
+victory is earned (in fact, the VP total is only 3 points away 
+from where it was at the start of the game, as France’s military 
+success modestly outweighed Britain’s mercantile dominance). 
+The players now proceed to the Reset Phase. They return all 
+of their Basic War tiles to their player mats (except for the one 
+Eliza removed from the game thanks to her Military Upgrade), 
+remove the Bonus War tiles for the War of the Spanish Succes-
+sion from the game, and add the Bonus War Tiles for the War of 
+the Austrian Succession to the appropriate box on their player 
+mats. The Conflict markers in Albany and Austria are removed.
+Then, in the War Layout Phase, the players return the War of the 
+Spanish Succession display to the box, and set up the next War: 
+the War of the Austrian Succession. Placing it by the board, they 
+draw 4 Basic War Tiles each from their player mats, and place 
+them face down in the new War’s theaters. They are now ready 
+to begin turn 2, the second half of the Succession Era!
+DESIGN NOTE: The British did very well with Regional 
+awards and Global Demand, and have a large stock of Treaty 
+Points for the next turn. Eliza will be able to make some big 
+moves, and may feel quite tempted to go second in turn 2. 
+The French, though, increased their board presence through 
+conquest, and those flags will be difficult for the British to 
+contest. They also control powerful political Advantages in 
+Europe. It’s anyone’s game thus far… if you’ve been playing 
+along with this example, feel free to continue the game, or 
+start one of your own!
+ 
+          
+A Note On Flags
+The 18th century hosted a blossoming of military and 
+civil institutions in both France and Britain; this bridge 
+between the Renaissance and modern eras meant that 
+armies and firms started to take on the scale and official-
+dom of modern states, but retained the personalized flavor 
+of earlier times.
+For the British, the most obvious evolution of its national 
+flag was the combination in 1707 of the Cross of St. George 
+and the Saltire of St. Andrew, representing the unified 
+thrones. The Saltire of St. Patrick would not be added until 
+1801, when Ireland joined what would then be called the 
+United Kingdom. Imperial Struggle uses the 1707 flag for 
+the British control markers—and for the Squadrons, despite 
+the availability of the British naval ensign, whereon the 
+predominance of white would cause readability problems 
+for players. The British East India Company flag, flown 
+around the world as the British Empire’s reach expanded, 
+bore a strong resemblance to the Grand Union flag that the 
+United States briefly flew prior to 1777, when thirteen stars 
+on a blue field replaced the Union cross.
+The French have a more complicated story. The Bourbon 
+battle flag was clean white; while this may invite jokes, the 
+way military forces would signal surrender was to show 
+the enemy’s colors—and a great many military forces sur-
+rendered to France, thus waving the white flag. Only when 
+a royal was present would the golden fleurs-de-lis also 
+grace the standard, and that was rare. For these reasons, 
+as well as for game readability, we have chosen the blue 
+Capetian standard adorned with fleurs-de-lis as the French 
+flag used to signify space control on the map. It was not 
+unheard of for an army to fly this flag (see Henri Félix Em-
+manuel Philippoteaux, The Battle of Fontenoy, 1745: The 
+Confrontation between the French and the Allies, 1873, on 
+page 20 of the Rulebook) or the variant with three larger 
+golden fleurs-de-lis.
+The French East India Company’s flag is, similarly, a 
+challenge to find. Very few French flags from the era survive 
+today; most of the images one can find are artists’ interpreta-
+tions from across the 19th and 20th centuries. The details 
+of the flag are in the Company’s charter, and we’ve chosen 
+the interpretation that we think has the strongest likelihood 
+of matching the historical one. The French naval ensign 
+is more intricate and designed than the British one, but it 
+certainly expresses the spirit and glory of the Sun King.
+We hope you keep the spirit of how these two mighty 
+adversaries chose to represent themselves on land and sea 
+in mind as you play Imperial Struggle!
+
+
+--- PLAYBOOK PAGE 12 ---
+Imperial Struggle ~ Playbook
+12
+© 2020 GMT Games, LLC
+Complex Action Round
+This example covers a single French Action Round that refer-
+ences most of the rules around Action Point expenditure.
+EXAMPLE: It is Turn 6. 
+Raj, playing France, selects an Investment tile 
+with 3 
+ and a 2 
+ Minor Military action. 
+He plays #36 Wealth Of Nations, and reveals #M-26 Lavoisier 
+for its Scholarship keyword, which will activate the bonus ef-
+fect on Wealth Of Nations. First, Raj reduces his Debt by 
+2, as directed by Wealth of Nations. The bonus effect is 3 
+. 
+Normally, Event card effects must be fully resolved before 
+spending any Action Points from the selected Investment tile 
+(5.2, step 2), but extra Action Points are an exception – they 
+may be spent alongside those from the Investment tile, in any 
+order the player desires. So, Raj now has 3 
+, 4 
+, and 3 
+ 
+to spend – the latter two increased by 1 apiece from their base 
+values on the Investment tile, as indicated by Lavoisier. Focus-
+ing first on the Caribbean, Raj decides to spend the  first, using 
+two of them to remove the Conflict marker in Puerto Principe. 
+The third is wasted, since only one expenditure may be made 
+with a Minor Action. Now that he has a Market adjacent to 
+Puerto Rico, he spends just 1 
+ to remove the Isolated British 
+flag in Puerto Rico (5.4.2). (Note that this is OK per 5.4.1, since 
+Raj already had a flag in Puerto Principe to confer adjacency at 
+the start of the Action Round—and now it no longer contains 
+a Conflict marker.)
+Continuing on, Raj now activates his Letters of Marque Advan-
+tage, and uses it to place a Conflict marker in Bahamas Run West. 
+(Since it is British-flagged, it is unprotected; French fleets do 
+not protect British flags from pirates.) This will also Isolate the 
+British flag in Bahamas Run North at the start of the next Action 
+Round (remember that Isolation doesn’t set in until the start of 
+a new AR, 5.4.1). But Raj can still take advantage, and spends 
+another 1 
+ to unflag Bahamas Run West (discounted due to 
+the Conflict marker, 5.4.2). This change in control removes the 
+Conflict marker. With 1  left Raj now takes 1 Debt (thank you 
+Further Examples
+
+
+--- PLAYBOOK PAGE 13 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+13
+Adam Smith) to make 1 additional 
+, and with these he flags 
+Bahamas Run West for himself.
+Looking at the board, Raj feels that he has improved his position 
+(and, by Isolating one of their flags, opened a threat that the Brit-
+ish must at least consider answering), but does not wish to spend 
+his 4 
+ in the Caribbean. (For one thing, he can’t—he already 
+controls Letters of Marque, and Pirate Havens would only cost 
+2 
+.) So he switches regions to Europe. He spends 2 
+ to 
+flag Sweden and the other 2 
+ to flag the 2-cost Prestige space 
+in Spain. Note that he does not pay extra for switching Regions 
+(5.3.4), since he did not spend any 
+ anywhere but Europe.
+Damaged Fort Example
+Eliza, playing France on turn 4, has selected an Investment tile 
+with 4 
+ and 2 
+. Fish is in Global Demand this turn, and she 
+sees an opportunity in North America. The British control Louis-
+bourg, having built it on a prior turn, but it was damaged by one 
+of Eliza’s War tiles during King George’s War. She spends all 4 
+of her 
+ to unflag Louisbourg—the cost is 3 (the number printed 
+in Louisbourg’s space), plus 1 (since repairing and seizing an 
+opposing damaged Fort costs an extra 
+, 5.6.4 2nd bullet). Note 
+that the French flag in Acadia does not provide the adjacency 
+needed to repair a Fort (ibid), but Eliza’s Squadron in the Cabot 
+Strait does. She removes both the British flag and the Damaged 
+Fort marker in Louisbourg and places her own flag there. Next, 
+she spends the 2  from her Minor Action to flag Georges Bank, 
+which she can now do thanks to the newly-adjacent French 
+Fort. In this way, she was able to improve her Fish holding us-
+ing a Minor Action (unflagging Northeast Channel would not 
+be permitted with a Minor Action), and for a low cost as well. 
+Note also that the Fort need not have been adjacent at the start 
+of the Action Round; only other Markets have this requirement 
+in order to confer adjacency (5.4.1, second Design Note).
+GUIDE FOR CDG PLAYERS
+Imperial Struggle twists some of the rules and mechanics 
+that CDG aficionados are used to. Here is a rundown of 
+some elements those players should keep in mind:
+•	 In Imperial Struggle, Event cards that get played as 
+Events are always removed from the game. This is in 
+contrast to most CDGs, including Twilight Struggle, 
+in which Events that get played as such are removed 
+only if there’s an asterisk or other markup indicating 
+that they are one-time occurrences.
+•	 When the Revolution Era begins, don’t forget to remove 
+all the Succession Era cards from the game—includ-
+ing from the draw pile and players’ hands. (Of course, 
+you can just remove and re-draw any Succession Era 
+cards as they are drawn, rather than removing them all 
+immediately in Turn 5’s Deck Phase.)
+•	 Investment tiles that have the Event symbol allow the 
+play of an Event in addition to the Action Points granted 
+by the tile. In most CDGs, players face a strict choice 
+between playing an Event and spending action points 
+(or operations points, command points, etc).
+•	 Play order isn’t fixed in Imperial Struggle. Instead, the 
+initiative is determined by the VP total. And the player 
+with initiative doesn’t necessarily go first – they choose 
+who does.
+•	 The three different types of Action Points— 
+,  
+ and 
+ —all have different uses and roles in the game. Most 
+CDGs have a single action point type with a single list 
+of ways they can be spent.
+•	 Daisy-chaining control of spaces is allowed in more 
+cases than in Twilight Struggle and others. You can’t 
+flag a Market and immediately grab a newly-adjacent 
+one, but you can do so if the first space you flag was 
+instead a Fort or Naval Space.
+
+
+--- PLAYBOOK PAGE 14 ---
+Imperial Struggle ~ Playbook
+14
+© 2020 GMT Games, LLC
+Historical Background
+Succession Era: Event and Ministry Cards
+Event Cards:
+#1 Carnatic War: Both France and Britain found themselves 
+drawn into—or instigating—intrigue and conflict between the 
+Mughal princes and other rulers of eastern India (particularly 
+the Nizams of Hyderabad). On several occasions these conflicts 
+erupted into open warfare, resulting in territorial and economic 
+gains for the Europeans. 
+DESIGN NOTE: Like some other Event cards (e.g., War of 
+Jenkins’ Ear), the Carnatic War card is in the Succession 
+deck even though the significant Carnatic wars took place 
+during the Empire Era. This is because they might have hap-
+pened earlier, and because they are known for fueling wider 
+conflicts like the War of the Austrian Succession. Giving 
+them a better chance to precede those conflicts enriches the 
+historical texture of the game. 
+#2 Acts of Union: The 1707 unification of the English and 
+Scottish thrones marked a watershed in British political history; 
+although the two kingdoms had shared monarchs before, the 
+British government’s prime aim of ensuring that Scotland could 
+not ally against it demanded that each’s head of state should 
+always be one individual. Scotland, for its own part, seemed 
+largely opposed to union, but financial considerations prompted 
+its delegates to ratify the initial Act. Scotland would nonetheless 
+remain a hotbed of Jacobite support for several decades.
+#3 Tropical Diseases: The biggest risk to anyone serving 
+in the West Indies, whether in the naval or merchant services, 
+was disease. Biting insects and other parasites were (and are) 
+persistent disease vectors; as with the rest of the New World, 
+native populations also suffered heavily from newly-introduced 
+European ailments. Additionally, African slaves brought across 
+the Atlantic introduced new tropical diseases native to Africa, 
+to which both Europeans and native Caribbean peoples were 
+vulnerable. This increased the price of slaves and further drove 
+the growth of the slave trade.
+#4 South Sea Speculation: The South Sea Company (so 
+named because of its trading rights with South America—not 
+the South Pacific!) was able to persuade the British government 
+to allow it to take on government debt; the Bank of England had 
+previously been the only institution permitted to do so. Once the 
+war with France ended, the South Sea directors drove a specu-
+lative rush around the company’s potential profits from South 
+American trade; they also saw a need to compete with Law’s 
+success at the Banque Royale in France. But when it became 
+clear there was no path to these profits, the stock price crashed 
+and ruined thousands of investors. Walpole built a good chunk 
+of his reputation on his skillful salvaging of the crisis, although 
+there was still widespread misery and ruin.
+#5 War of Jenkins’ Ear: Allegedly 
+precipitated by the “de-earing” of Rob-
+ert Jenkins, a British naval officer, when 
+a Spanish frigate searched his ship, the 
+War of Jenkins’ Ear represented a 
+power play by the South Sea Company 
+and the British government to make 
+inroads into Spanish holdings in the 
+Caribbean. Of particular note was the 
+Anson Expedition, in which British 
+Commodore George Anson, charged 
+with causing havoc in the Caribbean, ended up forced into the 
+Pacific and sailing all the way to China. He redeemed this 
+lengthy voyage by capturing a huge Spanish treasure fleet in the 
+Philippines and returned to England around the Cape of Good 
+Hope, thus circumnavigating the globe.
+#6 Native American Alliances: Britain and France both 
+forged extensive relationships with Native Americans, using 
+treaties and economic exchange as well as exploiting long-
+standing tribal rivalries to build support among the tribes. France 
+eventually cultivated the stronger relationship, in particular 
+due to its de-emphasis of religious conversion, but both sides 
+relied on Native scouts, guides, and raiders in all of their North 
+American conflicts.
+#7 Austro-Spanish Rivalry: These 
+two realms were constantly at odds over 
+almost every issue imaginable: trade, 
+territory, port rights, and European rela-
+tions. Each wanted unified rule under 
+their own throne, although this desire 
+weakened more and more as the cen-
+tury went on. To these ends they often 
+dealt and quarreled with France and 
+Britain; for example, Charles VI aggres-
+sively pursued Dutch trading opportuni-
+ties, which gave him bargaining power against the British; and 
+Isabella Farnese’s intrigues against the Orléans regency led to 
+a French invasion of Spain during the War of the Quadruple 
+Alliance.
+#8 Tax Reform: Both Britain and France sought to clarify and 
+streamline their tax systems throughout the 18th century, using 
+a variety of creative tactics and schemes to overcome centuries 
+of entrenched privilege and traditions of tax avoidance. The 
+ability to raise revenue was key to the infrastructure and mili-
+tary progression that both kingdoms craved; Britain’s gradual 
+advantage in this area would become a decisive one during the 
+Industrial Revolution.
+#9 Great Northern War: The rivalry between Sweden and 
+Russia over who would dominate the Baltic was a major issue in 
+continental European politics, although both Britain and France 
+would spend most of it distracted by the War of the Spanish Suc-
+cession. Elector George of Hanover—the future King George 
+
+
+--- PLAYBOOK PAGE 15 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+15
+I of Great Britain—sided with Russia. The Swedish defeat at 
+Poltava in 1709 would end their ambitions on the opposite side 
+of the Baltic, although future Swedish monarchs would make 
+their own attempts later in the 1700s. 
+#10 Vatican Politics: The Papacy didn’t play as central a role 
+in the politics of the 18th century as it had in the preceding two, 
+but religious considerations still swayed decisions and drove 
+intrigue. The Church could still marshal massive support, or 
+quiet rumblings of dissent, with displays of favor and recogni-
+tion. Perhaps most important was its implicit recognition of 
+the House of Hanover and George I as the legitimate ruler of 
+Great Britain in 1766, a move that put an end to serious Jacobite 
+threats. And, of course, when the Bastille fell, the Papacy saw 
+the anti-clericalism of the Revolution as a serious threat.
+#11 Calico Acts: The Calico Acts banned the import of cotton 
+textiles into England. They were supported by British textile 
+mill owners, who had difficulty competing with the volume and 
+variety of textiles that the East India Company could ship from 
+Bengal. Like most import restrictions, the Acts led to a huge 
+wave of smuggling.
+#12 Military Spending Overruns: Wars are incredibly ex-
+pensive, and bankrupted more than one 18th-century monarch 
+(and 17th, and 16th…). The military needs for the empires both 
+kingdoms sought to build were enormous, and came at enormous 
+financial cost. France spent an astonishing 4 million livres on 
+the fortress of Louisbourg alone during the 18th century; Britain 
+was able to double the size of its navy by taking on extensive 
+government debt.
+#13 Alberoni’s Ambition: Giulio Alberoni was a cardinal who, 
+like Fleury and Dubois, formed strong political relationships 
+in a European court. Alberoni, however, did so in the Spanish 
+royal court, and came to be trusted by Isabella Farnese, queen 
+to Philip V of Spain. Since the War of the Spanish Succession 
+was about Philip’s right to inherit both the Spanish and French 
+thrones, this put Alberoni at the center of much intrigue. His 
+service to the ambitious Isabella led him to attempt recapture of 
+Spanish territory lost to Austria and Savoy during the war. When 
+the Sun King died, and the duc d’Orléans became regent to the 
+boy king Louis XV, Alberoni initiated the Cellamare Conspiracy 
+to undermine Orléans and replace him as regent with his own 
+master, Philip V—in this way he might have de facto reversed 
+the result of the War of the Spanish Succession. 
+#14 Famine In Ireland: In 1740 a 
+catastrophic cold snap wiped out both 
+the grain and potato crops in Ireland. 
+This was then followed by an equally 
+disastrous drought that destroyed the 
+remaining edible crops. Aid efforts were 
+hindered by out-of-season ice that 
+snarled harbors and blocked wharves. 
+Despite eventual food aid from Ameri-
+ca, roughly a third of the island’s popu-
+lation starved to death.
+#15 Interest Payments: The payment of interest on debt had 
+become common in Europe during the Renaissance. While 
+monarchs often felt tempted to default on debt, just to avoid 
+mounting interest payments, they knew this would affect their 
+ability to borrow in the future.
+Ministry Cards:
+#M-1 The Cardinal Ministers: Guillaume Dubois and 
+André-Hercule Fleury continued the tradition of service as 
+Chief Minister to the French king (that Richelieu and Mazarin 
+started). Both focused on stabilizing European relations (even 
+to the extent of formal alliance with Britain!), limiting other 
+powers’ ambitions, and solid finance. Fleury in particular over-
+saw three decades of peace between the two Succession wars 
+in Imperial Struggle.
+#M-2 John Law: A Scottish natural philosopher (what we’d 
+now call an economist), Law was charged with rehabilitating 
+France’s finances after the War of the Spanish Succession. 
+He succeeded, to an extent; although his fiat currency system 
+collapsed, his other reforms (particularly those that developed 
+France’s mercantile infrastructure) enabled his political succes-
+sors to cement a degree of financial stability.
+#M-3 Court of the Sun King: Ver-
+sailles started out as a hunting lodge; that 
+changed dramatically. In 1661 Louis XIV 
+began expanding it, and took up full-time 
+residence in the 1680s, transforming it 
+into the jewel of Europe. He wanted to 
+disrupt conventions and arrangements in 
+Paris, and recenter the royal court en-
+tirely on himself. Its lavish gardens and 
+accommodations impressed ambassadors 
+and courtiers from most of Europe.
+#M-4 Jacobite Uprisings: The large uprisings of 1715 and 
+1745 that aimed to undo the Glorious Revolution and restore the 
+Stuart dynasty to the English throne are the most well-known 
+Jacobite rebellions, but in fact the Jacobites contrived a seem-
+ingly endless procession of plots, intrigues, and smaller revolts 
+for most of the first half of the 18th century. The Jacobite cause 
+was only truly extinguished when the Papacy recognized the 
+House of Hanover as legitimate rulers of England and Scotland; 
+the resulting collapse of Catholic support for the Stuart cause 
+put a permanent end to Jacobite ambitions.
+#M-5 Robert Walpole: Regarded by many as Britain’s first 
+true prime minister, Walpole served three monarchs and wrung 
+reasonable consensus from a fractious Cabinet and Parliament. 
+Eventually eclipsed by Pitt the Elder, Walpole created a legacy 
+of stability and charted a successful political course for Britain 
+for decades.
+#M-6 Jonathan Swift: An Irish essayist and critic, Swift is 
+best known for Gulliver’s Travels and A Modest Proposal, both 
+of which combine imaginative prose with cutting political com-
+mentary. He was influential on both sides of Britain’s political 
+divide, although his advocacy for Ireland sometimes put him 
+out of favor.
+
+
+--- PLAYBOOK PAGE 16 ---
+Imperial Struggle ~ Playbook
+16
+© 2020 GMT Games, LLC
+#M-7 East India Company: Chartered 
+in 1600, the British East India Company 
+struggled for—and eventually se-
+cured—British economic and military 
+dominance over India and the East In-
+dies. Its success rippled back into poli-
+tics and society back home, as newly 
+wealthy traders and company officers 
+bought estates, married well-born la-
+dies, and ran for Parliament.
+#M-8 Bank of England: The Bank started out as a tool to 
+facilitate the government debt necessary to finance naval ex-
+pansion. Privately run until the 1960s, it issued new coinage 
+and paper currency (on which it had a monopoly) and ran a 
+conventional banking business as well, loaning to the public. A 
+stable holder of government debt, it provided monetary stabil-
+ity and consistency that allowed Britain to gradually accrue a 
+substantial financial advantage over France.
+#M-9 New World Huguenots: In all their North American 
+struggles against the British, the French faced a persistent disad-
+vantage: population. The British practice of sending criminals, 
+indentured servants, and especially religious dissenters to distant 
+colonies never caught on in France. Louis feared the creation of 
+a distant and potentially disloyal critical mass of Protestants, and 
+of course he could not stomach religious dissent in any case. But 
+it might not have been so; and the French colonies in Canada 
+and Acadia might have been able to compete with the British 
+ones in terms of local militia and logistics.
+#M-10 Edmond Halley: Known mostly for the comet whose 
+behavior he described, Halley was one of the Royal Society’s 
+brightest lights in the 18th century. He did trailblazing work 
+in engineering (inventing the diving bell), mathematics (some 
+regard him as the founder of actuarial science), and navigation. 
+Along with the securing of the Spanish slave-trading contract, 
+the asiento, Halley’s innovations paved the way for the British 
+naval ascendancy of the next two centuries.
+War of the Spanish Succession:  
+Tile Background
+ BRITISH WAR TILES
+John Churchill, Duke of Marlborough 
+(“Queen Anne’s Captain”) was unquestion-
+ably one of Britain’s greatest military leaders. 
+His skill at maneuver, tactics, and siegecraft 
+secured important victories at Blenheim, Ra-
+millies, and Oudenarde, and ultimately prevented the creation 
+of a unified Franco-Spanish superpower.
+Sir George Rooke, a veteran naval officer of the Nine Years’ 
+War, was Admiral of the Fleet (the highest rank in the British 
+Navy) by the time the War of the Spanish Succession began. He 
+decisively destroyed a Spanish treasure fleet at Vigo Bay and led 
+the successful expedition against Gibraltar, cementing British 
+power in the Mediterranean for generations.
+United Parliament: The two chief antagonists of Imperial 
+Struggle differed in many ways, but one of the most important 
+was in governance, where the King of England (and, shortly 
+into the game, Scotland) shared power with an often fractious 
+Parliament. When intrigue ran high between the Whigs and 
+Tories, British policy was adversely affected; conversely, when 
+they could work together, Britain was stronger.
+Benjamin Church was a military leader in the British colony 
+at Plymouth. He was one of the first European officers to recruit 
+Native Americans into irregular combat units, and to success-
+fully integrate European arms with Native tactics. 
+Prince Eugene of Savoy (“The Greatest 
+General”) led the Imperialist forces at every 
+crucial moment of the war. He played important 
+roles in Northern Italy, the Rhine campaigns, 
+and in the Low Countries. His command of the 
+right wing at Blenheim enabled Marlborough’s key break-
+through. It is impossible to overstate the role he played in the 
+war’s course.
+Leopold I: The Holy Roman Emperor at the start of the war, 
+Leopold I, saw an opportunity—he could leverage the rest of 
+Europe’s opposition to Bourbon dynastic union between France 
+and Spain to combine the Hapsburg holdings in Austria and 
+Spain, as they had been under Charles V. He was unsuccessful 
+in this, and did not survive the war.
+Louis William, margrave of Baden-Baden, fought alongside 
+Prince Eugene against the Turks in the 1680s. In the War of the 
+Spanish Succession he was defeated by Villars but came back 
+to play a key diversionary role in the campaign that culminated 
+in the Battle of Blenheim. A great Austrian general in his own 
+right, his legacy is much less noted than Eugene’s.
+Huguenot Rebels: Louis XIV’s revocation of the Edict of 
+Nantes had long-lasting repercussions for France, including the 
+Camisard rebellion that began in 1702 and lasted for most of 
+the war. Huguenot guerrillas massacred Catholics and engaged 
+in pitched battle against the royal army, diverting attention and 
+resources from the rest of the war. Even Villars commanded 
+against the rebels for a time, an indication of how serious this 
+distraction became.
+Henri de Massue, marquis de Rouvigny and Earl of Galway, 
+forever left French service when Louis XIV revoked the Edict 
+of Nantes. He settled in Ireland, receiving an Irish title, and 
+fought for Britain in both the Nine Years’ War and the War of 
+the Spanish Succession. 
+Savoy Defects: In 1702, Victor Amadeus, Duke of Savoy, saw 
+an opportunity to change sides and join the Grand Alliance. He 
+feared domination by the unified French and Spanish thrones 
+in the event of their victory, and the stalemate in northern Italy 
+provided him a key bargaining chip to offer Leopold. Savoy’s 
+defection complicated the French strategic problems in Central 
+Europe, to say the least.
+Prize Hunting: The prize system encouraged initiative and ag-
+gression among British naval officers, but it could also distract 
+them from strategic objectives.
+
+
+--- PLAYBOOK PAGE 17 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+17
+Foot Guards: British Foot Guards, Horse Guards, and Grena-
+dier Guards all served in the War of the Spanish Succession. 
+Considered the elite of the army, they fought widely and with 
+distinction.
+  FRENCH WAR TILES
+Claude Louis Hector de Villars, marquis et 
+duc de Villars (“Savior of France”) was the 
+most important and successful French army 
+leader in the War of the Spanish Succession. 
+At Malplaquet (1710) his forces inflicted over 
+20,000 Allied casualties for 8,000 French; although the battle 
+was a tactical defeat due to the loss of several key fortresses, 
+Villars’ victory at Denain two years later guaranteed his monarch 
+an honorable peace.
+Louis Joseph, duc de Vendôme, was the com-
+mander most responsible for the many Aus-
+trian setbacks in the early portion of the War 
+of the Spanish Succession. He defeated Prince 
+Eugene of Savoy on several occasions, and 
+proved a highly worthy adversary for the Duke of Marlborough. 
+His greatest victory came in Spain, however, where he smashed 
+the Allied forces at Villaviciosa and ended the Hapsburgs’ hopes 
+for the Spanish throne.
+Louis François de Boufflers, duc de Boufflers, was highly re-
+spected by both King Louis XIV and the British for his bravery 
+and tenacity, but he had mixed success during his long service. 
+However, at Malplaquet he showed remarkable humility and 
+judgment when he subordinated himself to Villars, ensuring 
+unity of command in that crucial battle.
+The Maison du Roi was the royal household force of Louis 
+XIV. Its troops served with great distinction throughout the war.
+Cádiz Refused: One of Admiral Rooke’s few setbacks, the 
+Anglo-Dutch attempt to seize the fortresses of Cádiz and St. 
+Matagorda in 1702 was crippled by inter-service rivalry and a 
+stout and imaginative Spanish defense.
+René de Froulay de Tessé, comte de Tessé, seems to have been 
+one of the unluckiest of the war’s French generals. Frustrated 
+in his well-planned attempts to seize Gibraltar and Barcelona, 
+de Tessé finally found success in the south of France, where he 
+stopped the advance of Prince Eugene at Toulon. Unfortunately, 
+the French naval squadron there had already been scuttled, 
+just in case Eugene’s siege had succeeded. With Gibraltar still 
+in British hands this struck the final blow to French hopes of 
+contesting the Mediterranean.
+James FitzJames, Duke of Berwick, was the nephew of Marl-
+borough and a devoted Jacobite. He fought on his father James’ 
+side in the Glorious Revolution of 1688 and entered the service 
+of the Sun King. In the War of the Spanish Succession he fought 
+brilliantly in Spain, winning a crucial victory at Almanza in 
+1707. He survived the war in good health and led the Sun King’s 
+armies in both the War of the Quadruple Alliance and the War 
+of the Polish Succession. 
+Victor-Marie d’Estrées, duc d’Estrées earned his monarch’s 
+gratitude by securing the dual thrones of Sicily for Philip V of 
+Spain; had the Sun King’s ultimate ambitions worked out, the 
+Two Sicilies would have been another part of the combined 
+Franco-Spanish dynasty.
+Pierre de Montesquiou, comte d’Artagnan was a musketeer 
+and a hero of Malplaquet. His cousin Charles was the model 
+for Alexandre Dumas’ literary hero, which immortalized their 
+family title.
+Ultima Ratio Regum: Louis XIV engraved this motto, literally 
+“the final argument of kings”, on his cannon, to emphasize his 
+view that disputes between nations could always be resolved 
+by force.
+Musketeers: The blue tabards of the Royal Musketeers are 
+familiar to anyone who’s read the work of Alexandre Dumas, 
+which raised their status from merely prestigious to legendary. 
+Service with the Musketeers was reserved for nobles.
+Crack Troops: The French army was the most feared force in 
+the world at this time, experienced and well-funded. It featured 
+many elite units of various types, from dragoons to grenadiers 
+to siege batteries.
+Empire Era: Event and Ministry Cards
+Event Cards:
+#16 Caribbean Slave Unrest: The lot of a slave in a Caribbean 
+plantation was grim. Disease, awful working conditions, and 
+boundless cruelty made for the saying “sold down the river”—
+an allusion to the fate of a slave sent to the Caribbean from the 
+USA, and often a threat as well. Unrest wracked the Caribbean 
+during the 18th century, with uprisings in Martinique, Guade-
+loupe, Jamaica, Antigua, and most of the other plantation islands.
+#17 Pacte de Famille: With the end of Hapsburg rule in Spain 
+and his crown secure, Philip V (born duc d’Anjou) sought to 
+establish Bourbon control of other Mediterranean territories, 
+forming an agreement with his nephew Louis XV. This opened 
+the door for the British to re-invigorate their successful alliance 
+with Austria, who had no intention of relinquishing territory the 
+Hapsburgs had ruled for generations just to enrich the children 
+of Philip’s ambitious queen, Elizabeth Farnese.
+#18 Byng’s Trial: Admiral John 
+Byng’s decision not to land troops at 
+Minorca in the face of a numerically 
+superior French ground force (and 
+equivalent naval opposition as well) 
+cost him his life. The court-martial and 
+execution are largely seen today as a 
+farce and an exercise in scapegoating; 
+unfortunately for Byng, Pitt was unable 
+to secure clemency (due largely to Pitt’s 
+enmity with King George). The saying 
+pour encourager les autres comes from Voltaire’s characteristi-
+cally sharp satirical pen (“it is good to kill an admiral from time 
+to time, to encourage the others.”)
+
+
+--- PLAYBOOK PAGE 18 ---
+Imperial Struggle ~ Playbook
+18
+© 2020 GMT Games, LLC
+#19 Le Beau Monde: The 18th century saw an explosion of 
+style, etiquette, and manner. France was unquestionably the cen-
+ter of the fashion world, although Louis’ policies drove a number 
+of Huguenot designers and dressmakers to London. Eventually, 
+Britain would mount a serious challenge to this dominance, but 
+not until the 19th century, when Beau Brummell’s “dandyism” 
+began to take over men’s fashion in particular.
+#20 Hyder Ali: The Sultan of Mysore from 1760 to his death 
+in 1782, Hyder Ali built his realm into a regional power. His 
+rivalries with the Marathas to the north, the Nizam of Hyderabad 
+to the northeast, and the Europeans, and his ability to profit from 
+all of them, cemented his legacy as one of southern India’s most 
+effective rulers. Before he became sultan (by means of a coup 
+against Khande Rao, a former retainer who had used British as-
+sistance to take the throne for himself), Ali led Mysore’s troops 
+in most of the important campaigns in India, primarily on the 
+side of the French.
+#21 Co-Hong System:  British and French trade with the Qing 
+in China was in its infancy at this time, although other European 
+powers such as Portugal and the Netherlands had made earlier 
+inroads. The Qing government managed trade with Europe 
+through a system called “co-hong”, after the mercantile associa-
+tions that conducted trade in China’s coastal cities.
+#22 Corsican Crisis: After the Seven Years’ War, France 
+sought to make up its territorial losses. Choiseul’s eye alighted 
+on Corsica, whose new regime found itself increasingly isolated 
+due in part to its liberalism. When France invaded in 1768, the 
+British government vacillated on the subject of intervention, 
+despite other European states’ unhappiness with the naked ag-
+gression France was showing. Ultimately France was able to 
+finalize the conquest, but Britain remembered its failure during 
+the French Revolution, when it attempted to once again separate 
+Corsica from France.
+#23 European Panic: Financial panics were common through-
+out the 18th century, varying in severity and scope. Their causes 
+were legion: fear of royal seizure of funds (in 1640, for example, 
+Charles I simply seized all of the gold being stored by private 
+goldsmiths for their clients at the Royal Mint), paper currency 
+volatility, under-developed insurance markets that caused major 
+institutions to fail on short notice, simple government misman-
+agement of debt, frequent wars and debt devaluation, and so 
+forth. The situation improved as the century went on, but of 
+course financial crises are still with us today.
+#24 West African Gold Mining: Disease and harsh terrain 
+would defer the “Scramble for Africa” until the late 1800s, but 
+the west coast of Africa was dotted with trading posts, slave 
+depots, and—sparsely but importantly—gold mining concerns. 
+While this production came nowhere near the amount of gold 
+looted by Spain from the Mesoamerican cultures it conquered, 
+gold trickled from West Africa into the European economy for 
+decades.
+#25 War of the Quadruple Alli-
+ance: In response to Alberoni and 
+Farnese’s resolute efforts to overturn the 
+result of the War of the Spanish Succes-
+sion, Britain and France actually allied 
+together (along with Austria and the 
+Dutch Republic) to contain these ambi-
+tions. Britain scored two important 
+naval victories at Cape Passaro and 
+Vigo, and Alberoni’s removal from 
+court by a disappointed Philip V al-
+lowed France to breathe much easier.
+#26 Salon d’Hercule: The “Hercules Room” or “Hercules 
+Lounge” is one of the most striking chambers in Versailles. 
+More intimate than the Hall of Mirrors and completed in 1736, it 
+served an important diplomatic role for Louis XV—its opulence, 
+in particular the stunning art that adorns it, served as a reminder 
+to envoys of France’s vast wealth, power, and cultural influence.
+#27 Bengal Famine: The Bengal Famine of 1770 devastated 
+the British-dominated territories in northeastern India, killing 
+10 million. Entire cities and small realms starved; the resulting 
+disease and banditry only multiplied the misery. While drought 
+and crop failure precipitated the disaster, there is no doubt that 
+the short-sighted and extractive policies of the British East 
+India Company, as well as the devastation of two major wars 
+in quick succession, turned what might have been a relatively 
+mild episode into a catastrophe.
+#28 Father le Loutre: Father Jean-Louis Le Loutre, a mis-
+sionary priest in Acadia (modern day Nova Scotia), found him-
+self appointed the military leader of the Acadians, M’ikmaq, and 
+other native allies when the British seized Louisbourg during 
+King George’s War (part of the War of the Austrian Succession). 
+This unlikely guerrilla leader orchestrated raids on British ports 
+and posts for years, but was ultimately defeated at Fort Beau-
+séjour in 1752. He spent the rest of his life trying to help the 
+Acadians, deported from their homes by the victorious British, 
+resettle elsewhere in Canada.
+#29 War of the Polish Succession: 
+The death of Augustus II, the King of 
+Poland (by election, not birth) prompt-
+ed a succession struggle between three 
+candidates: Stanislaw I, who had been 
+crowned with Swedish support during 
+the Great Northern War but fled when 
+Sweden was defeated; Augustus III, the 
+son of the deceased King; and Infante 
+Manuel, a Portuguese Hapsburg prince. 
+Britain stayed out, which greatly 
+strained its alliance with Austria (and may have precipitated the 
+eventual end of that alliance). But by backing Stanislaw France 
+seized the opportunity to trim back Hapsburg influence and 
+regain some territory previously lost, even though Stanislaw 
+ultimately had to cede the throne to Augustus III.
+
+
+--- PLAYBOOK PAGE 19 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+19
+#30 Jonathan’s Coffee-House: Before there were stock 
+exchanges, there were coffee-houses: loud, unruly establish-
+ments where traders and financiers congregated and where news, 
+gossip, and (most importantly) share prices were swapped and 
+bargained for. Jonathan’s Coffee-House was one of the first such 
+establishments, and became the foundation for the first British 
+stock exchange.
+Ministry Cards:
+#M-11 Choiseul: Étienne-François, marquis de Stainville et 
+duc de Choiseul, was chief minister to Louis XV from 1758 to 
+1770. For someone as important and long-tenured as Choiseul, 
+we know remarkably little of him. A strong ally of Madame de 
+Pompadour, Choiseul sought to re-establish French competitive-
+ness in naval strength and European alliances. His policies were 
+expensive, though, although the ministers Pompadour helped 
+him select were able to enact reforms that helped finance these 
+ambitions. He was able to survive the disaster of the Seven 
+Years’ War, but ultimately fell from grace after Pompadour died.
+#M-12 Dupleix: Joseph Francis Dupleix dreamt of a French 
+empire in India, and spent his career trying to build it. At eighteen 
+he took to the sea; by his late twenties he had become rich due 
+to his skill in business and politics. He settled in India, in the 
+service of the Dutch East India Company, but eventually took 
+on the leadership of the French trading post at Chandernagore. 
+Unfortunately, while aggressive and dynamic in military af-
+fairs, he could not match the talents of Coote and Clive, and his 
+schemes came to ruin. While he was scapegoated like Lally, he 
+avoided the axe, dying in poverty in his native France.
+#M-13 Pompadour & Du Barry: 
+Jeanne Antoinette Poisson, marquise de 
+Pompadour, was the chief mistress (an 
+official title!) of Louis XV between the 
+War of the Austrian Succession and the 
+Seven Years’ War. Once granted a title 
+by the King, she drove patronage and 
+policy at court, backing important 
+French artists and scientists. Known as 
+La Reinette, Pompadour’s greatest con-
+tributions, like many powers-behind-
+the-throne, probably came in the area of talent-spotting. Madame 
+du Barry was another important royal mistress, although she 
+generally confined herself to art and society concerns rather than 
+politics. Both were simultaneously vilified by gossips and ad-
+mired by a wide swath of the court.
+#M-14 Voltaire: François-Marie Arouet is known almost ex-
+clusively by his pen name, Voltaire, and for his satire. A fierce 
+critic of religion (in Candide he ridiculed Leibniz’s “best of all 
+possible worlds” argument for the existence of God), he had 
+mixed and complex views about the potential for a revolution in 
+France—driven by contempt for both monarchy and democracy.
+#M-15 Pitt the Elder: William Pitt 
+(“The Great Commoner”) headed the 
+British government from a variety of 
+posts and appointments; this was due to 
+his persistent and strong public support, 
+which he earned for his fearlessness in 
+criticism and adherence to his princi-
+ples. His central legacy stems from his 
+forceful and brilliant leadership of Great 
+Britain during the Seven Years’ War; 
+although he did not get along with the 
+King (who never forgave Pitt’s anti-Hanover stances of the 
+1750s), he was one of Britain’s greatest leaders.
+#M-16 Charles Hanbury Williams: A British diplomat 
+and member of Parliament known more for his political poetry 
+(which attacked Walpole’s enemies with varying degrees of 
+gentleness) than his speechmaking, “for which he felt he had 
+no talent.” In the years running up to the Seven Years’ War he 
+took posts in Berlin, Dresden, Vienna, and St. Petersburg—the 
+gamut of the belligerents in the previous and forthcoming wars. 
+While he had mixed success, he was at least able to keep Britain 
+and Russia from open war.
+#M-17 Merchant Banks: Barings Bank was founded in 
+London in 1762, but lenders and insurers on a smaller, less 
+integrated scale had started to sprout up years prior. Britain’s 
+growing naval strength fueled trade and its appetite for credit, 
+insurance, and investment.
+#M-18 Samuel Johnson: “Dr. Johnson” was one of the pre-
+eminent scholars and men of letters in British history, let alone 
+the 18th century. Aside from his famous dictionary, one of the 
+first of its kind, his essays on Shakespeare and on 200 years’ 
+worth of English poetry are still considered definitive by many 
+scholars.
+War of the Austrian Succession:  
+Tile Background
+ BRITISH WAR TILES
+Admiral Sir Edward Boscawen joined the British navy at the 
+age of 12. He saw action in the War of Jenkins’ Ear and the 
+War of the Austrian Succession, and signed Admiral Byng’s 
+death warrant. “Never fire, my lads, till you see the whites of 
+the Frenchman’s eyes!”
+Major General Stringer Lawrence took command of the East 
+India Company’s troops at the outset of the War of the Austrian 
+Succession, and continued to lead in almost every important 
+campaign in India. He became the first Commander-in-Chief 
+for India, and worked well with his friend Robert Clive.
+Admiral Sir Peter Warren served extensively in the Caribbean 
+and North America, culminating in his command of the British 
+ships that assaulted Louisbourg in 1745. After the War of the 
+Austrian Succession he abandoned his land holdings in America 
+and returned to England, where he took up politics.
+
+
+--- PLAYBOOK PAGE 20 ---
+Imperial Struggle ~ Playbook
+20
+© 2020 GMT Games, LLC
+Charles Alexander, prince de Lorraine served as one of the 
+principal Austrian military commanders during the War of the 
+Austrian Succession. He is known for his crushing defeat by 
+Frederick the Great of Prussia at Leuthen in 1757, where Fred-
+erick the Great used his knowledge of the terrain to defeat the 
+larger, better-equipped Austrian force in a surprise attack. He 
+later served as a capable and popular governor of the Austrian 
+Netherlands.
+Friedrich Heinrich von Seckendorff fought for a surprising va-
+riety of armies and nations during the 18th century, commanding 
+troops for the Dutch, Austrian, Polish, English, Bavarian, Saxon, 
+and Ansbacher armies. The only early 18th-century war he did 
+not fight in was the Great Northern War. Generally successful, 
+with the exception of a campaign against the Ottomans in the 
+late 1730s, Seckendorff is probably one of the more underrated 
+soldiers of the period of Imperial Struggle.
+King George II inherited the crown of Great Britain and Ire-
+land in 1727, the second of the House of Hanover to wear it. 
+He displayed military courage throughout his life, especially 
+when he became the last British monarch to command on the 
+battlefield (at Dettingen, in 1743).
+John Dalrymple, 2nd Earl of Stair fought in 
+the War of the Spanish Succession, but did not 
+ascend to command rank until his father’s 
+creation as Earl of Stair and his own consequent 
+accession to the rank of viscount. Leading the 
+British forces at the very start of the war, and then standing by 
+the King at Dettingen, Dalrymple distinguished himself tremen-
+dously.
+Chaos in Bavaria: In 1743, Seckendorff and de Broglie, the 
+leaders of the allied Bavarian and French forces, quarreled. Their 
+armies failed to work together; no concerted resistance was 
+offered to the advance of the Austrian armies. De Broglie sur-
+rendered one Bavarian stronghold after another. The Bavarians 
+and French were driven back almost as far as the Rhine, where 
+they were defeated in the battle of Dettingen. Consequently, the 
+French were ejected entirely from Germany.
+Treaty of Warsaw: Signed in 1745 during the War of the Aus-
+trian Succession, this treaty created the Quadruple Alliance of 
+Great Britain, Austria, the Dutch, and the Saxons, for the purpose 
+of securing Maria Theresa’s claim to the Holy Roman Empire. 
+Saxony, its allies in Russia, and Austria hoped to reduce Fred-
+erick the Great’s Prussia to its pre-1713 borders.
+Hungarian Enthusiasm: Frederick the Great captured the 
+Austrian province of Silesia in 1739. In 1741, Maria Theresa of 
+Austria stood before the Diet of Budapest holding her newborn 
+son Joseph II, appealing in Latin to the Hungarian nobles for 
+support. The Hungarians, inspired by this appeal, raised 60,000 
+more light troops for the regular army. The fresh army ultimately 
+retook Silesia and invaded Bavaria.
+Francois de Bussy: As the War of the Austrian Succession 
+gained momentum, the French made plans for a surprise attack 
+on London to restore Prince Charles Stuart to the throne of Eng-
+land. But Francois de Bussy, a disgruntled shipping clerk and 
+illegitimate son of two courtiers, sold the details of the planned 
+attack to the British for £2,000. The British acted on his informa-
+tion, and hastily took naval defensive measures. These defenses, 
+in combination with bad weather, led the French to abandon their 
+invasion plans off the Kentish coast in March of 1744.
+Robert Clive was an unassuming East India 
+Company official when the Austrian Succes-
+sion war broke out, but quickly distinguished 
+himself with both learning and courage. He 
+joined the Company’s armed forces in 1746 
+and defended British holdings on several occasions. But it was 
+in the Seven Years’ War that his lasting legend would take shape.
+  FRENCH WAR TILES
+Maurice de Saxe was considered one of the 
+great generals of the eighteenth century, known 
+for his adventures with women and his physi-
+cal strength & vigor. He served (at different 
+times) the Holy Roman Empire, the Imperial 
+Army (of Austria), and the French. During the War of the Aus-
+trian Succession, he commanded French forces sent to invade 
+Austria in 1741, becoming famous for his surprise attack on 
+Prague, in which he captured the defending garrison by stealth. 
+In 1744, he commanded the men sent to invade Britain; his 
+forces were wrecked by storms after proceeding a few miles out 
+of harbor.  He is also known as the author of Mes Rêveries, a 
+book containing his reflections on the art of war.
+Lord George Murray served as a general for the Scottish 
+Jacobites. During the Jacobite uprising of 1745, he angered 
+Prince Charles by ordering a retreat against the Prince’s orders; 
+the following day, the Prince insisted on commanding his forces 
+himself. In writing his memoirs of the attack, James Johnstone 
+remarked that “Had Prince Charles slept during the whole of 
+the expedition, and allowed Lord George to act for him... he 
+would have found the crown of Great Britain on his head, when 
+he awoke.”
+Colonel John O’Sullivan was educated as a priest in Paris 
+and Rome. As a Catholic, he could not inherit his parents’ Irish 
+lands. He emigrated to France, where he joined the army, and 
+accompanied Prince Charles on his invasion of Scotland in 1745. 
+There is considerable historical controversy over O’Sullivan’s 
+role in the campaign, mostly focused on how much blame he 
+deserves for the Culloden defeat. But he helped the Prince escape 
+British clutches, and died a hero in France.
+Louis Georges Érasme, duc de Contades, is known much more 
+for his shattering defeat at Minden by Ferdinand of Brunswick 
+than for his service in the War of the Austrian Succession, where 
+his rise to high rank took place.
+Nizam’s Favor: The Nizams of Hyderabad were important 
+monarchs of what is now Andhra Pradesh. Both the French 
+and the British sought the favor of the Nizam. In 1748, the 
+Nizam died, resulting in a dispute over the throne between. 
+Hyderabad came under the control of Muzaffar Jang, a French 
+ally. But, by 1759, de Bussy, the French commander in charge 
+of the defense of Hyderabad, had been recalled to Pondicherry 
+
+
+--- PLAYBOOK PAGE 21 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+21
+(and is not to be confused with the de Bussy who spied for the 
+British during this period). After a surprisingly successful attack 
+on Hyderabad by a small force under Robert Clive, the Nizam 
+sought British support.
+Frederick II, King of Prussia (“Frederick 
+the Great”) is known for his military genius 
+and for forging Prussia into a major European 
+power. He forced Austria to cede almost all of 
+Silesia by 1745. His ambitions against the 
+Hapsburgs aligned him with France during the War of the Aus-
+trian Succession. But as power shifted in Europe, so too did the 
+camps of war, and in the Seven Years’ War France sought to 
+limit its former ally’s path to prominence on the Continent.
+Ulrich Frédéric Woldemar, comte de Lowendal was a Ger-
+man-born French officer. He besieged and captured the Dutch 
+fortress of Bergen op Zoom in 1747. The French soldiers brutally 
+sacked the town, injuring or killing thousands of civilians. Many 
+Europeans were outraged, and Louis XV was told of Woldemar, 
+“There is no middle course, either you must hang him or make 
+him a Marshal of France.” The King opted for the latter.
+Field Marshal Kurt von Schwerin served first in the Dutch 
+army, then entered Prussian service in 1720. In 1730, he was 
+one of the members of the military tribunal that tried the Crown 
+Prince of Prussia (who would later be known as Frederick the 
+Great) for desertion. Frederick later promoted Schwerin and 
+made him a count; in 1741 he led the Prussian Army’s victori-
+ous campaign in Silesia. He later distinguished himself in other 
+battles, but was shot and killed in an attack on Prague in 1757.
+François de Franquetot, comte de Coigny replaced Marshal 
+Villars as commander of the French army of the Rhine. He is 
+best known for a victory over the Austrians at Parma during the 
+War of Polish Succession in 1734, and for overseeing the French 
+defenses on the Rhine during the War of the Austrian Succession.
+The Mahé de la Bourdonnais was a remarkable French sea-
+man responsible for colonization of the Isle of France, now 
+Mauritius. On his arrival on the island in 1735, he realized that 
+a small cluster of huts with a bay in the northwest would make 
+an ideal location for the capital, which grew into the city of 
+Port Louis. Then governor, he seemed capable of everything, 
+serving as engineer, architect, agriculturalist, and superintendent 
+of the hospital he had built. In 1741, he rescued the French at 
+Mahé in India from a siege. He was later called to help Dupleix, 
+Governor of Pondicherry, in fighting with the British, but he and 
+Dupleix quarreled over the disposition of Madras, and Dupleix 
+charged La Bourdonnais with treason. Voyaging back to the Isle 
+of France, he was captured by the English, who brought him to 
+London and set him free. Returning to France in 1748, he was 
+arrested and sent to the Bastille. Although he was ultimately 
+declared innocent, he died in 1753.
+Bonny Prince Charlie: Prince Charles Edward Stuart was the 
+son of the exiled English King James II. When Emperor Charles 
+VI died in 1740, tension grew between Catholics in Scotland and 
+France and Protestants in England. Charles planned an invasion 
+of England, hoping to oust George II from the throne in support 
+of his father. He landed in Scotland in 1745, gaining support 
+from the Highlanders and winning several battles. However, 
+when he and his army tried to march to London, they were forced 
+to retreat to Scotland. Defeated at Culloden Moor, Charles fled 
+through England, reportedly disguising himself as shipwrecked 
+merchant and a noble lady. He eventually reached the safety of 
+France. In 1748, when England made peace with France, Charles 
+was exiled from France. His supporters faded away and he was 
+excluded from his father’s will. He died in 1788.
+Seven Years War: Tile Background
+ BRITISH WAR TILES
+John Bradstreet commanded the British attack on Fort Fron-
+tenac, a key French stronghold on Lake Ontario.
+Sir William Johnson was the chief British diplomat for Iroquois 
+affairs, and led Native warriors on several occasions. He also 
+took Fort Niagara and accompanied Amherst to Montreal. After 
+the war he continued to build positive relations between the 
+Iroquois, the British, and the tribes who had taken France’s side.
+Admiral Sir Edward Hawke commanded the British fleet that 
+defeated the French at Quiberon Bay, ending French ambitions 
+of naval superiority or even parity with Britain. His aggressive 
+move to engage Conflans’ fleet in the bay took the French com-
+mander by surprise, and ended the threat of French invasion.
+Robert Clive (“Clive of India”) was one of 
+the greatest generals and statesmen of the mid-
+century period. He held Arcot against the 
+Carnatic nawab Chandar Ali in 1751; Ali’s 
+close alliance with Dupleix and the French put 
+this victory among the first in what would become the Seven 
+Years’ War. He is best known for his victory at Plassey in 1757, 
+which cemented British control of the Bengal region, and for 
+his fearless governance thereafter.
+Robert Monckton was one of the steadiest officers in the North 
+American campaigns, executing campaigns in Nova Scotia and 
+then on the mainland. He fought at the Plains of Abraham, and 
+after the war for Canada ended, Amherst charged him with the 
+capture of Martinique (which he reliably captured). The French 
+ended up ceding control of New France at the treaty table in 
+exchange for Martinique, so in a sense, Monckton won Canada 
+for Britain.
+Jeffery Amherst fought briefly in Europe under the command of 
+the Duke of Cumberland, then took command in North America 
+from Abercrombie in 1758 and relentlessly chipped away at the 
+French position until he took Montreal in 1760. He is also known 
+for intentionally spreading smallpox to the Native American 
+population, who he denigrated as an “execrable race.”
+John Manners, Marquess of Granby fought alongside Ferdi-
+nand of Brunswick, Britain’s key ally on the Continent, for most 
+of the Seven Years’ War in Europe. He distinguished himself 
+in several key battles (albeit not at Minden, where Sackville 
+refused to authorize Granby’s cavalry to pursue the French) and 
+
+
+--- PLAYBOOK PAGE 22 ---
+Imperial Struggle ~ Playbook
+22
+© 2020 GMT Games, LLC
+parlayed his enormous popularity into a somewhat successful 
+political career. 
+James Wolfe is best known for his victory over the marquis 
+de Montcalm at the Plains of Abraham in 1759, in which both 
+generals perished. Nonetheless, this would prove the penultimate 
+blow that Britain would strike to win the war for Canada. 
+Sir Eyre Coote served with the British East India Company, par-
+ticularly in India where he fought Mughal princes, French proxy 
+allies, and the French themselves for thirty years (taking part 
+in both the Seven Years’ War, particularly in the pivotal Battle 
+of Wandiwash, and in the American War of Independence). He 
+despised Clive, which led to poor communication, but it’s hard 
+to argue with the results of their combined brilliance. 
+Morta la Bestia: Frederick the Great is alleged to have said 
+these words (“The beast is dead”) when he heard of the death 
+of Empress Elizabeth of Russia and the accession of her son 
+Peter who, as an admirer of Frederick, had no desire to continue 
+the war.
+Damned Audacity: The British efforts at Quiberon and, a few 
+days earlier, Lagos (Portugal) culminated in Admiral Hawke’s 
+aggressive decision to pursue Conflans into the treacherous 
+shoals of Quiberon Bay. He might have been motivated by 
+frustration at several near misses in his earlier attempts to bring 
+the French to battle, or simply by an assessment that the key 
+moment was at hand. Similarly, Admiral Sir Edward Boscawen 
+maintained perfect focus on his open blockade, anticipating the 
+destination of French Admiral Auguste de la Clue’s fleet as it 
+escaped the first blockade point and refusing to be distracted by 
+the pivot of de la Clue’s rear-guard. This allowed Boscawen to 
+force battle near Lagos and cripple the French squadron.
+Old Fritz was a nickname for Frederick II, the 
+military genius who succeeded to the Prussian 
+throne in 1740. He built Prussia into a Euro-
+pean power to be reckoned with on both the 
+battlefield and in scholarship, and added to 
+Prussia’s territory in both the War of the Austrian Succession 
+and the Seven Years’ War. He is of course better known by the 
+honorific “Frederick the Great.”
+  FRENCH WAR TILES
+Thomas Arthur, comte de Lally, served as an advisor to 
+Bonny Prince Charlie during the Jacobite Uprising of 1745. 
+After Charles’ defeat at Culloden, Lally went to India, and 
+made great progress against East India Company forces before 
+losing the Battle of Wandiwash, and with it most of the French 
+territories in south India, to Sir Eyre Coote. Along with Dupleix 
+he was scapegoated at court for the French setbacks in India, 
+and beheaded.
+Victor François, duc de Broglie, served as a subordinate com-
+mander to most of the French marshals of the Seven Years’ War. 
+He was reliable and competent, and eventually took command 
+in his own right after the defeat at Minden. He had a deep but 
+respectful rivalry with Granby, whom he admired.
+Sieur Louis Coulon de Villiers is notable for forcing the sur-
+render of Fort Necessity in 1754, from George Washington, then 
+the fort’s commander.
+François de Chevert was a consistently successful corps com-
+mander in the first three wars of Imperial Struggle. His bravery 
+and initiative led him to distinguish himself at Hastenbeck 
+against the Duke of Cumberland, and at Lutterberg against 
+another Hanoverian commander (von Oberg). He led some of 
+France’s most prestigious units into battle, including the Volo-
+ntaires Royaux and the Chasseurs de Fischer.
+Coureurs des bois: “Runners of the woods”, these French 
+hunters and traders were masters of the Canadian and North 
+American wilds second only to the Native populations they 
+interacted with. They served as scouts and guides for the French 
+war effort in North America; their expertise and familiarity with 
+the land often provided an important edge in battle.
+Louis-Antoine, comte de Bougainville, displayed an amazing 
+variety of talents during his lengthy career—he left his mark 
+on the century as navigator, ship captain, army officer, and 
+diplomat. In the French and Indian War he took part in most 
+of the successful French actions before the setbacks of 1759, 
+and despite great effort could not successfully defend Quebec 
+from the British after his commanding officer, the marquis de 
+Montcalm, fell in battle. After the war he became the first French 
+captain to circumnavigate the globe (Bougainville Island in the 
+Solomons is named for him); he then had another chance at the 
+British during the American Revolution, wherein he and his ship 
+were part of the French fleet that blocked Cornwallis’ hopes of 
+escape from Yorktown.
+Louis-Joseph de Montcalm-Grozon, marquis 
+de Montcalm de Saint-Veran, was one of the 
+most capable French commanders of the 
+Seven Years’ War. Early in the conflict he cap-
+tured Oswego and Fort William Henry from 
+the British; these allowed the French to deny crucial axes of 
+advance against New France to the enemy. As well, he de-
+fended Ticonderoga against a much larger British army, although 
+his aggressive approach led him to danger and death at the Plains 
+of Abraham in Quebec.
+Daniel Liénard de Beaujeu was a brave and capable officer 
+noted for his adoption of Native war customs, and for his leader-
+ship of Native allies in the early years of the French and Indian 
+War. He died early in the engagement at the Monongahela. 
+Charles Eugène Gabriel de la Croix de Cas-
+tries, marquis et maréchal de Castries, 
+earned national acclaim due to his valor in the 
+War of the Austrian Succession. In the Seven 
+Years’ War, he fought courageously through 
+wounds in several French defeats, including Rossbach and 
+Minden, before triumphing over Brunswick at Clostercamp. 
+This set the stage for a lengthy and successful career in the 
+French government; when the Bastille fell, Castries was quick 
+to join the Royalist cause.
+
+
+--- PLAYBOOK PAGE 23 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+23
+Monongahela Ambush: Braddock’s expedition against Fort 
+Duquesne culminated in this disaster, where French and Native 
+troops ambushed and broke the morale of Braddock’s redcoats. 
+The rough terrain neutralized Braddock’s artillery, and the na-
+tive warriors’ matchless knowledge of the area threw the British 
+into chaos.
+Hadik’s Raid: In response to the Prussian defeat at Kolin, Count 
+Andras Hadik led a detachment of about 5,000 cavalry troops 
+along the unexpectedly clear path to Berlin and captured the 
+city. Taking the garrison completely by surprise (and fooling 
+it into thinking it was outnumbered, when the opposite was 
+true), Hadik’s men compelled a surrender and extracted a huge 
+ransom payment before departing in a hurry ahead of Prussian 
+reinforcements.
+Nawabs Rally: The French military effort in India was con-
+sistently undermined by their Indian allies’ treachery and 
+unreliability. The British simply had the better of the covert 
+arrangements and understandings that determined so much in 
+India; additionally, native allies would often withdraw at the 
+first sign of difficulty in battle. But it’s plausible that the French 
+alliances could have been more stable; this might have provided 
+a decisive edge in determining which of the two realms would 
+dominate India.
+Revolution Era: Event and Ministry Cards
+Event Cards:
+#31 Nootka Incident: In 1789, tensions between British and 
+Spanish traders came to a head at Nootka Sound (near Vancouver 
+Island). Spain had claimed the entirety of the Pacific coastline, 
+but British traders would be denied no longer, and although war 
+was averted, Spain was forced to back down from its exclusive 
+control of those sea lanes. This additional access to the Pacific 
+sea trade would prove very profitable indeed.
+#32 Haitian Revolution: The St. 
+Domingue slave revolt of 1791, led by 
+Toussaint L’Ouverture, was the most 
+successful slave uprising in history; it 
+resulted in the new sovereign state of 
+Haiti, abolishing slavery and creating a 
+republic (albeit one with L’Ouverture 
+as permanent head of state, and estab-
+lishing Catholicism as the only permit-
+ted religion). L’Ouverture masterfully 
+played the French and Spanish against 
+one another until he and his movement were ready for a sustained 
+military effort.
+DESIGN NOTE: The Haitian Revolution took place in 1791, 
+technically outside the time covered by Imperial Struggle, but 
+potentially could have occurred earlier as L’Ouverture had 
+been a free man for at least several years prior to the revolt. 
+It’s also such an important event in the history of the Carib-
+bean that it seemed a shame not to put it on an Event card.
+#33 Loge Des Neuf Soeurs: One of several pro-American 
+Masonic lodges in France, the Nine Sisters organized support 
+for the Revolution both financially and intellectually. The mo-
+mentum generated for these idealistic gatherings only gained 
+strength with the Revolution’s success, and carried forward into 
+the French Revolution as well.
+#34 La Gabelle: The French salt tax was one of the most oner-
+ous of the dozens of taxes that peasants and lower-class workers 
+had to suffer for the ancien regime. Remarkably persistent, and 
+representative of the virtually unreformable French tax system 
+of the 18th century, it was repealed almost immediately by the 
+revolutionary government in 1790. It would return again with 
+Napoleon, and remain in force through World War II.
+#35 Jesuit Abolition: In 1760, the sugar industry on Mar-
+tinique collapsed. A financial crisis for France, this one was 
+remarkable in that the colony was largely owned and managed 
+by the Jesuit Order. The disaster provided a long-awaited open-
+ing for the Order’s political and religious rivals (in particular 
+Madame de Pompadour, who hated the Jesuits for their refusal 
+to endorse her relationship with the King). They mounted a 
+coordinated legal assault on the Jesuits; this spread widely 
+across Catholic monarchies and even earned the endorsement 
+of the Pope.
+#36 Wealth of Nations: To an economist, there’s a serious 
+argument that the most important event of 1776 was the publi-
+cation of An Inquiry Into the Nature and Causes of the Wealth 
+of Nations, by the Scottish natural philosopher Adam Smith. 
+(What revolution?) A systematic and powerful analysis of the 
+true nature of national wealth, the importance of specialization, 
+and the unintended consequences of humans’ self-interested 
+behavior (represented in Smith’s memorable metaphor “the 
+invisible hand”), this book remains thoroughly relevant today. 
+#37 Debt Crisis: By the time of the 
+Revolution Era in Imperial Struggle 
+both powers had spent enormous sums 
+on warfare, naval construction, and a 
+host of other investments; some of 
+which bore fruit (like the British East 
+India Company) and some of which did 
+not. Regardless, debt crises and the 
+threats of inflation and default caused 
+panics and uncertainty throughout the 
+period—particularly in France, which 
+historically was less able than Britain to clear away centuries 
+of antiquated financial and taxation methods.
+#38 East Asia Piracy: While privateers and piracy had largely 
+been brought low in the Caribbean by this time, it still flour-
+ished on the African coast and in East Asia, particularly near 
+the Malacca straits and around the Southeast Asian kingdoms. 
+This added to the risk of commerce past India, although Eu-
+ropean powers were gradually tightening their grip even over 
+such distant waters.
+
+
+--- PLAYBOOK PAGE 24 ---
+Imperial Struggle ~ Playbook
+24
+© 2020 GMT Games, LLC
+#39 Stamp Act: This British tariff on 
+paper goods and documents, passed in 
+1765, was a major spark for the Ameri-
+can Revolution. It only lasted a few 
+months before Parliament repealed it, 
+but the damage was done.
+#40 Falklands Crisis: Both Britain and Spain claimed the 
+Falklands Islands (“Islas Malvinas”) off the southern tip of South 
+America. In 1770 Spanish forces seized Port Egmont from the 
+British, sparking an international crisis. Choiseul, spoiling for 
+a fight after the defeats of the Seven Years’ War, sought to back 
+Spain’s claim and escalate to full-blown war over the islands, but 
+Louis XV demurred. This was also the final blow to Choiseul, 
+who left his post in the crisis. 
+#41 Cook And Bougainville: The two greatest explorers of 
+the century for Britain and France respectively were James Cook 
+and Louis-Antoine, comte de Bougainville; Cook’s voyages to 
+Australia and Hawaii, until then unknown to Europe, as well as 
+northwestern Canada and Alaska, form an awe-inspiring record 
+of navigational and leadership feats. Bougainville’s circumnavi-
+gation of the globe was the first by a French captain, and the 
+detailed records he kept of his visit to Tahiti inspired an entire 
+wave of cultural anthropology. The Pacific island named for him 
+was the focus of fierce fighting during World War II. 
+Ministry Cards:
+#M-19 James Watt: Watt did not invent the steam engine, but 
+he introduced crucial improvements to steam engine design. 
+With these improvements, which vastly increased the engine’s 
+efficiency and versatility, the Industrial Revolution began in 
+Britain.
+#M-20 Papacy-Hanover Negotiations: When the Papacy 
+refrained from recognizing Charles Stuart as his father James’ 
+successor to the English throne, this was as good as outright 
+legitimation of Hanoverian (and thus Protestant) rule in England. 
+This dealt a death blow to the Jacobites, who previously could 
+always count on the Holy See’s support.
+#M-21 Townshend Acts: The series 
+of revenue-related acts of Parliament 
+called the Townshend Acts (for Charles 
+Townsend, then the Chancellor of the 
+Exchequer) were passed following the 
+Declaratory Act of 1766, which as-
+serted Parliament’s right to legislate and 
+govern in all matters related to the 
+American colonies. Needless to say, this 
+did not go over well, particularly in New 
+York which was specifically targeted. 
+Although the Townshend Acts were repealed fairly quickly, the 
+damage was done, and the ensuing Tea Act spurred the Boston 
+Tea Party.
+#M-22 Edmund Burke: One of Britain’s preeminent scholar-
+statesmen, Burke wrote a searing critique of the French Revolu-
+tion entitled Reflections on the Revolution in France, in which 
+he decried the revolution’s unintended consequences and its 
+destruction of social capital and culture. For the traditionalist 
+ideas he articulated he is sometimes described as the first modern 
+conservative. He endorsed the American Revolution, though, 
+and believed it was counterproductive to use military force to 
+keep the colonies in line.
+#M-23 Turgot: Jacques Turgot, an economist and inheritor 
+of the Physiocrats (one of the defining movements in early 
+economics) served as finance minister to Louis XVI. His ini-
+tiatives to tax and debt simplification massively improved the 
+royal financial situation, but his curtailment of sinecures and 
+privileges alienated important courtiers (including the Queen). 
+He believed France could not afford intervention on behalf of 
+the American colonists, despite his deep sympathy with their 
+cause (although he also felt that France should not support a 
+country that would perpetuate slavery).
+#M-24 North American Trade: French trade in the natural 
+resources of North America generated not just substantial funds 
+for the crown, but also great cachet, given the uniqueness of 
+North American furs.
+#M-25 Marquis de Condorcet: A 
+mathematician and early game theorist, 
+Condorcet also wrote extensively about 
+politics (including an endorsement of 
+women’s equality and racial equality). 
+He is best known for the Condorcet 
+method of determining an electorate’s 
+preference among many candidates, 
+which involves a sequence of pairwise 
+matchups that eliminates half the can-
+didates every round. (There is scholar-
+ship indicating that Condorcet’s method best aggregates a large 
+group’s preferences.)
+#M-26 Lavoisier: Antoine Laurent de Lavoisier was perhaps 
+France’s—and Europe’s—greatest chemist, forging progress in 
+a wide variety of chemical and biological disciplines. He dis-
+covered that matter does not change mass as a result of chemical 
+processes like combustion, isolated and described the properties 
+of elements like oxygen and hydrogen, and systematized chem-
+istry to an unprecedented degree. His role in the antiquated and 
+arbitrary French tax system sealed his fate during the Revolution, 
+though, and he went to the guillotine in 1794.  
+
+
+--- PLAYBOOK PAGE 25 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+25
+American War of Independence:  
+Tile Background
+ BRITISH WAR TILES
+Charles Cornwallis, Earl of Cornwallis led British troops in 
+several major campaigns of the American War of Independence, 
+including the siege of Charleston; the campaign for New York; 
+and in the Carolinas where he fought a notable battle at Guil-
+ford Court House. Of course, he is best known for his surrender 
+under siege at Yorktown in 1781, which cemented American 
+independence.
+William Howe, a veteran of both of Britain’s previous global 
+conflicts, commanded all British forces in North America during 
+the American War of Independence until his resignation in 1777 
+(following the debacle at Saratoga). His capture of New York 
+was well executed, but his reticence to force extensive combat 
+allowed Washington and the Continental army to slip away.
+Sir Eyre Coote gets a second entry here due 
+to his incredible battlefield presence and com-
+mand in Britain’s first major counteroffensive 
+of the Second Anglo-Mysore War. At Porto 
+Novo, Coote’s mixed Company, regular, and 
+sepoy forces met a massive Indian force led by Hyder Ali, and 
+defeated them. He followed this up with a decisive victory over 
+Hyder Ali and his son, Tipu Sultan (who would later face Corn-
+wallis in the Third Anglo-Mysore War).
+Brant’s Volunteers: A mixed force of Mohawk and Tory militia 
+led by Joseph Brant (né Thayendanegea), the Volunteers raided, 
+looted, and harassed Patriot settlements. Brant, a Mohawk by 
+birth, played an important role in improving relations between 
+the British and the Iroquois tribes.
+Sir Guy Carleton commanded British forces in Quebec, defend-
+ing it from Continental attack in 1775. Although Montreal fell 
+in late 1775, Carleton held out in Quebec City, with the aid of 
+some of the first Hessian troops to fight for the British crown. He 
+took overall command of British forces from Sir Henry Clinton 
+at the end of the Revolution.
+Cornplanter, a chief of the Seneca (themselves a member tribe 
+of the Iroquois Confederacy), urged his people to remain distant 
+from the “white man’s war.” But when the confederation decided 
+to side with the British, Cornplanter led Seneca warriors in fierce 
+and brutal frontier fighting. After the war Cornplanter acted as a 
+liaison between the new American government and the Seneca, 
+trying to maintain Native territorial integrity. He met with some 
+success but ultimately became disillusioned.
+John Stuart was the architect of British alliance with the 
+Cherokee and other Native tribes of the southern colonies. At 
+his urging the Cherokee unleashed a swarm of raids and attacks 
+on Patriot centers of support; they also fought alongside the 
+British at Twelve Mile Creek in 1775.
+Admiral George Brydges Rodney com-
+manded several important fleet actions in the 
+Seven Years’ War and the American Revolu-
+tion. He was an effective and dynamic naval 
+commander, and made the greatest impact in 
+raids and prize captures, as well as providing crucial relief to 
+besieged Gibraltar. He helped prosecute the Anglo-Dutch war 
+that erupted during the Revolution, acquiring a reputation as a 
+glory and fortune hunter.
+Major John André was Howe’s chief of intelligence. A dash-
+ing and intelligent young officer, André took charge of Brit-
+ish espionage efforts in the Revolution. He coordinated the 
+nearly-successful betrayal of West Point to the British, and 
+the subsequent defection of Benedict Arnold. Caught by an 
+American patrol and identified as a spy, he was hanged at George 
+Washington’s order.
+Benedict Arnold is perhaps America’s most notorious traitor 
+(even more so than, ahem, Aldrich Ames). A capable sailor 
+as well as soldier, Arnold’s maneuvers at Saratoga are widely 
+credited as decisive in that victory, and his invasion of Quebec, 
+while prematurely called off, posed a terrible threat to British 
+control of Canada. Ill-tempered, short of money, suffering from 
+the pain of battle wounds, and resentful over what he saw as a 
+lack of credit for his contributions to the war, Arnold persuaded 
+himself that the Patriots could not ultimately win, and plotted 
+to surrender the West Point fortress to the British. The capture 
+of John André, his British handler, exposed Arnold’s treason, 
+although Washington’s disbelief at this turn of events allowed 
+Arnold enough time to flee to England.
+Anglo-Dutch Conflict: The Fourth Anglo-Dutch War stemmed 
+from Dutch opportunism over Britain’s distraction throughout 
+the world at the time of the American Revolution. The two na-
+tions hadn’t fought for naval dominance since before William 
+of Orange took the English throne, and this one ended very 
+badly for the Dutch (although they were able to recoup a few 
+of their territorial losses at the Paris treaty table). Nonetheless, 
+it did create additional strain on Britain’s naval priorities and 
+resources at a crucial time.
+Hessians: King George’s status as the Elector of Hanover won 
+the service of a great many—at least 50,000—German troops, 
+who hailed from a wide variety of German principalities and 
+electorates. Most of them came from Hanover, Hesse-Cassel, and 
+Hesse-Hanau, which caused them just to be called “Hessians”.
+
+
+--- PLAYBOOK PAGE 26 ---
+Imperial Struggle ~ Playbook
+26
+© 2020 GMT Games, LLC
+  FRENCH WAR TILES
+Jean-Baptiste Donatien de Vimeur, comte de Rochambeau, 
+held overall command of the French army that came to reinforce 
+the American colonists, once France committed to intervention 
+and to war with Britain. He arrived in the colonies in 1780 and, 
+once he felt strategically secure, marched to meet Washington’s 
+army in New York. The Yorktown campaign, and British defeat, 
+soon followed.
+Admiral François Joseph Paul de Grasse, comte de Grasse, 
+helmed the French fleet that defeated the British at the mouth 
+of the Chesapeake Bay in Maryland, denying Cornwallis’ army 
+supply and evacuation, and reinforcing the French and Ameri-
+cans with victuals and shot. Cornwallis was left with no choice 
+but to surrender his army.
+George Washington (“the American Cincin-
+natus”) led the Continental Army as command-
+er-in-chief and, after the Patriot victory in the 
+American Revolution, served as the new re-
+public’s first President under its recently-rati-
+fied Constitution. Unquestionably one of America’s greatest 
+statesmen and war leaders, Washington’s legacy and legend 
+remain among the most powerful historical influences on 
+American culture.
+Marie-Joseph Paul Yves Roch Gilbert du 
+Motier, marquis de Lafayette, aside from 
+having one of the 18th century’s best names, 
+was a devoted admirer of Washington and the 
+ideas of the Revolution generally. Highly liter-
+ate, charming, and talented as a military officer, Lafayette arrived 
+in the colonies well before France officially intervened, and 
+served with distinction and character from Brandywine in 1777 
+through the wintering at Valley Forge, the battle of Monmouth, 
+and Yorktown. One of only eight individuals to receive honor-
+ary U.S. citizenship, Lafayette was also a passionate abolition-
+ist, and he played a substantial role in the early stages of the 
+French Revolution before it went so tragically awry.
+Admiral Pierre André de Suffren St. Tropez, like many of-
+ficers of the global Anglo-French conflict that subsumed the 
+American Revolution, saw action in the previous two wars as 
+well. It was in that latter conflict, though, that de Suffren earned 
+his reputation as a top-notch naval strategist and even theorist—
+engaging in a lengthy chess match against the British squadron 
+supporting the East India Company. He and de Bussy-Castelnau 
+engaged in a close strategic partnership, with de Suffren at sea 
+and de Bussy on land, and also supported Hyder Ali’s campaigns 
+against the British. 
+Morgan’s Rifles was an elite unit of rifle-toting Patriot light 
+infantry, renowned for the marksmanship of its men and for 
+its extensive service record during the Revolution. It fought in 
+both the northern and southern theaters, under both Washington 
+and Greene.
+Charles Joseph Patissier, Marquis de Bussy-Castelnau, was 
+a protégé of Dupleix and a capable soldier. Charged with seiz-
+ing British territory and assets in India during the American 
+Revolution, and coordinating with Hyder Ali and Tipu Sultan 
+of Mysore, the French captured Mahé, an important port on the 
+west coast of India. With their supply lines restored, the French 
+had a genuine chance at regaining substantial holdings in India, 
+but ultimately fell short as the East India Company committed 
+strongly to the defense of India.
+Friedrich Wilhelm August Heinrich Ferdinand, Baron von 
+Steuben, was a career officer of the Prussian Army who came 
+to America to train the Continental Army in modern fighting 
+methods, tactics, and organization. His “Blue Book” (Regula-
+tions for the Order and Discipline of the Troops of the United 
+States) codified American army training doctrine for a genera-
+tion. He commanded a division at Yorktown and became a U.S. 
+citizen after the war.
+Nathanael Greene (“the Fighting Quaker”) led a relentless 
+campaign to recapture the southern American colonies from the 
+British. He was present at many key engagements, including 
+Brandywine, Guilford Court House, Germantown, Trenton, 
+and Eutaw Springs. Widely praised for his patience, judgment, 
+and leadership, Greene did as much as any American officer to 
+secure Patriot victory.
+East River Wind: Washington’s escape from New York under 
+cover of a fortuitous fog—which might have been expected to 
+blow away under the typical winds that blew along New York’s 
+east harbor—saved the fledgling Continental Army from utter 
+destruction at the hands of General Howe’s much larger and 
+better-supported British invasion force.
+Bunker Hill: The month after Lexington and Concord, Ameri-
+can colonists built fortifications on Breed’s Hill (near the actual 
+Bunker Hill) outside Boston, prompting a British assault. Al-
+though the British were able to occupy the fortifications, they 
+took significant losses in so doing. This was the first hint that 
+the war might be protracted and bloody.
+
+
+--- PLAYBOOK PAGE 27 ---
+© 2020 GMT Games, LLC
+Imperial Struggle ~ Playbook
+27
+S
+ince GMT Games published our Twilight Struggle back 
+in 2005, Jason and I have wanted to create another game 
+together. It’s no coincidence that this one is also about a 
+superpower conflict on a global scale. But unlike Twilight Strug-
+gle, where the identities of the superpowers are well known, in 
+Imperial Struggle the two rivals are trying to determine which 
+one will dominate the nascent modern age. This is not a trivial 
+difference. Imperial Struggle covers twice as much history, 
+features multiple shooting wars with the two-player nations in 
+direct conflict, and demands a more nuanced treatment of the 
+period’s other great powers. It didn’t take us long to realize that 
+Imperial Struggle could borrow very little from Twilight Struggle 
+if we had any hope of doing justice to this period and situation.
+The biggest design challenge in Imperial Struggle was sim-
+ply: how do we make a simple, quick-playing game that covers 
+92 years of history and four major wars , and embraces not just 
+military and political but social and cultural competition, without 
+requiring the player to learn the rules to both a Eurogame and 
+a wargame? Imperial Struggle unites all of these dynamics by 
+keeping decision-making at a high level. The players represent 
+monarchs and governments, whose direct control over mili-
+tary affairs was constrained by poor information and layers of 
+delegation. So, a system where the players could make com-
+mitments and recognize weaknesses, but with limited ability to 
+optimize, made sense. Dramatic territorial changes can happen 
+due to warfare in Imperial Struggle, but generally, wars ought 
+to feel constrained, where the loser feels that the concessions 
+represented by Treaty Points can enable recovery and revenge 
+in the next conflict.
+Instead, the key decisions rotate around where and when 
+to project power and seize opportunity. Each Action Round 
+invites you to create the best possible meld of Investment tile 
+and Event in hand, with an eye to denying options your oppo-
+nent. In Twilight Struggle the tension comes from managing the 
+adverse events in one’s hand each turn, minimizing their impact 
+while making progress on the board. Here, conversely, the ten-
+sion comes from executing the best possible combinations and 
+power moves, and blocking or playing around your opponent’s.
+Players sometimes ask us about the representation of alter-
+nate history in Twilight Struggle. There are so many fascinating 
+Cold War events that actually happened, but surely there should 
+be room for more what-if in the event deck. We didn’t go in that 
+direction in Twilight Struggle, except for the Turn Zero expan-
+sion, but in Imperial Struggle the Event cards resemble the ones 
+found in COIN games. Our decision to sever the action points 
+from the events in Imperial Struggle—both to limit the impact 
+of widely imbalanced card draws and to enable a pro-French 
+and pro-British version of most events—is something we hope 
+players particularly enjoy.
+And we also hope that our shared Anglophilia and Franco-
+philia pervade the game. Imperial Struggle has been a long time 
+coming, and one of the constant motivators to finish and deliver 
+the game has been our appreciation and affection for these two 
+great nations. It was critical for both of us that France and Britain 
+should be co-stars of Imperial Struggle, with the greatness of 
+each on full display. One important turning point in the develop-
+ment of Imperial Struggle was the creation of the Ministry cards, 
+with their side-specific mechanics. Playtest feedback indicated 
+that it felt too similar to play Britain and France—an outcome 
+we decidedly did not want! The Ministry cards were our solu-
+tion. Along with the Event card designs, we hoped they would 
+create a balanced competitive experience that also reflects the 
+two antagonists’ different worldviews, priorities, and ambitions.
+Although all historical eras have their fascinating personali-
+ties, we felt that this era featured some of the most remarkable 
+and distinctive people of all time. The Ministry and Event cards 
+helped us give them their due in gameplay, and putting them 
+(particularly the military figures) on the War tiles added the 
+sweep and march of history to the Wars. Earlier versions of the 
+game granted special powers to certain leaders, and added more 
+asymmetry in the ways wars could go, but ultimately those felt 
+clunky to play with. If players embrace Imperial Struggle, and 
+the version you hold now becomes familiar, we look forward 
+to resurrecting some ideas that felt like a bridge too far in a 
+game that already asks players to master some novel systems 
+and gameplay.
+Some playtesters and observers have asked: where is Napo-
+leon? Simply put: early versions of the game that included the 
+Napoleonic period increased game time by almost a third, and 
+added more rules complexity that really only came into play in 
+the endgame. If players get a lot of value from Imperial Struggle, 
+the temptation for us to create an expansion or follow-on game 
+to handle the Revolution and Napoleon (or whoever the Revolu-
+tion’s successor might be!) will be irresistible.
+But enough about what isn’t in the box. We hope you find 
+hours of tension, triumph, and glory in its cardboard contents; 
+that if you are less familiar with the turbulence and drama that 
+characterized the 18th century, you’ll fall under its spell as we 
+did; and if you are already a devotee of the period, that you feel 
+we’ve done it justice.
+Designer’s Notes
+
+
+--- PLAYBOOK PAGE 28 ---
+Imperial Struggle ~ Playbook
+28
+© 2020 GMT Games, LLC
+© 2020 GMT Games LLC
+P.O. Box 1308, Hanford, CA 93232 
+www.GMTGames.com
+Selected Bibliography & Ludography
+John B. Owen, The Eighteenth Century, Rowman and Littlefield 
+1975.
+Derek McKay & H.M. Scott, The Rise of the Great Powers 
+1648-1815, Routledge 2014.
+Robert and Isabelle Tombs, That Sweet Enemy: The British and 
+French from the Sun King to the Present, Knopf 2007.
+Robert Markham, Soldier Kings: The Seven Years War World-
+wide, Avalanche Press 2002.
+Zara Anishanslin, Portrait of a Woman in Silk: Hidden Histories 
+of the British Atlantic World, Yale 2016.
+Stephen Yafa, Cotton: The Biography of a Revolutionary Fiber, 
+Penguin 2005.
+Paul Lacroix, France in the Eighteenth Century: Its Institutions, 
+Customs, and Costumes, Bickers & Son 1876 (original); ed. 
+Suzanne Alleyn, Spyderwort Press, 2017.
+Douglas Peers, India under Colonial Rule 1700-1885, Rout-
+ledge 2013.
+Emile de Bonnechose, The History of France from The Invasion 
+of the Franks under Clovis to the Accession of Louis Philippe, 
+Routledge 1856 (tr. William Robson).
+Linda Frey and Marsha Frey, The Treaties of the War of the 
+Spanish Succession: An Historical and Critical Dictionary, 
+Greenwood 1995.
+Julian Stafford Corbett, England in the Seven Years War: A 
+Study in Combined Strategy (vol. II), 1907; ref. Pickle Partners 
+Publishing 2011.
+Credits
+Game Design: Ananda Gupta & Jason Matthews
+Developer: Ralan Hill
+Art Director: Rodger B. MacGowan
+Cover Art (game box, rules): Terry Leeds
+Map, Counters, and Cards: Terry Leeds
+Manuals and Player Aids: Charlie Kibler
+Editing: James McFetridge, Kai Jensen, Jeff Loewenguth, 
+Margo Marquess, Andrew Polak
+Production Coordination: Tony Curtis
+Executive Producers: Tony Curtis, Rodger MacGowan, Andy 
+Lewis, Gene Billingsley & Mark Simonitch
+Playtesters: Peter Card, Riku Riekkinen, Daniel Haas, Chris 
+Cantrell, Rajan Gupta, Harold Buchanan, Pat Mulvihill, Trevor 
+Bender, Charlie Roselius, Tim Porter, Barry Setser, Michael 
+Lahl, Nicholas Werner, Nicolas Emmanuel Chaffron, Marco 
+Poutré, Tom Kassel, Marc Guenette, David Stengle, Luis Soto, 
+John Echeverria, Michael Solomon, David Amidon, Andrew 
+Kluck, David Abecassis, Nicolas Gillon, Pierre Faucher, Hervé 
+Godinot, Steve Cole, Ryan O’Donoghue, Joel Toppen
+VASSAL module: Joel Toppen
+Much Love & Special Thanks: Solveig Singleton
+Decorative Page Art and Divider: FreePic (www.freepik.com)
+

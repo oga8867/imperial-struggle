@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://inv_tile_view"]
+
+[ext_resource type="Script" path="res://scripts/ui/investment_tile_view.gd" id="1"]
+
+[node name="InvestmentTileView" type="Control"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 120.0
+offset_bottom = 120.0
+mouse_filter = 0
+script = ExtResource("1")

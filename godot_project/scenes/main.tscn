@@ -1,0 +1,92 @@
+[gd_scene load_steps=2 format=3 uid="uid://main_scene"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="ColorRect" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.06, 0.07, 0.1, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="MainMenu/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+text = "IMPERIAL STRUGGLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+text = "제국의 투쟁"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 40)
+
+[node name="NewGameBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Hot-seat (2P) / 핫시트 2인"
+
+[node name="SoloBRBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Solo as Britain / 솔로 (영국)"
+
+[node name="SoloFRBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Solo as France / 솔로 (프랑스)"
+
+[node name="LoadBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Load Game / 불러오기"
+
+[node name="CardListBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Card List / 카드 목록"
+
+[node name="SettingsBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Settings / 설정"
+
+[node name="QuitBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 56)
+text = "Quit / 종료"
+
+[node name="GameBoard" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0

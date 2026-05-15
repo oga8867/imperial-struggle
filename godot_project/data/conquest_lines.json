@@ -1,0 +1,26 @@
+{
+  "comment": "Conquest Lines: territory captures require connection via these lines. Source: Imperial Struggle 2nd Printing rulebook + board.",
+  "lines": [
+    {"from": "louisbourg_fort", "to": "acadia"},
+    {"from": "louisbourg_fort", "to": "quebec_and_montreal"},
+    {"from": "louisbourg_fort", "to": "halifax_fort"},
+    {"from": "halifax_fort", "to": "acadia"},
+    {"from": "champlain_valley_fort", "to": "quebec_and_montreal"},
+    {"from": "champlain_valley_fort", "to": "northern_colonies"},
+    {"from": "ohio_forks_fort", "to": "northern_colonies"},
+    {"from": "ohio_forks_fort", "to": "carolinas"},
+    {"from": "carolinas", "to": "san_agustin"},
+    {"from": "san_agustin", "to": "carolinas"},
+
+    {"from": "vandavasi_fort", "to": "pondicherry"},
+    {"from": "vandavasi_fort", "to": "madras"},
+    {"from": "vandavasi_fort", "to": "karaikal"},
+
+    {"from": "havana", "to": "st_domingue"},
+    {"from": "santiago", "to": "st_domingue"},
+    {"from": "havana", "to": "jamaica"},
+    {"from": "santiago", "to": "jamaica"},
+
+    {"from": "biscay_naval", "to": "gibraltar"}
+  ]
+}

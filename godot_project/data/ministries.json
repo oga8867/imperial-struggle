@@ -1,0 +1,348 @@
+[
+  {
+    "id": "M-1",
+    "side": "france",
+    "eras": [
+      "succession"
+    ],
+    "title": "The Cardinal Ministers",
+    "keywords": [
+      "Governance"
+    ],
+    "abilities": "Once per turn, at the start of an Action Round in which your Investment Tile has any Diplomatic Action, that Action confers 1 extra DP for each of the following you control (max 3): Savoy, Sardinia, and each Prestige space in Spain and Austria.",
+    "image": "res://assets/cards/Card-FR Ministry 01 The Cardinal Ministers.png"
+  },
+  {
+    "id": "M-2",
+    "side": "france",
+    "eras": [
+      "succession"
+    ],
+    "title": "John Law",
+    "keywords": [
+      "Finance"
+    ],
+    "abilities": "At the end of each Peace turn, reduce your Debt by 1 (or 2, if you control any spaces in Scotland).",
+    "image": "res://assets/cards/Card-FR Ministry 02 John Law.png"
+  },
+  {
+    "id": "M-3",
+    "side": "france",
+    "eras": [
+      "succession"
+    ],
+    "title": "Court of the Sun King",
+    "keywords": [
+      "Style",
+      "Scholarship"
+    ],
+    "abilities": "The Award for Europe is worth 1 extra VP to you.",
+    "image": "res://assets/cards/Card-FR Ministry 03 Court of the Sun King.png"
+  },
+  {
+    "id": "M-4",
+    "side": "france",
+    "eras": [
+      "succession",
+      "empire",
+      "revolution"
+    ],
+    "title": "Jacobite Uprisings",
+    "keywords": [],
+    "abilities": "Once per turn, you may use MP to shift spaces in Scotland and/or Ireland. Once per turn, on a different Action Round, you may spend 3 MP to score 1 VP (max 4) for each FR-flagged such space and Jacobite Victory marker. Immediately remove this card from the game after BR play of the Papacy-Hanover Negotiations Ministry card, or after a Jacobite Defeat war result.",
+    "image": "res://assets/cards/Card-FR Ministry 04 Jacobite Uprisings.png"
+  },
+  {
+    "id": "M-9",
+    "side": "france",
+    "eras": [
+      "succession"
+    ],
+    "title": "New World Huguenots",
+    "keywords": [
+      "Mercantilism"
+    ],
+    "abilities": "Once per turn, during a FR Action Round, place 1 Huguenots marker in one FR-flagged Territory in N. America or the Caribbean where there isn't one already. A Huguenots marker increases its space's CP cost by 1. It may be flipped once per game to reduce the EP cost of a Market in its Region by 1. It is permanently removed if its space becomes BR-flagged.",
+    "image": "res://assets/cards/Card-FR Ministry 09 New World Huguenots.png"
+  },
+  {
+    "id": "M-11",
+    "side": "france",
+    "eras": [
+      "empire"
+    ],
+    "title": "Choiseul",
+    "keywords": [
+      "Governance",
+      "Finance"
+    ],
+    "abilities": "Once per turn, when taking a Military action, you receive 1 extra MP that you may spend on Bonus War TIles or deploying Squadrons (only). Once per turn, if you have a Squadron in North America, you may pay 2 MP to construct a new Squadron (instead of the usual 4).",
+    "image": "res://assets/cards/Card-FR Ministry 11 Choiseul.png"
+  },
+  {
+    "id": "M-12",
+    "side": "france",
+    "eras": [
+      "empire"
+    ],
+    "title": "Dupleix",
+    "keywords": [
+      "Mercantilism"
+    ],
+    "abilities": "The Awards for India, Cotton, and Spice are worth 1 extra TRP to you.",
+    "image": "res://assets/cards/Card-FR Ministry 12 Dupleix.png"
+  },
+  {
+    "id": "M-13",
+    "side": "france",
+    "eras": [
+      "empire",
+      "revolution"
+    ],
+    "title": "Pompadour & du Barry",
+    "keywords": [
+      "Style"
+    ],
+    "abilities": "The first time each Action Round that you exhaust an Advantage in Europe, gain 1 TRP.",
+    "image": "res://assets/cards/Card-FR Ministry 13 Pompadour and Du Barry.png"
+  },
+  {
+    "id": "M-14",
+    "side": "france",
+    "eras": [
+      "empire",
+      "revolution"
+    ],
+    "title": "Voltaire",
+    "keywords": [
+      "Scholarship"
+    ],
+    "abilities": "When the Europe Award is given, gain 1 TRP for each multi-space country in which you control a Prestige space (max 3).",
+    "image": "res://assets/cards/Card-FR Ministry 14 Voltaire.png"
+  },
+  {
+    "id": "M-23",
+    "side": "france",
+    "eras": [
+      "revolution"
+    ],
+    "title": "Turgot",
+    "keywords": [
+      "Finance",
+      "Style"
+    ],
+    "abilities": "The first Debt you take each Action Round is worth 1 extra Action Point, provided you have more Available Debt than the British.",
+    "image": "res://assets/cards/Card-FR Ministry 23 Turgot.png"
+  },
+  {
+    "id": "M-24",
+    "side": "france",
+    "eras": [
+      "revolution"
+    ],
+    "title": "North American Trade",
+    "keywords": [
+      "Mercantilism"
+    ],
+    "abilities": "If you control more Fur and Fish Markets (combined) than your opponent at the start of your Action Round, your Economic Major and Minor Actions are worth 1 extra EP. Refresh your Huguenots markers, if you have any on the map.",
+    "image": "res://assets/cards/Card-FR Ministry 24 North American Trade.png"
+  },
+  {
+    "id": "M-25",
+    "side": "france",
+    "eras": [
+      "revolution"
+    ],
+    "title": "Marquis de Condorcet",
+    "keywords": [
+      "Governance"
+    ],
+    "abilities": "Once per turn, at the start of your Action Round, you can play an Event even if your selected Investment Tile does not have an event symbol. You must still match the Event's type, if it has one, to the Major Action on the Investment Tile.",
+    "image": "res://assets/cards/Card-FR Ministry 25 Marquis De Condorcet.png"
+  },
+  {
+    "id": "M-26",
+    "side": "france",
+    "eras": [
+      "revolution"
+    ],
+    "title": "Lavoisier",
+    "keywords": [
+      "Scholarship"
+    ],
+    "abilities": "On any Action Round you play an Event with a Bonus effect, and your receive that Bonus effect, your Major and Minor Actions from Investment Tiles are worth 1 extra Action Point.",
+    "image": "res://assets/cards/Card-FR Ministry 26 Lavoisier.png"
+  },
+  {
+    "id": "M-5",
+    "side": "britain",
+    "eras": [
+      "succession"
+    ],
+    "title": "Robert Walpole",
+    "keywords": [
+      "Governance"
+    ],
+    "abilities": "Once per turn, your may draw one Event card, then discard one Event card.",
+    "image": "res://assets/cards/Card-BR Ministry 05 Robert Walpole.jpg"
+  },
+  {
+    "id": "M-6",
+    "side": "britain",
+    "eras": [
+      "succession"
+    ],
+    "title": "Jonathan Swift",
+    "keywords": [
+      "Style"
+    ],
+    "abilities": "Spaces in Ireland and Scotland cost you 1 less DP to flag. If you control any spaces in Ireland, your Minor Diplomatic Actions may be used to remove FR flags in Europe.",
+    "image": "res://assets/cards/Card-BR Ministry 06 Jonathan Swift.png"
+  },
+  {
+    "id": "M-7",
+    "side": "britain",
+    "eras": [
+      "succession",
+      "empire"
+    ],
+    "title": "East India Company",
+    "keywords": [
+      "Mercantilism"
+    ],
+    "abilities": "During the Scoring Phase, score 1 VP for each of the following unexhausted Advantages you control (maximum 3): Textiles, Silk, Fruit, Fur Trade, Rum.",
+    "image": "res://assets/cards/Card-BR Ministry 07 East India Company.png"
+  },
+  {
+    "id": "M-8",
+    "side": "britain",
+    "eras": [
+      "succession"
+    ],
+    "title": "Bank of England",
+    "keywords": [
+      "Finance"
+    ],
+    "abilities": "Once per turn, you may increase your Debt Limit by 1. Once per turn, you may play an Economic event even if your selected Investment Tile does not have an Economic Major Action. (It still must have the Event symbol.)",
+    "image": "res://assets/cards/Card-BR Ministry 08 Bank of England.png"
+  },
+  {
+    "id": "M-10",
+    "side": "britain",
+    "eras": [
+      "succession"
+    ],
+    "title": "Edmond Halley",
+    "keywords": [
+      "Scholarship"
+    ],
+    "abilities": "Once per turn, you may spend 2 MP to build a Squadron (instead of the usual 4). Once per turn, if you have a Squadron in Europe, you may discard an Event card from your hand and take 1 TRP.",
+    "image": "res://assets/cards/Card-BR Ministry 10 Edmond Halley.png"
+  },
+  {
+    "id": "M-15",
+    "side": "britain",
+    "eras": [
+      "empire"
+    ],
+    "title": "Pitt the Elder",
+    "keywords": [
+      "Governance"
+    ],
+    "abilities": "Once per turn, when taking a Diplomatic action, you receive 1 extra DP that you may spend on shifting non-Prestige Political spaces. Once per turn, you may pay 2 MP to construct a new Squadron (instead of the usual 4).",
+    "image": "res://assets/cards/Card-BR Ministry 15 Pitt the Elder.png"
+  },
+  {
+    "id": "M-16",
+    "side": "britain",
+    "eras": [
+      "empire"
+    ],
+    "title": "Charles Hanbury Williams",
+    "keywords": [
+      "Style"
+    ],
+    "abilities": "Once per turn, FR-flagged spaces in Prussia, German States, and Russia cost you 1 less DP to unflag for one Action Round.",
+    "image": "res://assets/cards/Card-BR Ministry 16 Charles Hanbury Williams.png"
+  },
+  {
+    "id": "M-17",
+    "side": "britain",
+    "eras": [
+      "empire",
+      "revolution"
+    ],
+    "title": "Merchant Banks",
+    "keywords": [
+      "Finance"
+    ],
+    "abilities": "Ignore the first 2 Debt you take as EP each Peace turn, provided you use the Debt. (If this ability is available, you may use it even while at your Debt Limit.)",
+    "image": "res://assets/cards/Card-BR Ministry 17 Merchant Banks.png"
+  },
+  {
+    "id": "M-18",
+    "side": "britain",
+    "eras": [
+      "empire",
+      "revolution"
+    ],
+    "title": "Samuel Johnson",
+    "keywords": [
+      "Scholarship"
+    ],
+    "abilities": "The Award for Europe is worth 1 extra VP to you, and 1 less VP to France (minimum 0).",
+    "image": "res://assets/cards/Card-BR Ministry 18 Samuel Johnson.png"
+  },
+  {
+    "id": "M-19",
+    "side": "britain",
+    "eras": [
+      "revolution"
+    ],
+    "title": "James Watt",
+    "keywords": [
+      "Scholarship"
+    ],
+    "abilities": "If you are forced to take Debt in excess of your Debt Limit, your opponent scores no VP. The first time each Action Round your opponent exhausts an Advantage, gain 1 TRP.",
+    "image": "res://assets/cards/Card-BR Ministry 19 James Watt.png"
+  },
+  {
+    "id": "M-20",
+    "side": "britain",
+    "eras": [
+      "revolution"
+    ],
+    "title": "Papacy-Hanover Negotiations",
+    "keywords": [
+      "Style"
+    ],
+    "abilities": "Remove the Jacobite Uprisings Ministry card from the game. Once per turn, when taking a Diplomatic action, you receive 2 DP usable only to shift spaces in Scotland and Ireland.",
+    "image": "res://assets/cards/Card-BR Ministry 20 Papacy-Hanover Negotiations.png"
+  },
+  {
+    "id": "M-21",
+    "side": "britain",
+    "eras": [
+      "revolution"
+    ],
+    "title": "Townshend Acts",
+    "keywords": [
+      "Mercantilism"
+    ],
+    "abilities": "Once per turn, at the start of an Action Round, place the Townshend Acts marker on a commodity on the Global Demand display. You may use Minor Actions to unflag that commodity's Markets this turn.",
+    "image": "res://assets/cards/Card-BR Ministry 21 Townshend Acts.png"
+  },
+  {
+    "id": "M-22",
+    "side": "britain",
+    "eras": [
+      "revolution"
+    ],
+    "title": "Edmund Burke",
+    "keywords": [
+      "Governance"
+    ],
+    "abilities": "Major Diplomatic Actions spent entirely in Europe are worth up to 2 extra DP: one for each Ireland space you control. Sons of Liberty and USA spaces cost 1 less DP for you to shift.",
+    "image": "res://assets/cards/Card-BR Ministry 22 Edmund Burke.png"
+  }
+]

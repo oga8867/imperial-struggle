@@ -1,0 +1,200 @@
+[
+  {
+    "display_name": "Algonquin Raids",
+    "name_ko": "Algonquin Raids",
+    "x": 168,
+    "y": 572,
+    "region": "north_america",
+    "type": "advantage",
+    "id": "algonquin_raids_adv"
+  },
+  {
+    "display_name": "Fur Trade",
+    "name_ko": "Fur Trade",
+    "x": 527,
+    "y": 165,
+    "region": "north_america",
+    "type": "advantage",
+    "id": "fur_trade_adv"
+  },
+  {
+    "display_name": "Iroquois Raids",
+    "name_ko": "Iroquois Raids",
+    "x": 173,
+    "y": 2091,
+    "region": "north_america",
+    "type": "advantage",
+    "id": "iroquois_raids_adv"
+  },
+  {
+    "display_name": "Wheat",
+    "name_ko": "Wheat",
+    "x": 351,
+    "y": 1671,
+    "region": "north_america",
+    "type": "advantage",
+    "id": "wheat_adv"
+  },
+  {
+    "display_name": "Patriot Agitation",
+    "name_ko": "Patriot Agitation",
+    "x": 820,
+    "y": 1456,
+    "region": "north_america",
+    "type": "advantage",
+    "id": "patriot_agitation_adv"
+  },
+  {
+    "display_name": "Fruit",
+    "name_ko": "Fruit",
+    "x": 967,
+    "y": 1643,
+    "region": "caribbean",
+    "type": "advantage",
+    "id": "fruit_adv"
+  },
+  {
+    "display_name": "Slaving Contracts",
+    "name_ko": "Slaving Contracts",
+    "x": 1813,
+    "y": 1512,
+    "region": "caribbean",
+    "type": "advantage",
+    "id": "slaving_contracts_adv"
+  },
+  {
+    "display_name": "Rum",
+    "name_ko": "Rum",
+    "x": 2051,
+    "y": 2555,
+    "region": "caribbean",
+    "type": "advantage",
+    "id": "rum_adv"
+  },
+  {
+    "display_name": "Pirate Havens",
+    "name_ko": "Pirate Havens",
+    "x": 1408,
+    "y": 3183,
+    "region": "caribbean",
+    "type": "advantage",
+    "id": "pirate_havens_adv"
+  },
+  {
+    "display_name": "Letters of Marque",
+    "name_ko": "Letters of Marque",
+    "x": 2246,
+    "y": 2271,
+    "region": "caribbean",
+    "type": "advantage",
+    "id": "letters_of_marque_adv"
+  },
+  {
+    "display_name": "Raids & Incursions",
+    "name_ko": "Raids & Incursions",
+    "x": 3483,
+    "y": 1723,
+    "region": "india",
+    "type": "advantage",
+    "id": "raids_and_incursions_adv"
+  },
+  {
+    "display_name": "Silk",
+    "name_ko": "Silk",
+    "x": 3614,
+    "y": 1975,
+    "region": "india",
+    "type": "advantage",
+    "id": "silk_adv"
+  },
+  {
+    "display_name": "Textiles",
+    "name_ko": "Textiles",
+    "x": 3485,
+    "y": 3151,
+    "region": "india",
+    "type": "advantage",
+    "id": "textiles_adv"
+  },
+  {
+    "display_name": "Power Struggle",
+    "name_ko": "Power Struggle",
+    "x": 3146,
+    "y": 3162,
+    "region": "india",
+    "type": "advantage",
+    "id": "power_struggle_adv"
+  },
+  {
+    "display_name": "Separatist Wars",
+    "name_ko": "Separatist Wars",
+    "x": 3053,
+    "y": 2708,
+    "region": "india",
+    "type": "advantage",
+    "id": "separatist_wars_adv"
+  },
+  {
+    "display_name": "Baltic Trade",
+    "name_ko": "Baltic Trade",
+    "x": 3897,
+    "y": 308,
+    "region": "europe",
+    "type": "advantage",
+    "id": "baltic_trade_adv"
+  },
+  {
+    "display_name": "German Diplomacy",
+    "name_ko": "German Diplomacy",
+    "x": 4656,
+    "y": 597,
+    "region": "europe",
+    "type": "advantage",
+    "id": "german_diplomacy_adv"
+  },
+  {
+    "display_name": "Central Europe Conflict",
+    "name_ko": "Central Europe Conflict",
+    "x": 4642,
+    "y": 801,
+    "region": "europe",
+    "type": "advantage",
+    "id": "central_europe_conflict_adv"
+  },
+  {
+    "display_name": "Silesia Negotiations",
+    "name_ko": "Silesia Negotiations",
+    "x": 4916,
+    "y": 835,
+    "region": "europe",
+    "type": "advantage",
+    "id": "silesia_negotiations_adv"
+  },
+  {
+    "display_name": "Italy Influence",
+    "name_ko": "Italy Influence",
+    "x": 4434,
+    "y": 1364,
+    "region": "europe",
+    "type": "advantage",
+    "id": "italy_influence_adv"
+  },
+  {
+    "display_name": "Mediterranean Intrigue",
+    "name_ko": "Mediterranean Intrigue",
+    "x": 3656,
+    "y": 1256,
+    "region": "europe",
+    "type": "advantage",
+    "id": "mediterranean_intrigue_adv"
+  },
+  {
+    "display_name": "Naval Bastion",
+    "name_ko": "Naval Bastion",
+    "x": 2892,
+    "y": 1395,
+    "region": "europe",
+    "type": "advantage",
+    "id": "naval_bastion_adv"
+  }
+]

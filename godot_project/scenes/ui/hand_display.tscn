@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://hand_display"]
+
+[ext_resource type="Script" path="res://scripts/ui/hand_display.gd" id="1"]
+
+[node name="HandDisplay" type="Control"]
+custom_minimum_size = Vector2(0, 220)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 800.0
+offset_bottom = 220.0
+script = ExtResource("1")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="HBox" type="HBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 4.0
+offset_right = 60.0
+offset_bottom = 24.0
+text = "Hand"
+horizontal_alignment = 1

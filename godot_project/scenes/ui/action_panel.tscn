@@ -1,0 +1,106 @@
+[gd_scene load_steps=2 format=3 uid="uid://action_panel"]
+
+[ext_resource type="Script" path="res://scripts/ui/action_panel.gd" id="1"]
+
+[node name="ActionPanel" type="Control"]
+custom_minimum_size = Vector2(440, 220)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 440.0
+offset_bottom = 220.0
+script = ExtResource("1")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 12.0
+offset_right = -14.0
+offset_bottom = -12.0
+theme_override_constants/separation = 8
+
+[node name="StepLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "1. SELECT INVESTMENT TILE"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.98, 0.75, 0.14, 1)
+horizontal_alignment = 1
+
+[node name="HintLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = "Click one of the 9 tiles on the right"
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.7, 0.74, 0.78, 1)
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="APLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.98, 0.85, 0.4, 1)
+horizontal_alignment = 1
+
+[node name="HBox" type="HBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="MajorBtn" type="Button" parent="Panel/VBox/HBox"]
+layout_mode = 2
+text = "Major"
+
+[node name="MinorBtn" type="Button" parent="Panel/VBox/HBox"]
+layout_mode = 2
+text = "Minor"
+
+[node name="UpgradeBtn" type="Button" parent="Panel/VBox/HBox"]
+visible = false
+layout_mode = 2
+text = "Upgrade"
+
+[node name="SkipEventBtn" type="Button" parent="Panel/VBox"]
+visible = false
+layout_mode = 2
+text = "No Event — Continue"
+
+[node name="WarTileBtn" type="Button" parent="Panel/VBox"]
+visible = false
+layout_mode = 2
+text = "War Tiles..."
+
+[node name="DebtRow" type="HBoxContainer" parent="Panel/VBox"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="DebtBtn" type="Button" parent="Panel/VBox/DebtRow"]
+layout_mode = 2
+text = "Take 1 Debt (+1 AP)"
+
+[node name="DebtBtn2" type="Button" parent="Panel/VBox/DebtRow"]
+layout_mode = 2
+text = "+2 Debt"
+
+[node name="TpBtn" type="Button" parent="Panel/VBox/DebtRow"]
+layout_mode = 2
+text = "+1 TRP"
+
+[node name="UndoBtn" type="Button" parent="Panel/VBox"]
+visible = false
+layout_mode = 2
+text = "↶ Undo Last Action"
+
+[node name="EndBtn" type="Button" parent="Panel/VBox"]
+visible = false
+layout_mode = 2
+text = "End Action Round"

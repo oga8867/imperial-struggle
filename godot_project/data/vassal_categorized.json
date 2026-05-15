@@ -1,0 +1,1216 @@
+{
+  "territory": [
+    {
+      "vassal_name": "Hudson Bay (Territory)",
+      "base": "Hudson Bay",
+      "type": "territory",
+      "x": 740,
+      "y": 221,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Québec & Montreal (Territory)",
+      "base": "Québec & Montreal",
+      "type": "territory",
+      "x": 936,
+      "y": 293,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Acadia (Territory)",
+      "base": "Acadia",
+      "type": "territory",
+      "x": 1923,
+      "y": 848,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Northern Colonies (Territory)",
+      "base": "Northern Colonies",
+      "type": "territory",
+      "x": 600,
+      "y": 1401,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Louisiana (Territory)",
+      "base": "Louisiana",
+      "type": "territory",
+      "x": 729,
+      "y": 1776,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "St. Domingue (Territory)",
+      "base": "St. Domingue",
+      "type": "territory",
+      "x": 1588,
+      "y": 2585,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Guadeloupe (Territory)",
+      "base": "Guadeloupe",
+      "type": "territory",
+      "x": 2257,
+      "y": 2842,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Carolinas (Territory)",
+      "base": "Carolinas",
+      "type": "territory",
+      "x": 1475,
+      "y": 1462,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Barbados (Territory)",
+      "base": "Barbados",
+      "type": "territory",
+      "x": 2247,
+      "y": 3152,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Jamaica (Territory)",
+      "base": "Jamaica",
+      "type": "territory",
+      "x": 984,
+      "y": 2924,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "San Agustin (Territory)",
+      "base": "San Agustin",
+      "type": "territory",
+      "x": 1210,
+      "y": 1729,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Asiento (Territory)",
+      "base": "Asiento",
+      "type": "territory",
+      "x": 1642,
+      "y": 1643,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Chandernagore (Territory)",
+      "base": "Chandernagore",
+      "type": "territory",
+      "x": 4166,
+      "y": 1843,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Calcutta (Territory)",
+      "base": "Calcutta",
+      "type": "territory",
+      "x": 4227,
+      "y": 2293,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Madras (Territory)",
+      "base": "Madras",
+      "type": "territory",
+      "x": 3994,
+      "y": 2525,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Pondicherry (Territory)",
+      "base": "Pondicherry",
+      "type": "territory",
+      "x": 3992,
+      "y": 2865,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Gibraltar (Territory)",
+      "base": "Gibraltar",
+      "type": "territory",
+      "x": 2691,
+      "y": 1421,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Minorca (Territory)",
+      "base": "Minorca",
+      "type": "territory",
+      "x": 2691,
+      "y": 1639,
+      "zone": "Europe"
+    }
+  ],
+  "political": [
+    {
+      "vassal_name": "Algonquin (Local Alliance: 2)",
+      "base": "Algonquin",
+      "type": "political",
+      "x": 328,
+      "y": 365,
+      "zone": "North America",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Iroquois (Local Alliance: 2)",
+      "base": "Iroquois",
+      "type": "political",
+      "x": 226,
+      "y": 1885,
+      "zone": "North America",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Sons of Liberty (Local Alliance: 3)",
+      "base": "Sons of Liberty",
+      "type": "political",
+      "x": 1079,
+      "y": 1333,
+      "zone": "North America",
+      "cost": 3,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "USA Prestige (Prestige: 2)",
+      "base": "USA Prestige",
+      "type": "political",
+      "x": 2071,
+      "y": 1268,
+      "zone": "North America",
+      "cost": 2,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "USA Prestige (Prestige: 3)",
+      "base": "USA Prestige",
+      "type": "political",
+      "x": 2255,
+      "y": 1268,
+      "zone": "North America",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Buccaneers (Local Alliance: 2)",
+      "base": "Buccaneers",
+      "type": "political",
+      "x": 1119,
+      "y": 3158,
+      "zone": "Caribbean",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Privateers (Local Alliance: 2)",
+      "base": "Privateers",
+      "type": "political",
+      "x": 1939,
+      "y": 2345,
+      "zone": "Caribbean",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Maratha (Local Alliance: 2)",
+      "base": "Maratha",
+      "type": "political",
+      "x": 3663,
+      "y": 1528,
+      "zone": "India",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Mysore (Local Alliance: 2)",
+      "base": "Mysore",
+      "type": "political",
+      "x": 2882,
+      "y": 3048,
+      "zone": "India",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Nizam (Local Alliance: 2)",
+      "base": "Nizam",
+      "type": "political",
+      "x": 2882,
+      "y": 2461,
+      "zone": "India",
+      "cost": 2,
+      "sub": "local_alliance"
+    },
+    {
+      "vassal_name": "Ireland (Alliance: 2)",
+      "base": "Ireland",
+      "type": "political",
+      "x": 3048,
+      "y": 550,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Ireland (Prestige: 3)",
+      "base": "Ireland",
+      "type": "political",
+      "x": 3233,
+      "y": 550,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Scotland (Alliance: 2)",
+      "base": "Scotland",
+      "type": "political",
+      "x": 3454,
+      "y": 318,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Scotland (Prestige: 3)",
+      "base": "Scotland",
+      "type": "political",
+      "x": 3639,
+      "y": 318,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Dutch Republic (Alliance: 2)",
+      "base": "Dutch Republic",
+      "type": "political",
+      "x": 3755,
+      "y": 653,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Dutch Republic (Prestige: 3)",
+      "base": "Dutch Republic",
+      "type": "political",
+      "x": 3940,
+      "y": 653,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Denmark • Norway (Alliance: 2)",
+      "base": "Denmark • Norway",
+      "type": "political",
+      "x": 4112,
+      "y": 176,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Prussia (Alliance: 2)",
+      "base": "Prussia",
+      "type": "political",
+      "x": 4201,
+      "y": 451,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Prussia (Prestige: 3)",
+      "base": "Prussia",
+      "type": "political",
+      "x": 4386,
+      "y": 451,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Prussia (Alliance: 2) [b]",
+      "base": "Prussia",
+      "type": "political",
+      "x": 4201,
+      "y": 667,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Prussia (Prestige: 3) [b]",
+      "base": "Prussia",
+      "type": "political",
+      "x": 4386,
+      "y": 667,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "German States • Saxony (Alliance: 2)",
+      "base": "German States • Saxony",
+      "type": "political",
+      "x": 4082,
+      "y": 998,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "German States • Saxony (Alliance: 3)",
+      "base": "German States • Saxony",
+      "type": "political",
+      "x": 4266,
+      "y": 998,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Bavaria (Alliance: 3)",
+      "base": "Bavaria",
+      "type": "political",
+      "x": 4500,
+      "y": 998,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Austria (Alliance: 2)",
+      "base": "Austria",
+      "type": "political",
+      "x": 4732,
+      "y": 1055,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Austria (Prestige: 3)",
+      "base": "Austria",
+      "type": "political",
+      "x": 4916,
+      "y": 1055,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Austria (Alliance: 3)",
+      "base": "Austria",
+      "type": "political",
+      "x": 4732,
+      "y": 1239,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Austria (Prestige: 3) [b]",
+      "base": "Austria",
+      "type": "political",
+      "x": 4916,
+      "y": 1239,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Sardinia (Alliance: 2)",
+      "base": "Sardinia",
+      "type": "political",
+      "x": 4442,
+      "y": 1672,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Savoy (Alliance: 2)",
+      "base": "Savoy",
+      "type": "political",
+      "x": 4043,
+      "y": 1288,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Spain (Alliance: 3)",
+      "base": "Spain",
+      "type": "political",
+      "x": 3110,
+      "y": 1220,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Spain (Prestige: 2)",
+      "base": "Spain",
+      "type": "political",
+      "x": 3294,
+      "y": 1220,
+      "zone": "Europe",
+      "cost": 2,
+      "sub": "prestige"
+    },
+    {
+      "vassal_name": "Spain (Alliance: 3) [b]",
+      "base": "Spain",
+      "type": "political",
+      "x": 3110,
+      "y": 1403,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "alliance"
+    },
+    {
+      "vassal_name": "Spain (Prestige: 3)",
+      "base": "Spain",
+      "type": "political",
+      "x": 3294,
+      "y": 1403,
+      "zone": "Europe",
+      "cost": 3,
+      "sub": "prestige"
+    }
+  ],
+  "advantage": [
+    {
+      "vassal_name": "Algonquin Raids (Advantage)",
+      "base": "Algonquin Raids",
+      "type": "advantage",
+      "x": 168,
+      "y": 572,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Fur Trade (Advantage)",
+      "base": "Fur Trade",
+      "type": "advantage",
+      "x": 527,
+      "y": 165,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Iroquois Raids (Advantage)",
+      "base": "Iroquois Raids",
+      "type": "advantage",
+      "x": 173,
+      "y": 2091,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Wheat (Advantage)",
+      "base": "Wheat",
+      "type": "advantage",
+      "x": 351,
+      "y": 1671,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Patriot Agitation (Advantage)",
+      "base": "Patriot Agitation",
+      "type": "advantage",
+      "x": 820,
+      "y": 1456,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Fruit (Advantage)",
+      "base": "Fruit",
+      "type": "advantage",
+      "x": 967,
+      "y": 1643,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Slaving Contracts (Advantage)",
+      "base": "Slaving Contracts",
+      "type": "advantage",
+      "x": 1813,
+      "y": 1512,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Rum (Advantage)",
+      "base": "Rum",
+      "type": "advantage",
+      "x": 2051,
+      "y": 2555,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Pirate Havens (Advantage)",
+      "base": "Pirate Havens",
+      "type": "advantage",
+      "x": 1408,
+      "y": 3183,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Letters of Marque (Advantage)",
+      "base": "Letters of Marque",
+      "type": "advantage",
+      "x": 2246,
+      "y": 2271,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Raids & Incursions (Advantage)",
+      "base": "Raids & Incursions",
+      "type": "advantage",
+      "x": 3483,
+      "y": 1723,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Silk (Advantage)",
+      "base": "Silk",
+      "type": "advantage",
+      "x": 3614,
+      "y": 1975,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Textiles (Advantage)",
+      "base": "Textiles",
+      "type": "advantage",
+      "x": 3485,
+      "y": 3151,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Power Struggle (Advantage)",
+      "base": "Power Struggle",
+      "type": "advantage",
+      "x": 3146,
+      "y": 3162,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Separatist Wars (Advantage)",
+      "base": "Separatist Wars",
+      "type": "advantage",
+      "x": 3053,
+      "y": 2708,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Baltic Trade (Advantage)",
+      "base": "Baltic Trade",
+      "type": "advantage",
+      "x": 3897,
+      "y": 308,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "German Diplomacy (Advantage)",
+      "base": "German Diplomacy",
+      "type": "advantage",
+      "x": 4656,
+      "y": 597,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Central Europe Conflict (Advantage)",
+      "base": "Central Europe Conflict",
+      "type": "advantage",
+      "x": 4642,
+      "y": 801,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Silesia Negotiations (Advantage)",
+      "base": "Silesia Negotiations",
+      "type": "advantage",
+      "x": 4916,
+      "y": 835,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Italy Influence (Advantage)",
+      "base": "Italy Influence",
+      "type": "advantage",
+      "x": 4434,
+      "y": 1364,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Mediterranean Intrigue (Advantage)",
+      "base": "Mediterranean Intrigue",
+      "type": "advantage",
+      "x": 3656,
+      "y": 1256,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Naval Bastion (Advantage)",
+      "base": "Naval Bastion",
+      "type": "advantage",
+      "x": 2892,
+      "y": 1395,
+      "zone": "Europe"
+    }
+  ],
+  "market": [
+    {
+      "vassal_name": "Cataraqui (Furs: 2)",
+      "base": "Cataraqui",
+      "type": "market",
+      "x": 502,
+      "y": 603,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Mass. Bay (Fish: 3)",
+      "base": "Mass. Bay",
+      "type": "market",
+      "x": 1021,
+      "y": 874,
+      "zone": "North America",
+      "commodity": "fish",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Hudson Valley (Furs: 3)",
+      "base": "Hudson Valley",
+      "type": "market",
+      "x": 608,
+      "y": 1076,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 3
+    },
+    {
+      "vassal_name": "York Factory (Furs: 2)",
+      "base": "York Factory",
+      "type": "market",
+      "x": 587,
+      "y": 397,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Ile-aux-Noix (Furs: 3)",
+      "base": "Ile-aux-Noix",
+      "type": "market",
+      "x": 957,
+      "y": 507,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Gulf of St. Lawrence (Fish: 3)",
+      "base": "Gulf of St. Lawrence",
+      "type": "market",
+      "x": 1980,
+      "y": 399,
+      "zone": "North America",
+      "commodity": "fish",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Northeast Channel (Fish: 3)",
+      "base": "Northeast Channel",
+      "type": "market",
+      "x": 1715,
+      "y": 962,
+      "zone": "North America",
+      "commodity": "fish",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Georges Bank (Fish: 2)",
+      "base": "Georges Bank",
+      "type": "market",
+      "x": 1540,
+      "y": 1100,
+      "zone": "North America",
+      "commodity": "fish",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Niagara (Furs: 2)",
+      "base": "Niagara",
+      "type": "market",
+      "x": 238,
+      "y": 988,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Oswego (Furs: 2)",
+      "base": "Oswego",
+      "type": "market",
+      "x": 516,
+      "y": 849,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Albany (Furs: 3)",
+      "base": "Albany",
+      "type": "market",
+      "x": 705,
+      "y": 876,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Allegheny (Furs: 2)",
+      "base": "Allegheny",
+      "type": "market",
+      "x": 324,
+      "y": 1150,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Cumberland (Furs: 2)",
+      "base": "Cumberland",
+      "type": "market",
+      "x": 262,
+      "y": 1506,
+      "zone": "North America",
+      "commodity": "fur",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Port de Paix (Sugar: 3)",
+      "base": "Port de Paix",
+      "type": "market",
+      "x": 1405,
+      "y": 2585,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Martinique (Sugar: 2)",
+      "base": "Martinique",
+      "type": "market",
+      "x": 2048,
+      "y": 2975,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Georgia (Tobacco: 2)",
+      "base": "Georgia",
+      "type": "market",
+      "x": 1258,
+      "y": 1529,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 2
+    },
+    {
+      "vassal_name": "St. Lucia (Sugar: 2)",
+      "base": "St. Lucia",
+      "type": "market",
+      "x": 2001,
+      "y": 3181,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 2
+    },
+    {
+      "vassal_name": "St. James (Tobacco: 2)",
+      "base": "St. James",
+      "type": "market",
+      "x": 616,
+      "y": 1965,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Panzacola (Sugar: 3)",
+      "base": "Panzacola",
+      "type": "market",
+      "x": 976,
+      "y": 1895,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Bahamas Run North (Tobacco: 3)",
+      "base": "Bahamas Run North",
+      "type": "market",
+      "x": 1501,
+      "y": 1919,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Bahamas Run West (Tobacco: 2)",
+      "base": "Bahamas Run West",
+      "type": "market",
+      "x": 1131,
+      "y": 2220,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Cuba Passage East (Tobacco: 3)",
+      "base": "Cuba Passage East",
+      "type": "market",
+      "x": 951,
+      "y": 2303,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Caicos (Tobacco: 2)",
+      "base": "Caicos",
+      "type": "market",
+      "x": 1435,
+      "y": 2378,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Cayman Passage (Tobacco: 2)",
+      "base": "Cayman Passage",
+      "type": "market",
+      "x": 703,
+      "y": 2808,
+      "zone": "Caribbean",
+      "commodity": "tobacco",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Santiago (Sugar: 2)",
+      "base": "Santiago",
+      "type": "market",
+      "x": 1194,
+      "y": 2713,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Havana (Sugar: 2)",
+      "base": "Havana",
+      "type": "market",
+      "x": 877,
+      "y": 2514,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Puerto Principe (Sugar: 2)",
+      "base": "Puerto Principe",
+      "type": "market",
+      "x": 1176,
+      "y": 2454,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Puerto Rico (Sugar: 3)",
+      "base": "Puerto Rico",
+      "type": "market",
+      "x": 1786,
+      "y": 2649,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Antigua (Sugar: 2)",
+      "base": "Antigua",
+      "type": "market",
+      "x": 1873,
+      "y": 2836,
+      "zone": "Caribbean",
+      "commodity": "sugar",
+      "cost": 2
+    },
+    {
+      "vassal_name": "West Bengal (Cotton: 2)",
+      "base": "West Bengal",
+      "type": "market",
+      "x": 3701,
+      "y": 1802,
+      "zone": "India",
+      "commodity": "cotton",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Plassey (Cotton: 3)",
+      "base": "Plassey",
+      "type": "market",
+      "x": 3948,
+      "y": 1668,
+      "zone": "India",
+      "commodity": "cotton",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Malacca Route (Spice: 3)",
+      "base": "Malacca Route",
+      "type": "market",
+      "x": 4584,
+      "y": 2304,
+      "zone": "India",
+      "commodity": "spice",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Midnapore (Cotton: 3)",
+      "base": "Midnapore",
+      "type": "market",
+      "x": 3815,
+      "y": 2160,
+      "zone": "India",
+      "commodity": "cotton",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Kurpa (Cotton: 2)",
+      "base": "Kurpa",
+      "type": "market",
+      "x": 3191,
+      "y": 2252,
+      "zone": "India",
+      "commodity": "cotton",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Vellore (Cotton: 2)",
+      "base": "Vellore",
+      "type": "market",
+      "x": 3165,
+      "y": 2499,
+      "zone": "India",
+      "commodity": "cotton",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Kanchipuram (Spice: 2)",
+      "base": "Kanchipuram",
+      "type": "market",
+      "x": 3624,
+      "y": 2639,
+      "zone": "India",
+      "commodity": "spice",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Karaikal (Cotton: 3)",
+      "base": "Karaikal",
+      "type": "market",
+      "x": 3942,
+      "y": 3110,
+      "zone": "India",
+      "commodity": "cotton",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Tiruchirappalli (Spice: 2)",
+      "base": "Tiruchirappalli",
+      "type": "market",
+      "x": 3304,
+      "y": 3025,
+      "zone": "India",
+      "commodity": "spice",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Calicut (Spice: 3)",
+      "base": "Calicut",
+      "type": "market",
+      "x": 2741,
+      "y": 2741,
+      "zone": "India",
+      "commodity": "spice",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Mangalore (Spice: 2)",
+      "base": "Mangalore",
+      "type": "market",
+      "x": 2634,
+      "y": 2230,
+      "zone": "India",
+      "commodity": "spice",
+      "cost": 2
+    }
+  ],
+  "fort": [
+    {
+      "vassal_name": "Champlain Valley (Fort: 4)",
+      "base": "Champlain Valley",
+      "type": "fort",
+      "x": 762,
+      "y": 631,
+      "zone": "North America",
+      "cost": 4
+    },
+    {
+      "vassal_name": "Louisbourg (Fort: 3)",
+      "base": "Louisbourg",
+      "type": "fort",
+      "x": 2163,
+      "y": 811,
+      "zone": "North America",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Halifax (Fort: 3)",
+      "base": "Halifax",
+      "type": "fort",
+      "x": 1681,
+      "y": 737,
+      "zone": "North America",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Ohio Forks (Fort: 3)",
+      "base": "Ohio Forks",
+      "type": "fort",
+      "x": 142,
+      "y": 1308,
+      "zone": "North America",
+      "cost": 3
+    },
+    {
+      "vassal_name": "Arcot (Fort: 2)",
+      "base": "Arcot",
+      "type": "fort",
+      "x": 3376,
+      "y": 2408,
+      "zone": "India",
+      "cost": 2
+    },
+    {
+      "vassal_name": "Vandavasi (Fort: 4)",
+      "base": "Vandavasi",
+      "type": "fort",
+      "x": 3585,
+      "y": 2925,
+      "zone": "India",
+      "cost": 4
+    }
+  ],
+  "naval": [
+    {
+      "vassal_name": "Cabot Strait (Naval)",
+      "base": "Cabot Strait",
+      "type": "naval",
+      "x": 1943,
+      "y": 600,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Gulf of Maine (Naval)",
+      "base": "Gulf of Maine",
+      "type": "naval",
+      "x": 1306,
+      "y": 945,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Atlantic Passage (Naval)",
+      "base": "Atlantic Passage",
+      "type": "naval",
+      "x": 1326,
+      "y": 1265,
+      "zone": "North America"
+    },
+    {
+      "vassal_name": "Bahamas Run (Naval)",
+      "base": "Bahamas Run",
+      "type": "naval",
+      "x": 1359,
+      "y": 2174,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Cuba Passage (Naval)",
+      "base": "Cuba Passage",
+      "type": "naval",
+      "x": 751,
+      "y": 2335,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Gulf of Cazones (Naval)",
+      "base": "Gulf of Cazones",
+      "type": "naval",
+      "x": 1051,
+      "y": 2600,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Antilles Channel (Naval)",
+      "base": "Antilles Channel",
+      "type": "naval",
+      "x": 1797,
+      "y": 3065,
+      "zone": "Caribbean"
+    },
+    {
+      "vassal_name": "Hooghly River (Naval)",
+      "base": "Hooghly River",
+      "type": "naval",
+      "x": 4140,
+      "y": 2060,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Malabar Coast (Naval)",
+      "base": "Malabar Coast",
+      "type": "naval",
+      "x": 2574,
+      "y": 2498,
+      "zone": "India"
+    },
+    {
+      "vassal_name": "Biscay (Naval)",
+      "base": "Biscay",
+      "type": "naval",
+      "x": 2689,
+      "y": 881,
+      "zone": "Europe"
+    },
+    {
+      "vassal_name": "Balearic (Naval)",
+      "base": "Balearic",
+      "type": "naval",
+      "x": 2876,
+      "y": 881,
+      "zone": "Europe"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+[gd_scene load_steps=2 format=3 uid="uid://hud_scene"]
+
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="1"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="TopBar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 96.0
+mouse_filter = 0
+
+[node name="Margin" type="MarginContainer" parent="TopBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="HBox" type="HBoxContainer" parent="TopBar/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BritainPanel" type="Panel" parent="TopBar/Margin/HBox"]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="TopBar/Margin/HBox/BritainPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = -12.0
+offset_bottom = -6.0
+theme_override_constants/separation = 2
+
+[node name="Title" type="Label" parent="TopBar/Margin/HBox/BritainPanel/VBox"]
+layout_mode = 2
+text = "BRITAIN"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.85, 0.3, 0.3, 1)
+
+[node name="DebtLabel" type="Label" parent="TopBar/Margin/HBox/BritainPanel/VBox"]
+layout_mode = 2
+text = "Debt: 0/4"
+theme_override_font_sizes/font_size = 13
+
+[node name="TPLabel" type="Label" parent="TopBar/Margin/HBox/BritainPanel/VBox"]
+layout_mode = 2
+text = "Treaty: 0  Squad: 0  Hand: 0"
+theme_override_font_sizes/font_size = 13
+
+[node name="SquadLabel" type="Label" parent="TopBar/Margin/HBox/BritainPanel/VBox"]
+visible = false
+layout_mode = 2
+
+[node name="HandLabel" type="Label" parent="TopBar/Margin/HBox/BritainPanel/VBox"]
+visible = false
+layout_mode = 2
+
+[node name="CenterPanel" type="Panel" parent="TopBar/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="TopBar/Margin/HBox/CenterPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = -12.0
+offset_bottom = -6.0
+theme_override_constants/separation = 2
+
+[node name="VPRow" type="HBoxContainer" parent="TopBar/Margin/HBox/CenterPanel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 8
+
+[node name="VPLabel" type="Label" parent="TopBar/Margin/HBox/CenterPanel/VBox/VPRow"]
+layout_mode = 2
+text = "VP"
+theme_override_font_sizes/font_size = 14
+
+[node name="VPValue" type="Label" parent="TopBar/Margin/HBox/CenterPanel/VBox/VPRow"]
+layout_mode = 2
+text = "15"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.98, 0.85, 0.4, 1)
+
+[node name="InfoRow" type="HBoxContainer" parent="TopBar/Margin/HBox/CenterPanel/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="TurnLabel" type="Label" parent="TopBar/Margin/HBox/CenterPanel/VBox/InfoRow"]
+layout_mode = 2
+text = "Turn 1/6"
+theme_override_font_sizes/font_size = 13
+
+[node name="EraLabel" type="Label" parent="TopBar/Margin/HBox/CenterPanel/VBox/InfoRow"]
+layout_mode = 2
+text = "Succession"
+theme_override_font_sizes/font_size = 13
+
+[node name="PhaseLabel" type="Label" parent="TopBar/Margin/HBox/CenterPanel/VBox/InfoRow"]
+layout_mode = 2
+text = "Phase: -"
+theme_override_font_sizes/font_size = 13
+
+[node name="DemandRow" type="HBoxContainer" parent="TopBar/Margin/HBox/CenterPanel/VBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="DemandLabel" type="Label" parent="TopBar/Margin/HBox/CenterPanel/VBox/DemandRow"]
+layout_mode = 2
+text = "Global Demand: -"
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.7, 0.85, 1, 1)
+
+[node name="FrancePanel" type="Panel" parent="TopBar/Margin/HBox"]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="TopBar/Margin/HBox/FrancePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = -12.0
+offset_bottom = -6.0
+theme_override_constants/separation = 2
+
+[node name="Title" type="Label" parent="TopBar/Margin/HBox/FrancePanel/VBox"]
+layout_mode = 2
+text = "FRANCE"
+horizontal_alignment = 2
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.3, 0.5, 0.85, 1)
+
+[node name="DebtLabel" type="Label" parent="TopBar/Margin/HBox/FrancePanel/VBox"]
+layout_mode = 2
+text = "Debt: 0/4"
+horizontal_alignment = 2
+theme_override_font_sizes/font_size = 13
+
+[node name="TPLabel" type="Label" parent="TopBar/Margin/HBox/FrancePanel/VBox"]
+layout_mode = 2
+text = "Treaty: 0  Squad: 0  Hand: 0"
+horizontal_alignment = 2
+theme_override_font_sizes/font_size = 13
+
+[node name="SquadLabel" type="Label" parent="TopBar/Margin/HBox/FrancePanel/VBox"]
+visible = false
+layout_mode = 2
+
+[node name="HandLabel" type="Label" parent="TopBar/Margin/HBox/FrancePanel/VBox"]
+visible = false
+layout_mode = 2
+
+[node name="ActiveTurnIndicator" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 96.0
+offset_bottom = 132.0
+mouse_filter = 0
+
+[node name="Label" type="Label" parent="ActiveTurnIndicator"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Setup"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.95, 0.85, 0.4, 1)
