@@ -13,6 +13,16 @@ extends Resource
 @export var france: PlayerState
 
 var available_investment_tiles: Array[InvestmentTile] = []
+var investment_draw_pile: Array[InvestmentTile] = []
+var investment_used_pile: Array[InvestmentTile] = []
+var investment_dealt_this_turn: Array[InvestmentTile] = []
+var byng_theater: String = ""
+var war_carryover_draws: Dictionary = {}
+var jacobite_victories: int = 0
+var jacobite_defeated: bool = false
+var jacobite_extra_ministry: bool = false
+var winner: Enums.Side = Enums.Side.NONE
+var victory_reason: String = ""
 var event_draw_pile: Array[EventCard] = []
 var event_discard_pile: Array[EventCard] = []   # discarded from hand (face-up, can be reshuffled)
 var event_played_pile: Array[EventCard] = []    # played events (REMOVED from game per §5.2.5, but kept for UI reference)

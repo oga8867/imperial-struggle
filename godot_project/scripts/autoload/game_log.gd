@@ -3,6 +3,7 @@ extends Node
 # Centralized game event log with optional space references for board hover-highlighting.
 
 signal entry_added(entry: Dictionary)
+signal history_changed
 
 var entries: Array = []
 var current_turn_section: int = 1
@@ -45,6 +46,8 @@ func log_system(text: String) -> void:
 
 func clear() -> void:
 	entries.clear()
+	current_turn_section = 1
+	history_changed.emit()
 
 
 func format_entry(entry: Dictionary) -> String:

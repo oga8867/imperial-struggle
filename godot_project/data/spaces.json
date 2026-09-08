@@ -10,12 +10,10 @@
     "id": "hudson_bay",
     "starting_control": "britain",
     "connections": [
-      "champlain_valley_fort",
-      "ile_aux_noix",
-      "quebec_and_montreal",
       "york_factory"
     ],
-    "conquest_lines": []
+    "conquest_lines": [],
+    "sub_region": "canada"
   },
   {
     "display_name": "Québec & Montreal",
@@ -28,15 +26,15 @@
     "id": "quebec_and_montreal",
     "starting_control": "france",
     "connections": [
-      "champlain_valley_fort",
-      "hudson_bay",
-      "ile_aux_noix",
-      "york_factory"
+      "cataraqui",
+      "gulf_of_st_lawrence",
+      "ile_aux_noix"
     ],
     "conquest_lines": [
       "louisbourg_fort",
       "champlain_valley_fort"
-    ]
+    ],
+    "sub_region": "canada"
   },
   {
     "display_name": "Algonquin",
@@ -48,10 +46,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "algonquin_la",
-    "connections": [
-      "cataraqui",
-      "york_factory"
-    ]
+    "connections": [],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Cataraqui",
@@ -64,12 +61,11 @@
     "commodity": "fur",
     "id": "cataraqui",
     "connections": [
-      "albany",
-      "algonquin_la",
-      "champlain_valley_fort",
-      "oswego",
-      "york_factory"
-    ]
+      "niagara",
+      "quebec_and_montreal"
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Acadia",
@@ -82,15 +78,13 @@
     "id": "acadia",
     "starting_control": "france",
     "connections": [
-      "cabot_strait_naval",
-      "halifax_fort",
       "louisbourg_fort",
       "northeast_channel"
     ],
     "conquest_lines": [
-      "louisbourg_fort",
-      "halifax_fort"
-    ]
+      "louisbourg_fort"
+    ],
+    "sub_region": "canada"
   },
   {
     "display_name": "Mass. Bay",
@@ -104,11 +98,12 @@
     "id": "mass_bay",
     "starting_control": "britain",
     "connections": [
-      "albany",
-      "champlain_valley_fort",
+      "georges_bank",
       "gulf_of_maine_naval",
-      "ile_aux_noix"
-    ]
+      "northern_colonies"
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Hudson Valley",
@@ -122,11 +117,11 @@
     "id": "hudson_valley",
     "connections": [
       "albany",
-      "allegheny",
-      "niagara",
-      "northern_colonies",
-      "oswego"
-    ]
+      "cumberland",
+      "northern_colonies"
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Northern Colonies",
@@ -139,15 +134,17 @@
     "id": "northern_colonies",
     "starting_control": "britain",
     "connections": [
-      "allegheny",
       "chesapeake",
       "cumberland",
-      "hudson_valley"
+      "hudson_valley",
+      "mass_bay"
     ],
     "conquest_lines": [
+      "halifax_fort",
       "champlain_valley_fort",
       "ohio_forks_fort"
-    ]
+    ],
+    "sub_region": "northern_colonies"
   },
   {
     "display_name": "Chesapeake",
@@ -160,10 +157,10 @@
     "commodity": "tobacco",
     "id": "chesapeake",
     "connections": [
-      "cumberland",
-      "iroquois_la",
       "northern_colonies"
-    ]
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "York Factory",
@@ -176,13 +173,10 @@
     "commodity": "fur",
     "id": "york_factory",
     "connections": [
-      "algonquin_la",
-      "cataraqui",
-      "champlain_valley_fort",
-      "hudson_bay",
-      "ile_aux_noix",
-      "quebec_and_montreal"
-    ]
+      "hudson_bay"
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Ile-aux-Noix",
@@ -196,12 +190,13 @@
     "id": "ile_aux_noix",
     "starting_control": "france",
     "connections": [
+      "albany",
       "champlain_valley_fort",
-      "hudson_bay",
-      "mass_bay",
-      "quebec_and_montreal",
-      "york_factory"
-    ]
+      "niagara",
+      "quebec_and_montreal"
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Champlain Valley",
@@ -215,18 +210,14 @@
     "starting_control": "france",
     "connections": [
       "albany",
-      "cataraqui",
-      "hudson_bay",
       "ile_aux_noix",
-      "mass_bay",
-      "oswego",
-      "quebec_and_montreal",
-      "york_factory"
+      "oswego"
     ],
     "conquest_lines": [
       "quebec_and_montreal",
       "northern_colonies"
-    ]
+    ],
+    "sub_region": "northern_colonies"
   },
   {
     "display_name": "Gulf of St. Lawrence",
@@ -239,8 +230,13 @@
     "commodity": "fish",
     "id": "gulf_of_st_lawrence",
     "connections": [
-      "cabot_strait_naval"
-    ]
+      "cabot_strait_naval",
+      "georges_bank",
+      "louisbourg_fort",
+      "quebec_and_montreal"
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Louisbourg",
@@ -254,13 +250,17 @@
     "starting_control": "france",
     "connections": [
       "acadia",
-      "cabot_strait_naval"
+      "cabot_strait_naval",
+      "georges_bank",
+      "gulf_of_st_lawrence",
+      "northeast_channel"
     ],
     "conquest_lines": [
       "acadia",
       "quebec_and_montreal",
       "halifax_fort"
-    ]
+    ],
+    "sub_region": "canada"
   },
   {
     "display_name": "Halifax",
@@ -273,15 +273,15 @@
     "id": "halifax_fort",
     "starting_control": "britain",
     "connections": [
-      "acadia",
-      "cabot_strait_naval",
       "georges_bank",
+      "gulf_of_maine_naval",
       "northeast_channel"
     ],
     "conquest_lines": [
       "louisbourg_fort",
-      "acadia"
-    ]
+      "northern_colonies"
+    ],
+    "sub_region": "northern_colonies"
   },
   {
     "display_name": "Northeast Channel",
@@ -296,9 +296,11 @@
     "connections": [
       "acadia",
       "georges_bank",
-      "gulf_of_maine_naval",
-      "halifax_fort"
-    ]
+      "halifax_fort",
+      "louisbourg_fort"
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Georges Bank",
@@ -314,9 +316,14 @@
     "connections": [
       "atlantic_passage_naval",
       "gulf_of_maine_naval",
+      "gulf_of_st_lawrence",
       "halifax_fort",
+      "louisbourg_fort",
+      "mass_bay",
       "northeast_channel"
-    ]
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Niagara",
@@ -330,10 +337,13 @@
     "id": "niagara",
     "connections": [
       "allegheny",
-      "hudson_valley",
+      "cataraqui",
+      "ile_aux_noix",
       "ohio_forks_fort",
       "oswego"
-    ]
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Oswego",
@@ -347,12 +357,11 @@
     "id": "oswego",
     "connections": [
       "albany",
-      "allegheny",
-      "cataraqui",
       "champlain_valley_fort",
-      "hudson_valley",
       "niagara"
-    ]
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Albany",
@@ -365,12 +374,14 @@
     "commodity": "fur",
     "id": "albany",
     "connections": [
-      "cataraqui",
       "champlain_valley_fort",
+      "cumberland",
       "hudson_valley",
-      "mass_bay",
+      "ile_aux_noix",
       "oswego"
-    ]
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Allegheny",
@@ -384,12 +395,11 @@
     "id": "allegheny",
     "connections": [
       "cumberland",
-      "hudson_valley",
       "niagara",
-      "northern_colonies",
-      "ohio_forks_fort",
-      "oswego"
-    ]
+      "ohio_forks_fort"
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Ohio Forks",
@@ -406,9 +416,9 @@
       "niagara"
     ],
     "conquest_lines": [
-      "northern_colonies",
-      "carolinas"
-    ]
+      "northern_colonies"
+    ],
+    "sub_region": "northern_colonies"
   },
   {
     "display_name": "Cumberland",
@@ -421,12 +431,14 @@
     "commodity": "fur",
     "id": "cumberland",
     "connections": [
+      "albany",
       "allegheny",
-      "chesapeake",
-      "iroquois_la",
+      "hudson_valley",
       "northern_colonies",
       "ohio_forks_fort"
-    ]
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Iroquois",
@@ -438,10 +450,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "iroquois_la",
-    "connections": [
-      "chesapeake",
-      "cumberland"
-    ]
+    "connections": [],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Sons of Liberty",
@@ -453,9 +464,10 @@
     "base_cost": 3,
     "is_local_alliance": true,
     "id": "sons_of_liberty_la",
-    "connections": [
-      "atlantic_passage_naval"
-    ]
+    "connections": [],
+    "sub_region": "northern_colonies",
+    "available_era": "revolution",
+    "conquest_lines": []
   },
   {
     "display_name": "USA Prestige",
@@ -467,9 +479,9 @@
     "base_cost": 2,
     "is_prestige": true,
     "id": "usa_prestige_prestige",
-    "connections": [
-      "usa_prestige_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "USA Prestige",
@@ -481,9 +493,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "usa_prestige_prestige_b",
-    "connections": [
-      "usa_prestige_prestige"
-    ]
+    "connections": [],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Cabot Strait",
@@ -495,11 +507,11 @@
     "base_cost": 1,
     "id": "cabot_strait_naval",
     "connections": [
-      "acadia",
       "gulf_of_st_lawrence",
-      "halifax_fort",
       "louisbourg_fort"
-    ]
+    ],
+    "sub_region": "canada",
+    "conquest_lines": []
   },
   {
     "display_name": "Gulf of Maine",
@@ -511,11 +523,12 @@
     "base_cost": 1,
     "id": "gulf_of_maine_naval",
     "connections": [
-      "atlantic_passage_naval",
       "georges_bank",
-      "mass_bay",
-      "northeast_channel"
-    ]
+      "halifax_fort",
+      "mass_bay"
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Atlantic Passage",
@@ -527,10 +540,10 @@
     "base_cost": 1,
     "id": "atlantic_passage_naval",
     "connections": [
-      "georges_bank",
-      "gulf_of_maine_naval",
-      "sons_of_liberty_la"
-    ]
+      "georges_bank"
+    ],
+    "sub_region": "northern_colonies",
+    "conquest_lines": []
   },
   {
     "display_name": "Louisiana",
@@ -543,10 +556,12 @@
     "id": "louisiana",
     "starting_control": "france",
     "connections": [
-      "panzacola",
       "st_james"
     ],
-    "conquest_lines": []
+    "conquest_lines": [
+      "cuba_passage_naval"
+    ],
+    "sub_region": "none"
   },
   {
     "display_name": "Port de Paix",
@@ -560,14 +575,10 @@
     "id": "port_de_paix",
     "starting_control": "france",
     "connections": [
-      "bahamas_run_naval",
-      "caicos",
-      "gulf_of_cazones_naval",
-      "puerto_principe",
-      "puerto_rico",
-      "santiago",
       "st_domingue"
-    ]
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "St. Domingue",
@@ -580,16 +591,15 @@
     "id": "st_domingue",
     "starting_control": "france",
     "connections": [
-      "antigua",
       "caicos",
       "port_de_paix",
-      "puerto_rico",
-      "santiago"
+      "puerto_principe"
     ],
     "conquest_lines": [
-      "havana",
-      "santiago"
-    ]
+      "san_agustin",
+      "bahamas_run_naval"
+    ],
+    "sub_region": "none"
   },
   {
     "display_name": "Martinique",
@@ -603,13 +613,12 @@
     "id": "martinique",
     "starting_control": "france",
     "connections": [
-      "antigua",
       "antilles_channel_naval",
-      "barbados",
       "guadeloupe",
-      "puerto_rico",
       "st_lucia"
-    ]
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Guadeloupe",
@@ -622,11 +631,12 @@
     "id": "guadeloupe",
     "starting_control": "france",
     "connections": [
-      "antigua",
-      "barbados",
       "martinique"
     ],
-    "conquest_lines": []
+    "conquest_lines": [
+      "antilles_channel_naval"
+    ],
+    "sub_region": "none"
   },
   {
     "display_name": "Georgia",
@@ -639,10 +649,10 @@
     "commodity": "tobacco",
     "id": "georgia",
     "connections": [
-      "asiento",
-      "carolinas",
-      "san_agustin"
-    ]
+      "carolinas"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Carolinas",
@@ -655,14 +665,11 @@
     "id": "carolinas",
     "starting_control": "britain",
     "connections": [
-      "asiento",
-      "georgia",
-      "san_agustin"
+      "bahamas_run_west",
+      "georgia"
     ],
-    "conquest_lines": [
-      "ohio_forks_fort",
-      "san_agustin"
-    ]
+    "conquest_lines": [],
+    "sub_region": "none"
   },
   {
     "display_name": "St. Lucia",
@@ -679,7 +686,9 @@
       "antilles_channel_naval",
       "barbados",
       "martinique"
-    ]
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Barbados",
@@ -692,11 +701,12 @@
     "id": "barbados",
     "starting_control": "britain",
     "connections": [
-      "guadeloupe",
-      "martinique",
       "st_lucia"
     ],
-    "conquest_lines": []
+    "conquest_lines": [
+      "antilles_channel_naval"
+    ],
+    "sub_region": "none"
   },
   {
     "display_name": "Jamaica",
@@ -709,15 +719,13 @@
     "id": "jamaica",
     "starting_control": "britain",
     "connections": [
-      "buccaneers_la",
       "cayman_passage",
-      "gulf_of_cazones_naval",
       "santiago"
     ],
     "conquest_lines": [
-      "havana",
-      "santiago"
-    ]
+      "cuba_passage_naval"
+    ],
+    "sub_region": "none"
   },
   {
     "display_name": "St. James",
@@ -730,10 +738,14 @@
     "commodity": "tobacco",
     "id": "st_james",
     "connections": [
+      "bahamas_run_west",
+      "cayman_passage",
+      "cuba_passage_east",
       "cuba_passage_naval",
-      "louisiana",
-      "panzacola"
-    ]
+      "louisiana"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Panzacola",
@@ -746,12 +758,10 @@
     "commodity": "sugar",
     "id": "panzacola",
     "connections": [
-      "bahamas_run_west",
-      "cuba_passage_east",
-      "louisiana",
-      "san_agustin",
-      "st_james"
-    ]
+      "san_agustin"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "San Agustin",
@@ -763,14 +773,12 @@
     "conquest_cost": 1,
     "id": "san_agustin",
     "connections": [
-      "bahamas_run_north",
-      "carolinas",
-      "georgia",
       "panzacola"
     ],
     "conquest_lines": [
-      "carolinas"
-    ]
+      "st_domingue"
+    ],
+    "sub_region": "none"
   },
   {
     "display_name": "Asiento",
@@ -781,12 +789,9 @@
     "type": "territory",
     "conquest_cost": 1,
     "id": "asiento",
-    "connections": [
-      "bahamas_run_north",
-      "carolinas",
-      "georgia"
-    ],
-    "conquest_lines": []
+    "connections": [],
+    "conquest_lines": [],
+    "sub_region": "none"
   },
   {
     "display_name": "Bahamas Run North",
@@ -799,10 +804,12 @@
     "commodity": "tobacco",
     "id": "bahamas_run_north",
     "connections": [
-      "asiento",
       "bahamas_run_naval",
-      "san_agustin"
-    ]
+      "bahamas_run_west",
+      "caicos"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Bahamas Run West",
@@ -816,14 +823,14 @@
     "id": "bahamas_run_west",
     "connections": [
       "bahamas_run_naval",
+      "bahamas_run_north",
       "caicos",
+      "carolinas",
       "cuba_passage_east",
-      "cuba_passage_naval",
-      "gulf_of_cazones_naval",
-      "havana",
-      "panzacola",
-      "puerto_principe"
-    ]
+      "st_james"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Bahamas Run",
@@ -837,9 +844,11 @@
     "connections": [
       "bahamas_run_north",
       "bahamas_run_west",
-      "caicos",
-      "port_de_paix",
-      "puerto_principe"
+      "caicos"
+    ],
+    "sub_region": "none",
+    "conquest_lines": [
+      "st_domingue"
     ]
   },
   {
@@ -854,12 +863,12 @@
     "id": "cuba_passage_east",
     "connections": [
       "bahamas_run_west",
+      "cayman_passage",
       "cuba_passage_naval",
-      "gulf_of_cazones_naval",
-      "havana",
-      "panzacola",
-      "puerto_principe"
-    ]
+      "st_james"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Cuba Passage",
@@ -871,11 +880,14 @@
     "base_cost": 1,
     "id": "cuba_passage_naval",
     "connections": [
-      "bahamas_run_west",
+      "cayman_passage",
       "cuba_passage_east",
-      "gulf_of_cazones_naval",
-      "havana",
       "st_james"
+    ],
+    "sub_region": "none",
+    "conquest_lines": [
+      "jamaica",
+      "louisiana"
     ]
   },
   {
@@ -890,12 +902,12 @@
     "id": "caicos",
     "connections": [
       "bahamas_run_naval",
+      "bahamas_run_north",
       "bahamas_run_west",
-      "port_de_paix",
-      "puerto_principe",
-      "santiago",
       "st_domingue"
-    ]
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Cayman Passage",
@@ -908,10 +920,13 @@
     "commodity": "tobacco",
     "id": "cayman_passage",
     "connections": [
-      "gulf_of_cazones_naval",
-      "havana",
-      "jamaica"
-    ]
+      "cuba_passage_east",
+      "cuba_passage_naval",
+      "jamaica",
+      "st_james"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Santiago",
@@ -924,18 +939,13 @@
     "commodity": "sugar",
     "id": "santiago",
     "connections": [
-      "caicos",
       "gulf_of_cazones_naval",
       "havana",
       "jamaica",
-      "port_de_paix",
-      "puerto_principe",
-      "st_domingue"
+      "puerto_principe"
     ],
-    "conquest_lines": [
-      "st_domingue",
-      "jamaica"
-    ]
+    "conquest_lines": [],
+    "sub_region": "none"
   },
   {
     "display_name": "Gulf of Cazones",
@@ -947,16 +957,11 @@
     "base_cost": 1,
     "id": "gulf_of_cazones_naval",
     "connections": [
-      "bahamas_run_west",
-      "cayman_passage",
-      "cuba_passage_east",
-      "cuba_passage_naval",
       "havana",
-      "jamaica",
-      "port_de_paix",
-      "puerto_principe",
       "santiago"
-    ]
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Havana",
@@ -969,18 +974,12 @@
     "commodity": "sugar",
     "id": "havana",
     "connections": [
-      "bahamas_run_west",
-      "cayman_passage",
-      "cuba_passage_east",
-      "cuba_passage_naval",
       "gulf_of_cazones_naval",
       "puerto_principe",
       "santiago"
     ],
-    "conquest_lines": [
-      "st_domingue",
-      "jamaica"
-    ]
+    "conquest_lines": [],
+    "sub_region": "none"
   },
   {
     "display_name": "Puerto Principe",
@@ -993,15 +992,13 @@
     "commodity": "sugar",
     "id": "puerto_principe",
     "connections": [
-      "bahamas_run_naval",
-      "bahamas_run_west",
-      "caicos",
-      "cuba_passage_east",
-      "gulf_of_cazones_naval",
       "havana",
-      "port_de_paix",
-      "santiago"
-    ]
+      "puerto_rico",
+      "santiago",
+      "st_domingue"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Puerto Rico",
@@ -1015,12 +1012,10 @@
     "id": "puerto_rico",
     "connections": [
       "antigua",
-      "antilles_channel_naval",
-      "martinique",
-      "port_de_paix",
-      "privateers_la",
-      "st_domingue"
-    ]
+      "puerto_principe"
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Antigua",
@@ -1035,12 +1030,11 @@
     "starting_control": "britain",
     "connections": [
       "antilles_channel_naval",
-      "guadeloupe",
-      "martinique",
       "puerto_rico",
-      "st_domingue",
       "st_lucia"
-    ]
+    ],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Antilles Channel",
@@ -1054,8 +1048,12 @@
     "connections": [
       "antigua",
       "martinique",
-      "puerto_rico",
       "st_lucia"
+    ],
+    "sub_region": "none",
+    "conquest_lines": [
+      "guadeloupe",
+      "barbados"
     ]
   },
   {
@@ -1068,9 +1066,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "buccaneers_la",
-    "connections": [
-      "jamaica"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Privateers",
@@ -1082,9 +1080,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "privateers_la",
-    "connections": [
-      "puerto_rico"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Maratha",
@@ -1096,10 +1094,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "maratha_la",
-    "connections": [
-      "plassey",
-      "west_bengal"
-    ]
+    "connections": [],
+    "sub_region": "hooghly_river",
+    "conquest_lines": []
   },
   {
     "display_name": "West Bengal",
@@ -1112,10 +1109,13 @@
     "commodity": "cotton",
     "id": "west_bengal",
     "connections": [
-      "maratha_la",
+      "hooghly_river_naval",
+      "mangalore",
       "midnapore",
       "plassey"
-    ]
+    ],
+    "sub_region": "hooghly_river",
+    "conquest_lines": []
   },
   {
     "display_name": "Plassey",
@@ -1129,9 +1129,12 @@
     "id": "plassey",
     "connections": [
       "chandernagore",
-      "maratha_la",
+      "hooghly_river_naval",
+      "malacca_route",
       "west_bengal"
-    ]
+    ],
+    "sub_region": "hooghly_river",
+    "conquest_lines": []
   },
   {
     "display_name": "Chandernagore",
@@ -1144,10 +1147,12 @@
     "id": "chandernagore",
     "starting_control": "france",
     "connections": [
-      "hooghly_river_naval",
       "plassey"
     ],
-    "conquest_lines": []
+    "conquest_lines": [
+      "hooghly_river_naval"
+    ],
+    "sub_region": "hooghly_river"
   },
   {
     "display_name": "Hooghly River",
@@ -1159,9 +1164,15 @@
     "base_cost": 1,
     "id": "hooghly_river_naval",
     "connections": [
-      "calcutta",
+      "malacca_route",
+      "midnapore",
+      "plassey",
+      "west_bengal"
+    ],
+    "sub_region": "hooghly_river",
+    "conquest_lines": [
       "chandernagore",
-      "midnapore"
+      "calcutta"
     ]
   },
   {
@@ -1175,8 +1186,11 @@
     "commodity": "spice",
     "id": "malacca_route",
     "connections": [
-      "calcutta"
-    ]
+      "hooghly_river_naval",
+      "plassey"
+    ],
+    "sub_region": "hooghly_river",
+    "conquest_lines": []
   },
   {
     "display_name": "Calcutta",
@@ -1189,11 +1203,12 @@
     "id": "calcutta",
     "starting_control": "britain",
     "connections": [
-      "hooghly_river_naval",
-      "madras",
-      "malacca_route"
+      "midnapore"
     ],
-    "conquest_lines": []
+    "conquest_lines": [
+      "hooghly_river_naval"
+    ],
+    "sub_region": "hooghly_river"
   },
   {
     "display_name": "Midnapore",
@@ -1206,10 +1221,13 @@
     "commodity": "cotton",
     "id": "midnapore",
     "connections": [
+      "calcutta",
       "hooghly_river_naval",
-      "madras",
+      "kurpa",
       "west_bengal"
-    ]
+    ],
+    "sub_region": "hooghly_river",
+    "conquest_lines": []
   },
   {
     "display_name": "Kurpa",
@@ -1223,9 +1241,11 @@
     "id": "kurpa",
     "connections": [
       "arcot_fort",
-      "nizam_la",
+      "midnapore",
       "vellore"
-    ]
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Arcot",
@@ -1237,9 +1257,12 @@
     "base_cost": 2,
     "id": "arcot_fort",
     "connections": [
-      "kanchipuram",
       "kurpa",
       "vellore"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": [
+      "madras"
     ]
   },
   {
@@ -1254,9 +1277,12 @@
     "id": "vellore",
     "connections": [
       "arcot_fort",
+      "kanchipuram",
       "kurpa",
-      "nizam_la"
-    ]
+      "tiruchirappalli"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Kanchipuram",
@@ -1269,10 +1295,14 @@
     "commodity": "spice",
     "id": "kanchipuram",
     "connections": [
-      "arcot_fort",
+      "karaikal",
       "madras",
-      "vandavasi_fort"
-    ]
+      "tiruchirappalli",
+      "vandavasi_fort",
+      "vellore"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Madras",
@@ -1285,14 +1315,13 @@
     "id": "madras",
     "starting_control": "britain",
     "connections": [
-      "calcutta",
-      "kanchipuram",
-      "midnapore",
-      "pondicherry"
+      "kanchipuram"
     ],
     "conquest_lines": [
-      "vandavasi_fort"
-    ]
+      "vandavasi_fort",
+      "arcot_fort"
+    ],
+    "sub_region": "carnatic_coast"
   },
   {
     "display_name": "Pondicherry",
@@ -1305,13 +1334,12 @@
     "id": "pondicherry",
     "starting_control": "france",
     "connections": [
-      "karaikal",
-      "madras",
-      "vandavasi_fort"
+      "karaikal"
     ],
     "conquest_lines": [
       "vandavasi_fort"
-    ]
+    ],
+    "sub_region": "carnatic_coast"
   },
   {
     "display_name": "Karaikal",
@@ -1324,12 +1352,13 @@
     "commodity": "cotton",
     "id": "karaikal",
     "connections": [
+      "kanchipuram",
       "pondicherry",
+      "tiruchirappalli",
       "vandavasi_fort"
     ],
-    "conquest_lines": [
-      "vandavasi_fort"
-    ]
+    "conquest_lines": [],
+    "sub_region": "carnatic_coast"
   },
   {
     "display_name": "Vandavasi",
@@ -1343,14 +1372,13 @@
     "connections": [
       "kanchipuram",
       "karaikal",
-      "pondicherry",
       "tiruchirappalli"
     ],
     "conquest_lines": [
       "pondicherry",
-      "madras",
-      "karaikal"
-    ]
+      "madras"
+    ],
+    "sub_region": "carnatic_coast"
   },
   {
     "display_name": "Tiruchirappalli",
@@ -1363,8 +1391,14 @@
     "commodity": "spice",
     "id": "tiruchirappalli",
     "connections": [
-      "vandavasi_fort"
-    ]
+      "calicut",
+      "kanchipuram",
+      "karaikal",
+      "vandavasi_fort",
+      "vellore"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Mysore",
@@ -1376,9 +1410,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "mysore_la",
-    "connections": [
-      "calicut"
-    ]
+    "connections": [],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Calicut",
@@ -1392,9 +1426,11 @@
     "id": "calicut",
     "connections": [
       "malabar_coast_naval",
-      "mysore_la",
-      "nizam_la"
-    ]
+      "mangalore",
+      "tiruchirappalli"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Malabar Coast",
@@ -1407,9 +1443,10 @@
     "id": "malabar_coast_naval",
     "connections": [
       "calicut",
-      "mangalore",
-      "nizam_la"
-    ]
+      "mangalore"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Mangalore",
@@ -1422,9 +1459,12 @@
     "commodity": "spice",
     "id": "mangalore",
     "connections": [
+      "calicut",
       "malabar_coast_naval",
-      "nizam_la"
-    ]
+      "west_bengal"
+    ],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Nizam",
@@ -1436,13 +1476,9 @@
     "base_cost": 2,
     "is_local_alliance": true,
     "id": "nizam_la",
-    "connections": [
-      "calicut",
-      "kurpa",
-      "malabar_coast_naval",
-      "mangalore",
-      "vellore"
-    ]
+    "connections": [],
+    "sub_region": "carnatic_coast",
+    "conquest_lines": []
   },
   {
     "display_name": "Ireland",
@@ -1454,10 +1490,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "ireland_alliance",
-    "connections": [
-      "balearic_naval",
-      "ireland_prestige"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Ireland",
@@ -1469,10 +1504,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "ireland_prestige",
-    "connections": [
-      "ireland_alliance",
-      "scotland_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Scotland",
@@ -1484,10 +1518,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "scotland_alliance",
-    "connections": [
-      "ireland_prestige",
-      "scotland_prestige"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Scotland",
@@ -1499,10 +1532,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "scotland_prestige",
-    "connections": [
-      "dutch_republic_alliance",
-      "scotland_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Dutch Republic",
@@ -1514,10 +1546,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "dutch_republic_alliance",
-    "connections": [
-      "dutch_republic_prestige",
-      "scotland_prestige"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Dutch Republic",
@@ -1529,12 +1560,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "dutch_republic_prestige",
-    "connections": [
-      "dutch_republic_alliance",
-      "german_states_saxony_alliance",
-      "prussia_alliance",
-      "prussia_alliance_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Denmark • Norway",
@@ -1546,9 +1574,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "denmark_norway_alliance",
-    "connections": [
-      "prussia_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Prussia",
@@ -1560,13 +1588,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "prussia_alliance",
-    "connections": [
-      "denmark_norway_alliance",
-      "dutch_republic_prestige",
-      "prussia_alliance_b",
-      "prussia_prestige",
-      "prussia_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Prussia",
@@ -1578,12 +1602,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "prussia_prestige",
-    "connections": [
-      "prussia_alliance",
-      "prussia_alliance_b",
-      "prussia_prestige_b",
-      "sweden_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Prussia",
@@ -1595,14 +1616,10 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "prussia_alliance_b",
-    "connections": [
-      "dutch_republic_prestige",
-      "german_states_saxony_alliance",
-      "german_states_saxony_alliance_b",
-      "prussia_alliance",
-      "prussia_prestige",
-      "prussia_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "available_era": "empire",
+    "conquest_lines": []
   },
   {
     "display_name": "Prussia",
@@ -1614,13 +1631,10 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "prussia_prestige_b",
-    "connections": [
-      "bavaria_alliance",
-      "german_states_saxony_alliance_b",
-      "prussia_alliance",
-      "prussia_alliance_b",
-      "prussia_prestige"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "available_era": "empire",
+    "conquest_lines": []
   },
   {
     "display_name": "Sweden",
@@ -1633,10 +1647,9 @@
     "is_alliance": true,
     "is_prestige": true,
     "id": "sweden_alliance",
-    "connections": [
-      "prussia_prestige",
-      "russia_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Russia",
@@ -1649,9 +1662,9 @@
     "is_alliance": true,
     "is_prestige": true,
     "id": "russia_alliance",
-    "connections": [
-      "sweden_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "German States • Saxony",
@@ -1663,12 +1676,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "german_states_saxony_alliance",
-    "connections": [
-      "dutch_republic_prestige",
-      "german_states_saxony_alliance_b",
-      "prussia_alliance_b",
-      "savoy_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "German States • Saxony",
@@ -1680,13 +1690,9 @@
     "base_cost": 3,
     "is_alliance": true,
     "id": "german_states_saxony_alliance_b",
-    "connections": [
-      "bavaria_alliance",
-      "german_states_saxony_alliance",
-      "prussia_alliance_b",
-      "prussia_prestige_b",
-      "savoy_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Bavaria",
@@ -1698,12 +1704,9 @@
     "base_cost": 3,
     "is_alliance": true,
     "id": "bavaria_alliance",
-    "connections": [
-      "austria_alliance",
-      "austria_alliance_b",
-      "german_states_saxony_alliance_b",
-      "prussia_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Austria",
@@ -1715,12 +1718,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "austria_alliance",
-    "connections": [
-      "austria_alliance_b",
-      "austria_prestige",
-      "austria_prestige_b",
-      "bavaria_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Austria",
@@ -1732,11 +1732,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "austria_prestige",
-    "connections": [
-      "austria_alliance",
-      "austria_alliance_b",
-      "austria_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Austria",
@@ -1748,12 +1746,9 @@
     "base_cost": 3,
     "is_alliance": true,
     "id": "austria_alliance_b",
-    "connections": [
-      "austria_alliance",
-      "austria_prestige",
-      "austria_prestige_b",
-      "bavaria_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Austria",
@@ -1765,11 +1760,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "austria_prestige_b",
-    "connections": [
-      "austria_alliance",
-      "austria_alliance_b",
-      "austria_prestige"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Sardinia",
@@ -1781,7 +1774,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "sardinia_alliance",
-    "connections": []
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Savoy",
@@ -1793,10 +1788,9 @@
     "base_cost": 2,
     "is_alliance": true,
     "id": "savoy_alliance",
-    "connections": [
-      "german_states_saxony_alliance",
-      "german_states_saxony_alliance_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Spain",
@@ -1808,11 +1802,9 @@
     "base_cost": 3,
     "is_alliance": true,
     "id": "spain_alliance",
-    "connections": [
-      "spain_alliance_b",
-      "spain_prestige",
-      "spain_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Spain",
@@ -1824,11 +1816,9 @@
     "base_cost": 2,
     "is_prestige": true,
     "id": "spain_prestige",
-    "connections": [
-      "spain_alliance",
-      "spain_alliance_b",
-      "spain_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Spain",
@@ -1840,11 +1830,9 @@
     "base_cost": 3,
     "is_alliance": true,
     "id": "spain_alliance_b",
-    "connections": [
-      "spain_alliance",
-      "spain_prestige",
-      "spain_prestige_b"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Spain",
@@ -1856,11 +1844,9 @@
     "base_cost": 3,
     "is_prestige": true,
     "id": "spain_prestige_b",
-    "connections": [
-      "spain_alliance",
-      "spain_alliance_b",
-      "spain_prestige"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Biscay",
@@ -1871,12 +1857,9 @@
     "type": "naval",
     "base_cost": 1,
     "id": "biscay_naval",
-    "connections": [
-      "balearic_naval"
-    ],
-    "conquest_lines": [
-      "gibraltar"
-    ]
+    "connections": [],
+    "conquest_lines": [],
+    "sub_region": "none"
   },
   {
     "display_name": "Balearic",
@@ -1887,10 +1870,9 @@
     "type": "naval",
     "base_cost": 1,
     "id": "balearic_naval",
-    "connections": [
-      "biscay_naval",
-      "ireland_alliance"
-    ]
+    "connections": [],
+    "sub_region": "none",
+    "conquest_lines": []
   },
   {
     "display_name": "Gibraltar",
@@ -1902,12 +1884,9 @@
     "conquest_cost": 1,
     "id": "gibraltar",
     "starting_control": "britain",
-    "connections": [
-      "minorca"
-    ],
-    "conquest_lines": [
-      "biscay_naval"
-    ]
+    "connections": [],
+    "conquest_lines": [],
+    "sub_region": "none"
   },
   {
     "display_name": "Minorca",
@@ -1919,9 +1898,8 @@
     "conquest_cost": 1,
     "id": "minorca",
     "starting_control": "britain",
-    "connections": [
-      "gibraltar"
-    ],
-    "conquest_lines": []
+    "connections": [],
+    "conquest_lines": [],
+    "sub_region": "none"
   }
 ]

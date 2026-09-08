@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://action_panel"]
 
-[ext_resource type="Script" path="res://scripts/ui/action_panel.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/action_panel_v2.gd" id="1"]
 
 [node name="ActionPanel" type="Control"]
 custom_minimum_size = Vector2(440, 220)

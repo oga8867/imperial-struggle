@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/game_session.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://game_board_scene" path="res://scenes/board/game_board.tscn" id="2"]
-[ext_resource type="PackedScene" uid="uid://hud_scene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud_dashboard.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://inv_display_scene" path="res://scenes/ui/investment_display.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://hand_display" path="res://scenes/ui/hand_display.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://card_modal_scene" path="res://scenes/ui/card_modal.tscn" id="6"]
@@ -47,75 +47,62 @@ layout_mode = 1
 [node name="LogPanel" parent="UILayer" instance=ExtResource("11")]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 1060.0
+offset_left = 1160.0
 offset_top = 144.0
-offset_right = 1450.0
-offset_bottom = 460.0
+offset_right = 1480.0
+offset_bottom = 428.0
 
 [node name="NavyPanel" parent="UILayer" instance=ExtResource("14")]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 1060.0
-offset_top = 472.0
-offset_right = 1450.0
+offset_left = 1160.0
+offset_top = 444.0
+offset_right = 1480.0
 offset_bottom = 580.0
 
 [node name="AdvantagePanel" parent="UILayer" instance=ExtResource("12")]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 1060.0
-offset_top = 592.0
-offset_right = 1450.0
-offset_bottom = 800.0
+offset_left = 1160.0
+offset_top = 596.0
+offset_right = 1480.0
+offset_bottom = 832.0
 
 [node name="InvestmentDisplay" parent="UILayer" instance=ExtResource("4")]
-custom_minimum_size = Vector2(440, 460)
+custom_minimum_size = Vector2(0, 0)
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -460.0
+anchors_preset = 0
+offset_left = 1496.0
 offset_top = 144.0
-offset_right = -20.0
-offset_bottom = 604.0
-grow_horizontal = 0
+offset_right = 1896.0
+offset_bottom = 594.0
 
 [node name="ActionPanel" parent="UILayer" instance=ExtResource("7")]
-custom_minimum_size = Vector2(440, 240)
+custom_minimum_size = Vector2(0, 0)
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -460.0
-offset_top = 620.0
-offset_right = -20.0
-offset_bottom = 860.0
-grow_horizontal = 0
+anchors_preset = 0
+offset_left = 1496.0
+offset_top = 610.0
+offset_right = 1896.0
+offset_bottom = 1024.0
 
 [node name="MinistryHand" parent="UILayer" instance=ExtResource("15")]
-custom_minimum_size = Vector2(220, 200)
+custom_minimum_size = Vector2(0, 0)
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 0.0
-anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = -252.0
-offset_right = 236.0
-offset_bottom = -52.0
-grow_horizontal = 1
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 872.0
+offset_right = 264.0
+offset_bottom = 1024.0
 
 [node name="HandDisplay" parent="UILayer" instance=ExtResource("5")]
-custom_minimum_size = Vector2(0, 200)
+custom_minimum_size = Vector2(0, 0)
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 252.0
-offset_top = -252.0
-offset_right = -480.0
-offset_bottom = -52.0
+anchors_preset = 0
+offset_left = 280.0
+offset_top = 872.0
+offset_right = 1480.0
+offset_bottom = 1024.0
 
 [node name="PromptBar" type="Panel" parent="UILayer"]
 layout_mode = 1
@@ -134,7 +121,7 @@ offset_left = 24.0
 offset_top = -12.0
 offset_right = 1000.0
 offset_bottom = 12.0
-text = "Welcome to Imperial Struggle"
+text = "제국의 투쟁에 오신 것을 환영합니다"
 theme_override_font_sizes/font_size = 15
 
 [node name="PassBtn" type="Button" parent="UILayer/PromptBar"]
@@ -148,7 +135,7 @@ offset_left = -160.0
 offset_top = -16.0
 offset_right = -24.0
 offset_bottom = 16.0
-text = "Pass (-2 Debt)"
+text = "패스 (채무 감소)"
 
 [node name="SaveBtn" type="Button" parent="UILayer/PromptBar"]
 layout_mode = 1
@@ -161,7 +148,7 @@ offset_left = -320.0
 offset_top = -16.0
 offset_right = -180.0
 offset_bottom = 16.0
-text = "Save"
+text = "저장"
 
 [node name="MenuBtn" type="Button" parent="UILayer/PromptBar"]
 layout_mode = 1
@@ -174,7 +161,7 @@ offset_left = -440.0
 offset_top = -16.0
 offset_right = -340.0
 offset_bottom = 16.0
-text = "Menu"
+text = "메뉴"
 
 [node name="CardsBtn" type="Button" parent="UILayer/PromptBar"]
 layout_mode = 1
@@ -187,7 +174,7 @@ offset_left = -560.0
 offset_top = -16.0
 offset_right = -460.0
 offset_bottom = 16.0
-text = "Cards"
+text = "카드"
 
 [node name="CardModal" parent="UILayer" instance=ExtResource("6")]
 visible = false

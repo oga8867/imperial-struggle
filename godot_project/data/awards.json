@@ -1,10 +1,58 @@
 [
-  {"id": "europe_a", "region": "europe", "vp": 2, "tp": 1, "margin_required": 1, "name": "Europe (A)"},
-  {"id": "europe_b", "region": "europe", "vp": 3, "tp": 0, "margin_required": 2, "name": "Europe (B)"},
-  {"id": "north_america_a", "region": "north_america", "vp": 2, "tp": 1, "margin_required": 1, "name": "North America (A)"},
-  {"id": "north_america_b", "region": "north_america", "vp": 3, "tp": 0, "margin_required": 2, "name": "North America (B)"},
-  {"id": "caribbean_a", "region": "caribbean", "vp": 2, "tp": 1, "margin_required": 1, "name": "Caribbean (A)"},
-  {"id": "caribbean_b", "region": "caribbean", "vp": 3, "tp": 0, "margin_required": 2, "name": "Caribbean (B)"},
-  {"id": "india_a", "region": "india", "vp": 2, "tp": 1, "margin_required": 1, "name": "India (A)"},
-  {"id": "india_b", "region": "india", "vp": 3, "tp": 0, "margin_required": 2, "name": "India (B)"}
+  {
+    "id": "award_1",
+    "vp": 0,
+    "tp": 1,
+    "margin_required": 1,
+    "name": "0 VP + TRP"
+  },
+  {
+    "id": "award_2",
+    "vp": 0,
+    "tp": 1,
+    "margin_required": 1,
+    "name": "0 VP + TRP"
+  },
+  {
+    "id": "award_3",
+    "vp": 1,
+    "tp": 1,
+    "margin_required": 1,
+    "name": "1 VP + TRP"
+  },
+  {
+    "id": "award_4",
+    "vp": 1,
+    "tp": 1,
+    "margin_required": 1,
+    "name": "1 VP + TRP"
+  },
+  {
+    "id": "award_5",
+    "vp": 1,
+    "tp": 0,
+    "margin_required": 1,
+    "name": "1 VP"
+  },
+  {
+    "id": "award_6",
+    "vp": 1,
+    "tp": 0,
+    "margin_required": 1,
+    "name": "1 VP"
+  },
+  {
+    "id": "award_7",
+    "vp": 2,
+    "tp": 0,
+    "margin_required": 2,
+    "name": "2 VP"
+  },
+  {
+    "id": "award_8",
+    "vp": 3,
+    "tp": 0,
+    "margin_required": 2,
+    "name": "3 VP"
+  }
 ]

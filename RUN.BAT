@@ -1,8 +1,8 @@
 @echo off
 REM Imperial Struggle - launcher
-REM Edit GODOT_EXE below if your Godot path is different.
+REM Set GODOT_EXE in your environment when Godot is installed elsewhere.
 
-set "GODOT_EXE=X:\SteamLibrary\steamapps\common\Godot Engine\godot.windows.opt.tools.64.exe"
+if not defined GODOT_EXE set "GODOT_EXE=X:\SteamLibrary\steamapps\common\Godot Engine\godot.windows.opt.tools.64.exe"
 set "PROJECT_DIR=%~dp0godot_project"
 
 if not exist "%GODOT_EXE%" (

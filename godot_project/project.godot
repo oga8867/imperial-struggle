@@ -16,13 +16,16 @@ GameData="*res://scripts/autoload/game_data.gd"
 LocaleManager="*res://scripts/autoload/locale_manager.gd"
 GameManager="*res://scripts/autoload/game_manager.gd"
 ActionController="*res://scripts/autoload/action_controller.gd"
+CardChoices="*res://scripts/autoload/card_choices.gd"
 EventEffects="*res://scripts/autoload/event_effects.gd"
 AdvantageManager="*res://scripts/autoload/advantage_manager.gd"
 WarManager="*res://scripts/autoload/war_manager.gd"
+WarFlow="*res://scripts/autoload/war_flow.gd"
 AwardManager="*res://scripts/autoload/award_manager.gd"
 AIController="*res://scripts/autoload/ai_controller.gd"
-MinistryEffects="*res://scripts/autoload/ministry_effects.gd"
-SaveLoad="*res://scripts/autoload/save_load.gd"
+MinistryEffects="*res://scripts/autoload/ministry_effects_v2.gd"
+MinistryDecisions="*res://scripts/autoload/ministry_decisions.gd"
+SaveLoad="*res://scripts/autoload/save_load_v2.gd"
 ThemeManager="*res://scripts/autoload/theme_manager.gd"
 GameLog="*res://scripts/autoload/game_log.gd"
 FileLogger="*res://scripts/autoload/file_logger.gd"
@@ -31,9 +34,11 @@ FileLogger="*res://scripts/autoload/file_logger.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=2
+window/size/mode=0
+window/size/window_width_override=1600
+window/size/window_height_override=900
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/stretch/aspect="keep"
 
 [internationalization]
 

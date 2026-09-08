@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://war_tile_purchase"]
 
-[ext_resource type="Script" path="res://scripts/ui/war_tile_purchase.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/war_tile_purchase_v2.gd" id="1"]
 
 [node name="WarTilePurchase" type="Control"]
 layout_mode = 3
@@ -63,9 +63,9 @@ theme_override_constants/separation = 8
 [node name="UpgradeBtn" type="Button" parent="Panel/VBox"]
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
-text = "Military Upgrade (replace worst basic tile)"
+text = "군사 업그레이드 (최약 기본 타일 교체)"
 
 [node name="CloseBtn" type="Button" parent="Panel/VBox"]
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
-text = "Close"
+text = "닫기"

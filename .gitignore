@@ -55,3 +55,21 @@ out/
 
 # Misc large
 *.iso
+
+# Godot-generated imports and editor state (keep source assets and .uid files)
+**/.godot/
+.godot/
+export.cfg
+export_credentials.cfg
+
+# Local assistant state, validation profiles, saves and generated captures
+**/.omc/
+**/.claude/
+**/.codex/
+/tmp/
+/output/
+**/saves/
+**/settings.cfg
+*.bak
+
+# Only selected, intentional screenshots live under docs/images/.

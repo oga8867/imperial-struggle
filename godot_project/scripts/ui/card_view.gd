@@ -39,7 +39,8 @@ func bind_event(card: EventCard) -> void:
 	bound_card = card
 	if card:
 		_load_image(card.get("image") if card.get("image") else "")
-		_setup_fallback("#%d %s" % [card.id, card.title])
+		_setup_fallback("#%d %s" % [card.id, card.disp_title()])
+		tooltip_text = card.disp_title() + LocaleManager.tx("\n보너스: ") + card.disp_bonus_condition() + "\n" + (card.disp_both_base() if card.is_symmetric() else card.disp_british_base()+"\n"+card.disp_french_base())
 
 
 func bind_ministry(card: MinistryCard) -> void:
@@ -47,6 +48,8 @@ func bind_ministry(card: MinistryCard) -> void:
 	if card:
 		_load_image(card.get("image") if card.get("image") else "")
 		_setup_fallback("%s\n%s" % [card.id, card.title])
+		tooltip_text = card.disp_title() if card.has_method("disp_title") else card.title
+		tooltip_text += "\n" + (card.abilities_ko if LocaleManager.current_locale == "ko" else card.abilities)
 
 
 func bind_image(path: String, label_text: String = "") -> void:

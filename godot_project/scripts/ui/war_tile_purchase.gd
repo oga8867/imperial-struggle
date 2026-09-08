@@ -17,6 +17,16 @@ func _ready() -> void:
 	visible = false
 	close_btn.pressed.connect(_on_close)
 	upgrade_btn.pressed.connect(_on_upgrade)
+	close_btn.text = LocaleManager.t("btn_close")
+	upgrade_btn.text = LocaleManager.t("war_upgrade_btn")
+	LocaleManager.locale_changed.connect(_on_locale_changed)
+
+
+func _on_locale_changed(_new_locale: String) -> void:
+	close_btn.text = LocaleManager.t("btn_close")
+	upgrade_btn.text = LocaleManager.t("war_upgrade_btn")
+	if visible:
+		_refresh()
 
 
 func show_for(side: Enums.Side) -> void:
@@ -31,11 +41,11 @@ func _refresh() -> void:
 
 	var war_id := WarManager.get_upcoming_war_id()
 	if war_id == "":
-		title_label.text = "No upcoming war"
+		title_label.text = LocaleManager.t("war_no_upcoming")
 		return
 
 	var war: WarData = WarManager.wars[war_id]
-	title_label.text = "%s — Buy Bonus War Tiles" % war.name
+	title_label.text = LocaleManager.tf("war_buy_tiles_title", [war.name])
 
 	for theater in war.theaters:
 		var panel := Panel.new()
@@ -53,11 +63,11 @@ func _refresh() -> void:
 		var bonus_count: int = bonus_arr.size()
 		var info_lbl := Label.new()
 		info_lbl.custom_minimum_size = Vector2(160, 0)
-		info_lbl.text = "Bonus: %d/2" % bonus_count
+		info_lbl.text = LocaleManager.tf("war_bonus_count", [bonus_count])
 		hbox.add_child(info_lbl)
 
 		var buy_btn := Button.new()
-		buy_btn.text = "Buy (-2 MP)"
+		buy_btn.text = LocaleManager.t("war_buy_btn")
 		buy_btn.disabled = bonus_count >= 2 or not _can_afford(2)
 		buy_btn.pressed.connect(_on_buy.bind(theater.id))
 		hbox.add_child(buy_btn)
@@ -70,10 +80,10 @@ func _refresh() -> void:
 
 func _refresh_ap() -> void:
 	if ActionController.current_tile == null:
-		ap_label.text = "No active action"
+		ap_label.text = LocaleManager.t("war_no_active_action")
 		return
 	var ap := ActionController.ap_for_current()
-	ap_label.text = "Available MP: %d" % ap
+	ap_label.text = LocaleManager.tf("war_available_mp", [ap])
 
 
 func _can_afford(cost: int) -> bool:

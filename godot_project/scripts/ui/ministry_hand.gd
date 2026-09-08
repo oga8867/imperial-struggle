@@ -14,6 +14,7 @@ func _ready() -> void:
 	GameManager.action_round_started.connect(func(_s, _r): refresh())
 	if has_node("/root/ActionController"):
 		ActionController.action_state_changed.connect(func(_l): refresh())
+	LocaleManager.locale_changed.connect(func(_l): refresh())
 	refresh()
 
 
@@ -24,11 +25,10 @@ func refresh() -> void:
 		return
 	var side := GameManager.state.phasing_player
 	if side == Enums.Side.NONE:
-		title.text = "Ministry Cards"
+		title.text = LocaleManager.t("ministry_cards_generic")
 		return
 	var player := GameManager.state.get_player(side)
-	var side_name := "Britain" if side == Enums.Side.BRITAIN else "France"
-	title.text = "%s Ministries" % side_name
+	title.text = LocaleManager.tf("ministry_your_cards", [LocaleManager.side(side)])
 
 	for card in player.ministry_cards:
 		hbox.add_child(_make_card_entry(card, side))
@@ -63,7 +63,7 @@ func _make_card_entry(card: MinistryCard, side: Enums.Side) -> Control:
 		status.text = kw
 		status.add_theme_color_override("font_color", Color(0.5, 0.85, 0.55))
 	else:
-		status.text = "click to reveal"
+		status.text = LocaleManager.t("ministry_hidden")
 		status.add_theme_color_override("font_color", Color(0.65, 0.7, 0.78))
 	status.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	vbox.add_child(status)
@@ -73,10 +73,10 @@ func _make_card_entry(card: MinistryCard, side: Enums.Side) -> Control:
 	btn.custom_minimum_size = Vector2(0, 22)
 	btn.add_theme_font_size_override("font_size", 11)
 	if card.is_ability_exhausted(0):
-		btn.text = "Used"
+		btn.text = LocaleManager.t("ministry_used")
 		btn.disabled = true
 	else:
-		btn.text = "Activate"
+		btn.text = LocaleManager.t("ministry_activate")
 		btn.disabled = not _can_activate(card, side)
 	btn.pressed.connect(func(): _activate(card, side))
 	vbox.add_child(btn)

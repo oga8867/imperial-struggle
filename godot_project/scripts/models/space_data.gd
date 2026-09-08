@@ -3,6 +3,7 @@ extends Resource
 
 @export var id: String
 @export var display_name: String
+@export var name_ko: String = ""
 @export var space_type: Enums.SpaceType
 @export var region: Enums.Region
 @export var sub_region: Enums.SubRegion = Enums.SubRegion.NONE

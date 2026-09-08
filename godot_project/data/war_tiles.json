@@ -1,0 +1,866 @@
+[
+  {
+    "id": "WarTile_7YW_BR-Bonus-Amherst",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Amherst",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Amherst.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Bradstreet",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Bradstreet",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Bradstreet.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Clive",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Clive",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Clive.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Coote",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Coote",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Coote.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-DamnedAudacity",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Damned Audacity",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-DamnedAudacity.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Granby",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Granby",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Granby.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Johnson",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Johnson",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Johnson.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Monkton",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Monkton",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Monkton.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-MortaLaBestia",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Morta La Bestia",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-MortaLaBestia.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-OldFritz",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Old Fritz",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-OldFritz.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-SepoyVeterans",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Sepoy Veterans",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-SepoyVeterans.png"
+  },
+  {
+    "id": "WarTile_7YW_BR-Bonus-Wolfe",
+    "war": "seven_years",
+    "side": 1,
+    "name": "Wolfe",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_BR-Bonus-Wolfe.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Beaujeu",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Beaujeu",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Beaujeu.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Bougainville",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Bougainville",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Bougainville.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Broglie",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Broglie",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Broglie.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Castries",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Castries",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Castries.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Chevert",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Chevert",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Chevert.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-CoureursDeBois",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Coureurs De Bois",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-CoureursDeBois.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Hadik'sRaid",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Hadik's Raid",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Hadik'sRaid.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Lally",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Lally",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Lally.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-MononAmbush",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Monon Ambush",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-MononAmbush.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Montcalm",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Montcalm",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Montcalm.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-NawabsRally",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Nawabs Rally",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-NawabsRally.png"
+  },
+  {
+    "id": "WarTile_7YW_FR-Bonus-Villiers",
+    "war": "seven_years",
+    "side": 2,
+    "name": "Villiers",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_7YW_FR-Bonus-Villiers.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Andre",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Andre",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Andre.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-AngloDutchConflict",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Anglo Dutch Conflict",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-AngloDutchConflict.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Arnold'sTreason",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Arnold's Treason",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Arnold'sTreason.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Brant'sVolunteers",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Brant's Volunteers",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Brant'sVolunteers.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Carleton",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Carleton",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Carleton.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Coote",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Coote",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Coote.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Cornplanter",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Cornplanter",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Cornplanter.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Cornwallis",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Cornwallis",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Cornwallis.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Hessians",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Hessians",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Hessians.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Howe",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Howe",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Howe.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Rodney",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Rodney",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Rodney.png"
+  },
+  {
+    "id": "WarTile_AWI_BR-Bonus-Stuart",
+    "war": "american_independence",
+    "side": 1,
+    "name": "Stuart",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_AWI_BR-Bonus-Stuart.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Arnold",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Arnold",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Arnold.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Bunker Hill",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Bunker Hill",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Bunker Hill.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Castelnau",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Castelnau",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Castelnau.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-DeGrasse",
+    "war": "american_independence",
+    "side": 2,
+    "name": "De Grasse",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-DeGrasse.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-DeSuffren",
+    "war": "american_independence",
+    "side": 2,
+    "name": "De Suffren",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-DeSuffren.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-ERiverWind",
+    "war": "american_independence",
+    "side": 2,
+    "name": "ERiver Wind",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-ERiverWind.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Greene",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Greene",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Greene.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Lafayette",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Lafayette",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Lafayette.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-MorganRifles",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Morgan Rifles",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-MorganRifles.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Rochambeau",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Rochambeau",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Rochambeau.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-VonSteuben",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Von Steuben",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-VonSteuben.png"
+  },
+  {
+    "id": "WarTile_AWI_FR-Bonus-Washington",
+    "war": "american_independence",
+    "side": 2,
+    "name": "Washington",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_AWI_FR-Bonus-Washington.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-Boscawen",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Boscawen",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-Boscawen.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-ChaosInBavaria",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Chaos In Bavaria",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-ChaosInBavaria.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-Clive",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Clive",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-Clive.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-DeLorraine",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "De Lorraine",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-DeLorraine.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-FrancoisDeBussy",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Francois De Bussy",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-FrancoisDeBussy.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-HungarianEnthusiasm",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Hungarian Enthusiasm",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-HungarianEnthusiasm.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-KingGeorge2",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "King George2",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-KingGeorge2.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-Lawrence",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Lawrence",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-Lawrence.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-Seckendorff",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Seckendorff",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-Seckendorff.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-Stair",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Stair",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-Stair.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-TreatyOfWarsaw",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Treaty Of Warsaw",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-TreatyOfWarsaw.png"
+  },
+  {
+    "id": "WarTile_WAS_BR-Bonus-Warren",
+    "war": "austrian_succession",
+    "side": 1,
+    "name": "Warren",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_BR-Bonus-Warren.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-BonnyPrinceCharlie",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Bonny Prince Charlie",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-BonnyPrinceCharlie.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Castries",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Castries",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Castries.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Contades",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Contades",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Contades.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-DeCoigny",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "De Coigny",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-DeCoigny.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-DeLaBourdonnais",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "De La Bourdonnais",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-DeLaBourdonnais.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Frederick",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Frederick",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Frederick.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Lowendal",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Lowendal",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Lowendal.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Murray",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Murray",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Murray.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Nizam'sFavor",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Nizam's Favor",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Nizam'sFavor.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-OSullivan",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "OSullivan",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-OSullivan.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-Saxe",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Saxe",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-Saxe.png"
+  },
+  {
+    "id": "WarTile_WAS_FR-Bonus-VonSchwerin",
+    "war": "austrian_succession",
+    "side": 2,
+    "name": "Von Schwerin",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WAS_FR-Bonus-VonSchwerin.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-Church",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Church",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-Church.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-FootGuards",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Foot Guards",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-FootGuards.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-Galway",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Galway",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-Galway.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-HuguenotRebels",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Huguenot Rebels",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-HuguenotRebels.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-Leopold",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Leopold",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-Leopold.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-LouisWilliam",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Louis William",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-LouisWilliam.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-Marlborough",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Marlborough",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-Marlborough.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-PrinceEugene",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Prince Eugene",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-PrinceEugene.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-PrizeHunting",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Prize Hunting",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-PrizeHunting.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-Rooke",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Rooke",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-Rooke.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-SavoyDefects",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "Savoy Defects",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-SavoyDefects.png"
+  },
+  {
+    "id": "WarTile_WSS_BR-Bonus-UnitedParliament",
+    "war": "spanish_succession",
+    "side": 1,
+    "name": "United Parliament",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_BR-Bonus-UnitedParliament.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-Berwick",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Berwick",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-Berwick.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-Boufflers",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Boufflers",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-Boufflers.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-CadizRelieved",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Cadiz Relieved",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-CadizRelieved.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-CrackTroops",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Crack Troops",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-CrackTroops.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-D'Artagnan",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "D'Artagnan",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-D'Artagnan.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-D'Estrees",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "D'Estrees",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-D'Estrees.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-DeTesse",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "De Tesse",
+    "strength": 1,
+    "effect": 1,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-DeTesse.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-DeVillars",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "De Villars",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-DeVillars.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-MaisonDuRoi",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Maison Du Roi",
+    "strength": 1,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-MaisonDuRoi.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-Musketeers",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Musketeers",
+    "strength": 2,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-Musketeers.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-UltimaRatioRegum",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Ultima Ratio Regum",
+    "strength": 1,
+    "effect": 2,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-UltimaRatioRegum.png"
+  },
+  {
+    "id": "WarTile_WSS_FR-Bonus-Vendome",
+    "war": "spanish_succession",
+    "side": 2,
+    "name": "Vendome",
+    "strength": 3,
+    "effect": 0,
+    "image": "res://assets/war_tiles/WarTile_WSS_FR-Bonus-Vendome.png"
+  }
+]

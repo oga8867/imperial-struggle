@@ -4,23 +4,22 @@
     {"from": "louisbourg_fort", "to": "acadia"},
     {"from": "louisbourg_fort", "to": "quebec_and_montreal"},
     {"from": "louisbourg_fort", "to": "halifax_fort"},
-    {"from": "halifax_fort", "to": "acadia"},
+    {"from": "halifax_fort", "to": "northern_colonies"},
     {"from": "champlain_valley_fort", "to": "quebec_and_montreal"},
     {"from": "champlain_valley_fort", "to": "northern_colonies"},
     {"from": "ohio_forks_fort", "to": "northern_colonies"},
-    {"from": "ohio_forks_fort", "to": "carolinas"},
-    {"from": "carolinas", "to": "san_agustin"},
-    {"from": "san_agustin", "to": "carolinas"},
+    {"from": "san_agustin", "to": "st_domingue"},
 
     {"from": "vandavasi_fort", "to": "pondicherry"},
     {"from": "vandavasi_fort", "to": "madras"},
-    {"from": "vandavasi_fort", "to": "karaikal"},
+    {"from": "arcot_fort", "to": "madras"},
+    {"from": "hooghly_river_naval", "to": "chandernagore"},
+    {"from": "hooghly_river_naval", "to": "calcutta"},
 
-    {"from": "havana", "to": "st_domingue"},
-    {"from": "santiago", "to": "st_domingue"},
-    {"from": "havana", "to": "jamaica"},
-    {"from": "santiago", "to": "jamaica"},
-
-    {"from": "biscay_naval", "to": "gibraltar"}
+    {"from": "bahamas_run_naval", "to": "st_domingue"},
+    {"from": "cuba_passage_naval", "to": "jamaica"},
+    {"from": "cuba_passage_naval", "to": "louisiana"},
+    {"from": "antilles_channel_naval", "to": "guadeloupe"},
+    {"from": "antilles_channel_naval", "to": "barbados"}
   ]
 }

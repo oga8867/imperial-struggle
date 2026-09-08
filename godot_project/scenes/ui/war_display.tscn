@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://war_display_scene"]
 
-[ext_resource type="Script" path="res://scripts/ui/war_display.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/war_display_v2.gd" id="1"]
 
 [node name="WarDisplay" type="Control"]
 layout_mode = 3
@@ -63,9 +63,9 @@ theme_override_constants/separation = 16
 [node name="ResolveBtn" type="Button" parent="Panel/VBox/HBox"]
 custom_minimum_size = Vector2(160, 44)
 layout_mode = 2
-text = "Resolve War"
+text = "전쟁 해결"
 
 [node name="ContinueBtn" type="Button" parent="Panel/VBox/HBox"]
 custom_minimum_size = Vector2(160, 44)
 layout_mode = 2
-text = "Continue"
+text = "계속"

@@ -52,37 +52,37 @@ custom_minimum_size = Vector2(0, 40)
 [node name="NewGameBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Hot-seat (2P) / 핫시트 2인"
+text = "2인 (핫시트)"
 
 [node name="SoloBRBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Solo as Britain / 솔로 (영국)"
+text = "혼자 — 영국 플레이"
 
 [node name="SoloFRBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Solo as France / 솔로 (프랑스)"
+text = "혼자 — 프랑스 플레이"
 
 [node name="LoadBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Load Game / 불러오기"
+text = "게임 불러오기"
 
 [node name="CardListBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Card List / 카드 목록"
+text = "카드 목록"
 
 [node name="SettingsBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Settings / 설정"
+text = "언어: 한국어"
 
 [node name="QuitBtn" type="Button" parent="MainMenu/CenterContainer/VBox"]
 layout_mode = 2
 custom_minimum_size = Vector2(300, 56)
-text = "Quit / 종료"
+text = "종료"
 
 [node name="GameBoard" type="Control" parent="."]
 visible = false

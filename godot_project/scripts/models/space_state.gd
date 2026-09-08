@@ -7,6 +7,8 @@ var has_conflict_marker: bool = false
 var conflict_marker_extra_cost: bool = false
 var is_fort_damaged: bool = false
 var has_usa_flag: bool = false
+var huguenots_exhausted: bool = false
+var has_huguenots: bool = false  # M-9 New World Huguenots marker (+1 conquest cost)
 var is_available: bool = true
 
 
@@ -25,6 +27,7 @@ func is_controlled_by(side: Enums.Side) -> bool:
 
 
 func flag(side: Enums.Side) -> bool:
+	if has_usa_flag or not is_available: return false
 	if is_empty():
 		controlled_by = side
 		remove_conflict_marker()
@@ -51,13 +54,15 @@ func shift(side: Enums.Side) -> bool:
 
 
 func take_control(side: Enums.Side) -> bool:
-	var opponent := Enums.Side.FRANCE if side == Enums.Side.BRITAIN else Enums.Side.BRITAIN
+	if has_usa_flag or not is_available: return false
 	controlled_by = side
+	if side==Enums.Side.BRITAIN: has_huguenots=false
 	remove_conflict_marker()
 	return true
 
 
 func place_conflict_marker(extra_cost: bool = false) -> bool:
+	if has_usa_flag or not is_available: return false
 	if has_conflict_marker:
 		return false
 	if data.space_type == Enums.SpaceType.TERRITORY:

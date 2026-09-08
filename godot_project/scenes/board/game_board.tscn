@@ -18,12 +18,13 @@ color = Color(0.07, 0.08, 0.11, 1)
 
 [node name="BoardClip" type="Control" parent="."]
 layout_mode = 0
-offset_left = 20.0
-offset_top = 144.0
-offset_right = 1040.0
-offset_bottom = 800.0
 clip_contents = true
 mouse_filter = 2
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 144.0
+offset_right = 1136.72
+offset_bottom = 864.0
 
 [node name="BoardLayer" type="Control" parent="BoardClip"]
 layout_mode = 1
@@ -67,11 +68,12 @@ theme_override_constants/outline_size = 4
 
 [node name="ZoomBar" type="HBoxContainer" parent="UILayer"]
 layout_mode = 0
-offset_left = 36.0
-offset_top = 760.0
-offset_right = 280.0
-offset_bottom = 794.0
 theme_override_constants/separation = 4
+anchors_preset = 0
+offset_left = 40.0
+offset_top = 816.0
+offset_right = 1090.0
+offset_bottom = 856.0
 
 [node name="ZoomOutBtn" type="Button" parent="UILayer/ZoomBar"]
 custom_minimum_size = Vector2(36, 32)

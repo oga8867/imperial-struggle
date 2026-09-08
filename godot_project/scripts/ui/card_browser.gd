@@ -25,6 +25,18 @@ func _ready() -> void:
 	tab_all_min.pressed.connect(func(): set_mode("all_ministries"))
 	tab_played.pressed.connect(func(): set_mode("played"))
 	tab_discard.pressed.connect(func(): set_mode("discard"))
+	LocaleManager.locale_changed.connect(func(_l): _refresh_static_texts())
+	_refresh_static_texts()
+
+
+func _refresh_static_texts() -> void:
+	close_btn.text = LocaleManager.t("btn_close")
+	tab_all_events.text = LocaleManager.t("cards_all_events")
+	tab_all_min.text = LocaleManager.t("cards_all_ministries")
+	tab_played.text = LocaleManager.t("cards_played")
+	tab_discard.text = LocaleManager.t("cards_discard")
+	if visible:
+		_refresh()
 
 
 func show_for_main_menu() -> void:
@@ -49,22 +61,23 @@ func set_mode(mode: String) -> void:
 
 func _refresh() -> void:
 	for child in grid.get_children():
+		grid.remove_child(child)
 		child.queue_free()
 	var cards: Array = []
 	match current_mode:
 		"all_events":
-			title_label.text = "All Event Cards (%d)" % GameData.events.size()
+			title_label.text = LocaleManager.tf("cards_title_events", [GameData.events.size()])
 			cards = GameData.events
 		"all_ministries":
-			title_label.text = "All Ministry Cards (%d)" % GameData.ministries.size()
+			title_label.text = LocaleManager.tf("cards_title_ministries", [GameData.ministries.size()])
 			cards = GameData.ministries
 		"played":
 			var pile = GameManager.state.event_played_pile if GameManager.state else []
-			title_label.text = "Played Events (%d) — removed from game" % pile.size()
+			title_label.text = LocaleManager.tf("cards_title_played", [pile.size()])
 			cards = pile
 		"discard":
 			var pile = GameManager.state.event_discard_pile if GameManager.state else []
-			title_label.text = "Event Discard Pile (%d)" % pile.size()
+			title_label.text = LocaleManager.tf("cards_title_discard", [pile.size()])
 			cards = pile
 
 	tab_all_events.disabled = current_mode == "all_events"

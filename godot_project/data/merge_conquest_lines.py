@@ -8,8 +8,8 @@ with open(r"X:\Imperial Struggle\godot_project\data\conquest_lines.json", "r", e
 
 # Reset conquest lines from manual data only
 for s in spaces:
-    if s.get("type") == "territory":
-        s["conquest_lines"] = []
+    # 양방향 간선을 모두 비운다. 영토만 비우면 예전 가짜 간선의 반대쪽이 남는다.
+    s["conquest_lines"] = []
 
 # Build mapping
 sid_set = {s["id"] for s in spaces}

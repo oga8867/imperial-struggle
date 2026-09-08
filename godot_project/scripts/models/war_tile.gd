@@ -21,4 +21,5 @@ enum SpecialEffect {
 @export var war: Enums.War = Enums.War.SPANISH_SUCCESSION
 @export var display_name: String = ""
 
+@export var image: String = ""
 var display_name_ko: String = ""

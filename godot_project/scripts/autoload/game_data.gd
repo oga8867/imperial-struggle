@@ -24,7 +24,16 @@ func _load_korean_overrides() -> void:
 			for c in events:
 				var key := str(c.id)
 				if key in data:
-					c.title_ko = data[key].get("title", "")
+					var d: Dictionary = data[key]
+					c.title_ko = d.get("title", "")
+					c.bonus_condition_ko = d.get("bonus_condition", "")
+					c.both_base_ko = d.get("both_base", "")
+					c.both_bonus_ko = d.get("both_bonus", "")
+					c.british_base_ko = d.get("british_base", "")
+					c.british_bonus_ko = d.get("british_bonus", "")
+					c.french_base_ko = d.get("french_base", "")
+					c.french_bonus_ko = d.get("french_bonus", "")
+					c.special_note_ko = d.get("special_note", "")
 	var mn_path := "res://data/ministries_ko.json"
 	if FileAccess.file_exists(mn_path):
 		var f := FileAccess.open(mn_path, FileAccess.READ)
@@ -33,7 +42,9 @@ func _load_korean_overrides() -> void:
 			var data: Dictionary = json.data
 			for c in ministries:
 				if c.id in data:
-					c.title_ko = data[c.id].get("title", "")
+					var d: Dictionary = data[c.id]
+					c.title_ko = d.get("title", "")
+					c.abilities_ko = d.get("abilities", "")
 
 
 func _load_events() -> void:
@@ -105,8 +116,11 @@ func _load_spaces() -> void:
 		var sd := SpaceData.new()
 		sd.id = entry["id"]
 		sd.display_name = entry.get("display_name", entry.get("name", ""))
+		sd.name_ko = entry.get("name_ko", "")
 		sd.space_type = _parse_space_type(entry["type"])
 		sd.region = _parse_region(entry["region"])
+		sd.sub_region = Enums.SubRegion.get(entry.get("sub_region","none").to_upper(),Enums.SubRegion.NONE)
+		sd.available_from_era = _parse_era(entry.get("available_era","succession"))
 		sd.base_cost = int(entry.get("base_cost", entry.get("cost", 1)))
 		sd.commodity = _parse_commodity(entry.get("commodity", ""))
 		sd.is_prestige = entry.get("is_prestige", entry.get("prestige", false))
@@ -122,26 +136,11 @@ func _load_spaces() -> void:
 
 
 func _create_investment_tiles() -> void:
-	# Standard Imperial Struggle tile pattern (per Vassal images):
-	# 2-pt Major: Event + Upgrade (X,C)
-	# 3-pt Major: Event only (X)
-	# 4-pt Major: no symbols
-	# 6 tiles per major type (3 values × 2 minor types) = 18 total
-	var tile_id := 0
-	var configs: Array = []
-	for major_type in [Enums.ActionType.ECONOMIC, Enums.ActionType.DIPLOMATIC, Enums.ActionType.MILITARY]:
-		var minors: Array = _other_action_types(major_type)
-		for major_pts in [2, 3, 4]:
-			var has_event: bool = major_pts <= 3
-			var has_upgrade: bool = major_pts == 2
-			for minor in minors:
-				configs.append([major_type, major_pts, minor, has_event, has_upgrade])
-
-	for cfg in configs:
-		tile_id += 1
-		investment_tile_pool.append(
-			InvestmentTile.create(tile_id, cfg[0], cfg[1], cfg[2], cfg[3], cfg[4])
-		)
+	# 실제 타일 24장의 구성·중복을 보존한다. 4 AP 조합은 각각 두 장이다.
+	investment_tile_pool.clear()
+	var entries = JSON.parse_string(FileAccess.get_file_as_string("res://data/investments.json"))
+	for entry in entries:
+		investment_tile_pool.append(InvestmentTile.create(int(entry.id), int(entry.major), int(entry.points), int(entry.minor), entry.event, entry.upgrade))
 
 
 func _other_action_types(major: Enums.ActionType) -> Array:
@@ -170,7 +169,8 @@ func get_ministries_for_side(side: Enums.Side) -> Array[MinistryCard]:
 func get_ministries_for_era(side: Enums.Side, era: Enums.Era) -> Array[MinistryCard]:
 	var result: Array[MinistryCard] = []
 	for card in ministries:
-		if card.side == side and card.is_available_in_era(era):
+		if card.id == "M-4" and GameManager.state.jacobite_defeated: continue
+		if card.side == side and (card.is_available_in_era(era) or (card.id=="M-4" and GameManager.state.jacobite_extra_ministry)):
 			result.append(card)
 	return result
 

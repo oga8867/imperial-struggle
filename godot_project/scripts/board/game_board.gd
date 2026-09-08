@@ -6,11 +6,12 @@ const SpaceNodeScene = preload("res://scripts/board/space_node.gd")
 const VASSAL_MAP_WIDTH := 5100.0
 const VASSAL_MAP_HEIGHT := 3300.0
 
-# Display preserves aspect — height-bound to 660, so width = 660 * 1.545 = 1020
-const DISPLAY_WIDTH := 1020.0
-const DISPLAY_HEIGHT := 660.0
-const BOARD_OFFSET_X := 20.0
-const BOARD_OFFSET_Y := 144.0
+# 자원 대시보드 아래에 원작 비율 그대로 표시한다. 확대·클릭 좌표도 이 크기를 쓴다.
+const Layout = preload("res://scripts/ui/session_layout.gd")
+const DISPLAY_WIDTH = Layout.BOARD_RECT.size.x
+const DISPLAY_HEIGHT = Layout.BOARD_RECT.size.y
+const BOARD_OFFSET_X = Layout.BOARD_RECT.position.x
+const BOARD_OFFSET_Y = Layout.BOARD_RECT.position.y
 
 const ZOOM_MIN := 1.0
 const ZOOM_MAX := 4.0
@@ -27,6 +28,7 @@ const ZOOM_STEP := 1.15
 @onready var reset_btn: Button = $UILayer/ZoomBar/ResetBtn
 
 var space_nodes: Dictionary = {}
+var navy_box_view: Control
 var coords: Dictionary = {}  # space_id -> Vector2 (Vassal pixel coords)
 
 const NODE_SIZE := Vector2(28, 28)
@@ -40,23 +42,56 @@ var pan_start_offset: Vector2 = Vector2.ZERO
 
 
 func _ready() -> void:
+	Layout.place(board_clip,Layout.BOARD_RECT)
+	Layout.place(hover_label,Rect2(36,292,820,28))
+	Layout.place($UILayer/ZoomBar,Rect2(36,816,900,40))
+	board_clip.mouse_filter = Control.MOUSE_FILTER_STOP
 	_load_board()
 	_load_coordinates()
 	_create_space_nodes()
+	_create_navy_box()
 	GameManager.phase_changed.connect(_on_phase_changed)
 	if has_node("/root/ActionController"):
 		ActionController.action_state_changed.connect(_on_action_state_changed)
 		ActionController.ap_changed.connect(_refresh_valid_targets)
+	if has_node("/root/EventEffects"):
+		EventEffects.pending_choices_changed.connect(func(_c): _refresh_valid_targets())
+		EventEffects.effects_resolved.connect(func(): _refresh_valid_targets())
 	mouse_filter = Control.MOUSE_FILTER_PASS
 	gui_input.connect(_on_gui_input)
 	board_clip.gui_input.connect(_on_board_clip_input)
 	zoom_in_btn.pressed.connect(func(): _zoom_at(board_clip.size * 0.5, ZOOM_STEP))
 	zoom_out_btn.pressed.connect(func(): _zoom_at(board_clip.size * 0.5, 1.0 / ZOOM_STEP))
 	reset_btn.pressed.connect(reset_view)
+	reset_btn.text = LocaleManager.tx("전체 지도")
+	for region in [Enums.Region.EUROPE, Enums.Region.NORTH_AMERICA, Enums.Region.CARIBBEAN, Enums.Region.INDIA]:
+		var button = Button.new()
+		button.text = LocaleManager.region(region)
+		button.pressed.connect(focus_region.bind(region))
+		$UILayer/ZoomBar.add_child(button)
 
 
 func _on_gui_input(_event: InputEvent) -> void:
 	pass
+
+func _create_navy_box() -> void:
+	# 원작 해군 상자의 안쪽 좌표. 지도와 같은 부모 아래 두어 확대·이동을
+	# 공유한다. 클릭을 무시하여 지도 공간 선택과 드래그를 방해하지 않는다.
+	var panel = Panel.new()
+	panel.name = "NavyBoxMarkers"
+	panel.position = _vassal_to_local(Vector2(1775,1748))
+	panel.size = Vector2(100,39)
+	panel.mouse_filter = MOUSE_FILTER_IGNORE
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0.07,0.12,0.15,0.92)
+	style.set_corner_radius_all(3)
+	panel.add_theme_stylebox_override("panel",style)
+	board_layer.add_child(panel)
+	navy_box_view = preload("res://scripts/ui/navy_box_view.gd").new()
+	navy_box_view.compact = true
+	navy_box_view.position = Vector2(2,1)
+	navy_box_view.size = Vector2(96,36)
+	panel.add_child(navy_box_view)
 
 
 func _on_board_clip_input(event: InputEvent) -> void:
@@ -183,26 +218,66 @@ func bind_to_state() -> void:
 
 
 func _on_space_clicked(space_id: String) -> void:
+	if AIController.is_ai_turn(): return
 	# Pending event effect choice takes priority
 	if EventEffects.has_pending():
 		var ok := EventEffects.resolve_choice(0, space_id)
 		if ok:
 			_refresh_all_spaces()
 		else:
-			print("[Board] Invalid target for event choice: ", space_id)
+			GameManager.status_message.emit(ActionController.explain_space(space_id).replace("\n"," · "))
 		return
 
 	if ActionController.state in [
 			ActionController.ActionState.SPENDING_MAJOR,
-			ActionController.ActionState.SPENDING_MINOR]:
-		var ok := ActionController.attempt_shift(space_id)
+			ActionController.ActionState.SPENDING_MINOR,ActionController.ActionState.SPENDING_EVENT]:
+		var ss: SpaceState = GameManager.state.spaces[space_id]
+		if ss.data.space_type==Enums.SpaceType.NAVAL and ActionController.current_action_type()==Enums.ActionType.MILITARY:
+			_show_squadron_sources(space_id)
+			return
+		var remove_conflict = ss.has_conflict_marker and ss.data.space_type in [Enums.SpaceType.MARKET,Enums.SpaceType.POLITICAL] and ActionController.current_action_type()==Enums.ActionType.MILITARY
+		if remove_conflict and ActionController.can_shift_space(ss):
+			_show_jacobite_choice(space_id)
+			return
+		var ok = ActionController.remove_conflict_marker(space_id) if remove_conflict else ActionController.attempt_shift(space_id)
 		if ok:
 			(space_nodes[space_id] as SpaceNode).queue_redraw()
 		else:
-			print("[Board] Cannot shift: ", space_id)
+			GameManager.status_message.emit(ActionController.explain_space(space_id).replace("\n"," · "))
 
+
+func _show_jacobite_choice(id: String) -> void:
+	var popup=PopupPanel.new()
+	var box=VBoxContainer.new()
+	box.custom_minimum_size=Vector2(580,160)
+	popup.add_child(box)
+	var ss=GameManager.state.spaces[id]
+	var shift=Button.new()
+	shift.text=LocaleManager.tx("재커바이트: 깃발 이동 · 군사 %d점") % ActionController.calculate_shift_cost(ss,ss.data.region)
+	shift.custom_minimum_size.y=52
+	shift.pressed.connect(func():
+		ActionController.attempt_shift(id)
+		popup.hide()
+		_refresh_all_spaces())
+	box.add_child(shift)
+	var remove=Button.new()
+	remove.text=LocaleManager.tx("분쟁 마커만 제거 · 군사 %d점") % (2+int(ss.conflict_marker_extra_cost))
+	remove.custom_minimum_size.y=52
+	remove.pressed.connect(func():
+		ActionController.remove_conflict_marker(id)
+		popup.hide()
+		_refresh_all_spaces())
+	box.add_child(remove)
+	var cancel=Button.new()
+	cancel.text=LocaleManager.tx("닫기")
+	cancel.pressed.connect(popup.hide)
+	box.add_child(cancel)
+	add_child(popup)
+	popup.popup_hide.connect(popup.queue_free)
+	popup.popup_centered()
 
 func _refresh_all_spaces() -> void:
+	bind_to_state()
 	for sid in space_nodes:
 		(space_nodes[sid] as SpaceNode).queue_redraw()
 
@@ -211,21 +286,13 @@ func _on_space_hovered(space_id: String, is_hover: bool) -> void:
 	if is_hover and space_id in GameData.spaces:
 		var sd: SpaceData = GameData.spaces[space_id]
 		var name_text := sd.display_name
-		if LocaleManager.current_locale == "ko" and "name_ko" in sd:
-			name_text = sd.display_name
-		hover_label.text = "%s · %s · cost %d" % [name_text, _region_name(sd.region), sd.base_cost]
+		if LocaleManager.current_locale == "ko" and sd.name_ko != "":
+			name_text = sd.name_ko
+		hover_label.text = ActionController.explain_space(space_id)
+		space_nodes[space_id].tooltip_text = hover_label.text
 		hover_label.visible = true
 	else:
 		hover_label.visible = false
-
-
-func _region_name(region: Enums.Region) -> String:
-	match region:
-		Enums.Region.EUROPE: return "Europe"
-		Enums.Region.NORTH_AMERICA: return "N. America"
-		Enums.Region.CARIBBEAN: return "Caribbean"
-		Enums.Region.INDIA: return "India"
-	return ""
 
 
 func _on_phase_changed(_phase: Enums.TurnPhase) -> void:
@@ -245,13 +312,19 @@ func highlight_spaces(space_ids: Array) -> void:
 
 
 func _refresh_valid_targets() -> void:
+	bind_to_state()
 	if GameManager.state == null:
 		return
+	# During an Event effect, highlight the spaces that satisfy the current choice.
+	var event_pending := has_node("/root/EventEffects") and EventEffects.has_pending()
 	var spending := ActionController.state in [
 			ActionController.ActionState.SPENDING_MAJOR,
-			ActionController.ActionState.SPENDING_MINOR]
+			ActionController.ActionState.SPENDING_MINOR,ActionController.ActionState.SPENDING_EVENT]
 	for sid in space_nodes:
 		var node: SpaceNode = space_nodes[sid]
+		if event_pending:
+			node.set_valid_target(EventEffects.is_valid_target(sid))
+			continue
 		if not spending:
 			node.set_valid_target(false)
 			continue
@@ -260,3 +333,45 @@ func _refresh_valid_targets() -> void:
 			node.set_valid_target(ActionController.can_shift_space(ss))
 		else:
 			node.set_valid_target(false)
+
+
+func focus_region(region: int) -> void:
+	# 원작 지도의 네 구역 중심. 위치 변환은 클릭 마커와 동일한 좌표계를 사용한다.
+	var centers = {Enums.Region.NORTH_AMERICA: Vector2(1220,850), Enums.Region.EUROPE: Vector2(4020,850), Enums.Region.CARIBBEAN: Vector2(1220,2460), Enums.Region.INDIA: Vector2(4020,2460)}
+	zoom_level = 1.9
+	pan_offset = board_clip.size * 0.5 - _vassal_to_local(centers[region]) * zoom_level
+	_clamp_pan()
+	_apply_transform()
+
+func _show_squadron_sources(target_id: String) -> void:
+	var popup=PopupPanel.new()
+	var box=VBoxContainer.new()
+	box.custom_minimum_size=Vector2(560,120)
+	box.add_theme_constant_override("separation",10)
+	popup.add_child(box)
+	var label=Label.new()
+	label.text=LocaleManager.local_name(GameManager.state.spaces[target_id].data.display_name,GameManager.state.spaces[target_id].data.name_ko)+LocaleManager.tx(" · 이동할 함대의 출발지")
+	label.add_theme_font_size_override("font_size",22)
+	box.add_child(label)
+	var sources=["navy"]
+	for ss in GameManager.state.spaces.values():
+		if ss.data.space_type==Enums.SpaceType.NAVAL and ss.controlled_by==ActionController.current_side: sources.append(ss.data.id)
+	for source in sources:
+		var plan=ActionController.squadron_deployment_plan(target_id,source)
+		if plan.is_empty(): continue
+		var button=Button.new()
+		button.text=(LocaleManager.tx("해군 상자") if source=="navy" else LocaleManager.local_name(GameManager.state.spaces[source].data.display_name,GameManager.state.spaces[source].data.name_ko))+LocaleManager.tx(" · 군사 %d점") % plan.cost
+		button.custom_minimum_size.y=48
+		button.disabled=not ActionController.can_spend_ap(plan.cost,GameManager.state.spaces[target_id],"naval")
+		button.pressed.connect(func():
+			ActionController.deploy_squadron_to(target_id,source)
+			popup.hide()
+			_refresh_all_spaces())
+		box.add_child(button)
+	var cancel=Button.new()
+	cancel.text=LocaleManager.tx("닫기")
+	cancel.pressed.connect(popup.hide)
+	box.add_child(cancel)
+	add_child(popup)
+	popup.popup_hide.connect(popup.queue_free)
+	popup.popup_centered()

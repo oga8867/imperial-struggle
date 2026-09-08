@@ -1,71 +1,32 @@
 extends Control
 
-# Navy Box display: shows squadron tokens visually + counts.
-
 signal view_war_tiles_requested(side: Enums.Side)
-
-@onready var br_label: Label = $Panel/VBox/BRRow/Count
-@onready var fr_label: Label = $Panel/VBox/FRRow/Count
-@onready var br_btn: Button = $Panel/VBox/BRRow/ViewBtn
-@onready var fr_btn: Button = $Panel/VBox/FRRow/ViewBtn
-@onready var br_tokens: Control = $Panel/VBox/BRRow/Tokens
-@onready var fr_tokens: Control = $Panel/VBox/FRRow/Tokens
-
-var _tex_squadron_br: Texture2D
-var _tex_squadron_fr: Texture2D
-
+const NavyView = preload("res://scripts/ui/navy_box_view.gd")
+var navy_view: Control
+var title_label: Label
+var view_button: Button
 
 func _ready() -> void:
-	_tex_squadron_br = _try_load("res://assets/tokens/Squadron_BR.png")
-	_tex_squadron_fr = _try_load("res://assets/tokens/Squadron_FR.png")
-	GameManager.phase_changed.connect(func(_p): refresh())
-	GameManager.action_round_started.connect(func(_s, _r): refresh())
-	if has_node("/root/ActionController"):
-		ActionController.ap_changed.connect(refresh)
-	br_btn.pressed.connect(func(): view_war_tiles_requested.emit(Enums.Side.BRITAIN))
-	fr_btn.pressed.connect(func(): view_war_tiles_requested.emit(Enums.Side.FRANCE))
-	# Custom drawing on token containers
-	br_tokens.draw.connect(_draw_br_tokens)
-	fr_tokens.draw.connect(_draw_fr_tokens)
+	# 대기 수와 말을 위쪽에, 전쟁 타일 버튼을 아래에 두어 역할을 구분한다.
+	title_label = Label.new()
+	title_label.position = Vector2(12,8)
+	title_label.size = Vector2(272,24)
+	title_label.add_theme_font_size_override("font_size",18)
+	title_label.add_theme_color_override("font_color",Color("ebc982"))
+	add_child(title_label)
+	navy_view = NavyView.new()
+	navy_view.position = Vector2(12,36)
+	navy_view.size = Vector2(272,146)
+	add_child(navy_view)
+	view_button = Button.new()
+	view_button.position = Vector2(12,188)
+	view_button.size = Vector2(272,32)
+	view_button.pressed.connect(func(): view_war_tiles_requested.emit(GameManager.state.phasing_player))
+	add_child(view_button)
+	LocaleManager.locale_changed.connect(func(_l): refresh())
 	refresh()
 
-
-static func _try_load(path: String) -> Texture2D:
-	if ResourceLoader.exists(path):
-		return load(path)
-	return null
-
-
 func refresh() -> void:
-	if GameManager.state == null:
-		return
-	br_label.text = "Navy:%d  Map:%d  Pool:%d" % [
-		GameManager.state.britain.squadrons_in_navy_box,
-		GameManager.state.britain.squadrons_on_map,
-		8 - GameManager.state.britain.total_squadrons()]
-	fr_label.text = "Navy:%d  Map:%d  Pool:%d" % [
-		GameManager.state.france.squadrons_in_navy_box,
-		GameManager.state.france.squadrons_on_map,
-		8 - GameManager.state.france.total_squadrons()]
-	br_tokens.queue_redraw()
-	fr_tokens.queue_redraw()
-
-
-func _draw_br_tokens() -> void:
-	_draw_squadron_row(br_tokens, _tex_squadron_br,
-		GameManager.state.britain.squadrons_in_navy_box if GameManager.state else 0)
-
-
-func _draw_fr_tokens() -> void:
-	_draw_squadron_row(fr_tokens, _tex_squadron_fr,
-		GameManager.state.france.squadrons_in_navy_box if GameManager.state else 0)
-
-
-func _draw_squadron_row(container: Control, tex: Texture2D, count: int) -> void:
-	if tex == null or count == 0:
-		return
-	var token_size := 22.0
-	var spacing := 2.0
-	for i in range(min(count, 8)):
-		var x := float(i) * (token_size + spacing)
-		container.draw_texture_rect(tex, Rect2(Vector2(x, 0), Vector2(token_size, token_size)), false)
+	title_label.text = LocaleManager.tx("해군 상자")
+	view_button.text = LocaleManager.tx("내 전쟁 타일 확인")
+	navy_view.refresh()

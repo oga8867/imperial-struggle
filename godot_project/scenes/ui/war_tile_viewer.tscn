@@ -71,4 +71,4 @@ horizontal_alignment = 1
 [node name="CloseBtn" type="Button" parent="Panel/VBox"]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-text = "Close"
+text = "닫기"

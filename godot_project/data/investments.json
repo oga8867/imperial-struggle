@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "major": 2,
+    "points": 4,
+    "minor": 3,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 2,
+    "major": 2,
+    "points": 4,
+    "minor": 1,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 3,
+    "major": 2,
+    "points": 4,
+    "minor": 1,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 4,
+    "major": 2,
+    "points": 4,
+    "minor": 3,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 5,
+    "major": 2,
+    "points": 3,
+    "minor": 3,
+    "event": true,
+    "upgrade": false
+  },
+  {
+    "id": 6,
+    "major": 2,
+    "points": 3,
+    "minor": 1,
+    "event": true,
+    "upgrade": false
+  },
+  {
+    "id": 7,
+    "major": 1,
+    "points": 4,
+    "minor": 2,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 8,
+    "major": 2,
+    "points": 2,
+    "minor": 1,
+    "event": true,
+    "upgrade": true
+  },
+  {
+    "id": 9,
+    "major": 2,
+    "points": 2,
+    "minor": 3,
+    "event": true,
+    "upgrade": true
+  },
+  {
+    "id": 10,
+    "major": 1,
+    "points": 4,
+    "minor": 2,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 11,
+    "major": 1,
+    "points": 4,
+    "minor": 3,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 12,
+    "major": 1,
+    "points": 4,
+    "minor": 3,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 13,
+    "major": 1,
+    "points": 2,
+    "minor": 3,
+    "event": true,
+    "upgrade": true
+  },
+  {
+    "id": 14,
+    "major": 1,
+    "points": 3,
+    "minor": 2,
+    "event": true,
+    "upgrade": false
+  },
+  {
+    "id": 15,
+    "major": 1,
+    "points": 3,
+    "minor": 3,
+    "event": true,
+    "upgrade": false
+  },
+  {
+    "id": 16,
+    "major": 1,
+    "points": 2,
+    "minor": 2,
+    "event": true,
+    "upgrade": true
+  },
+  {
+    "id": 17,
+    "major": 3,
+    "points": 4,
+    "minor": 1,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 18,
+    "major": 3,
+    "points": 4,
+    "minor": 1,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 19,
+    "major": 3,
+    "points": 3,
+    "minor": 1,
+    "event": true,
+    "upgrade": false
+  },
+  {
+    "id": 20,
+    "major": 3,
+    "points": 4,
+    "minor": 2,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 21,
+    "major": 3,
+    "points": 4,
+    "minor": 2,
+    "event": false,
+    "upgrade": false
+  },
+  {
+    "id": 22,
+    "major": 3,
+    "points": 3,
+    "minor": 2,
+    "event": true,
+    "upgrade": false
+  },
+  {
+    "id": 23,
+    "major": 3,
+    "points": 2,
+    "minor": 1,
+    "event": true,
+    "upgrade": true
+  },
+  {
+    "id": 24,
+    "major": 3,
+    "points": 2,
+    "minor": 2,
+    "event": true,
+    "upgrade": true
+  }
+]

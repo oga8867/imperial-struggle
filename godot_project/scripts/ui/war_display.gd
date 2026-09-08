@@ -14,6 +14,16 @@ func _ready() -> void:
 	resolve_btn.pressed.connect(_on_resolve)
 	continue_btn.pressed.connect(_on_continue)
 	continue_btn.visible = false
+	resolve_btn.text = LocaleManager.t("war_resolve")
+	continue_btn.text = LocaleManager.t("war_continue")
+	LocaleManager.locale_changed.connect(_on_locale_changed)
+
+
+func _on_locale_changed(_new_locale: String) -> void:
+	resolve_btn.text = LocaleManager.t("war_resolve")
+	continue_btn.text = LocaleManager.t("war_continue")
+	if visible and resolution_results.size() > 0:
+		_show_results()
 
 
 func _on_war_started(war_id: String) -> void:
@@ -72,13 +82,13 @@ func _show_results() -> void:
 		vbox.position = Vector2(12, 8)
 		vbox.size = Vector2(900, 60)
 		var lbl := Label.new()
-		var winner_text := "Tie"
+		var winner_text := LocaleManager.t("war_tie")
 		if r["winner"] == Enums.Side.BRITAIN:
-			winner_text = "Britain wins by %d" % r["margin"]
+			winner_text = LocaleManager.tf("war_wins_by", [LocaleManager.side(Enums.Side.BRITAIN), r["margin"]])
 		elif r["winner"] == Enums.Side.FRANCE:
-			winner_text = "France wins by %d" % r["margin"]
-		lbl.text = "%s — BR %d vs FR %d → %s" % [
-			r["theater_name"], r["br_strength"], r["fr_strength"], winner_text]
+			winner_text = LocaleManager.tf("war_wins_by", [LocaleManager.side(Enums.Side.FRANCE), r["margin"]])
+		lbl.text = LocaleManager.tf("war_result_line", [
+			r["theater_name"], r["br_strength"], r["fr_strength"], winner_text])
 		lbl.add_theme_font_size_override("font_size", 14)
 		vbox.add_child(lbl)
 		panel.add_child(vbox)

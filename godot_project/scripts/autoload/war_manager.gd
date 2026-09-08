@@ -11,6 +11,12 @@ signal cp_awarded(side: Enums.Side, cp: int)
 var wars: Dictionary = {}  # id -> WarData
 var current_war_id: String = ""
 
+# Idempotency guard: a war must resolve exactly once even though the UI calls
+# resolve_full_war() twice (Resolve button for display, then Continue button
+# via GameManager.resolve_war_and_continue). Reset in setup_war().
+var _resolved_war_id: String = ""
+var _cached_results: Array = []
+
 # Per-war state
 var basic_war_tiles: Dictionary = {}  # side -> Array of WarTile
 var bonus_war_tiles_in_theater: Dictionary = {}  # theater_id -> {side: [WarTile]}
@@ -23,29 +29,20 @@ var bonus_tile_pool: Dictionary = {}  # side -> Array of WarTile (drawable)
 
 
 func _create_bonus_pool() -> void:
-	# Per Counter Manifest: 12 Bonus War Tiles per side per war (historically named)
-	# Generic distribution (since names are flavor only — gameplay effects identical across wars):
-	for side in [Enums.Side.BRITAIN, Enums.Side.FRANCE]:
-		var pool: Array = []
-		var configs := [
-			# [count, strength, effect]
-			[3, 1, WarTile.SpecialEffect.NONE],
-			[3, 2, WarTile.SpecialEffect.NONE],
-			[2, 3, WarTile.SpecialEffect.NONE],
-			[1, 4, WarTile.SpecialEffect.NONE],
-			[1, 2, WarTile.SpecialEffect.DEBT],
-			[1, 2, WarTile.SpecialEffect.DAMAGE_FORT_OR_REMOVE_SQUADRON],
-			[1, 1, WarTile.SpecialEffect.UNFLAG],
-		]
-		for cfg in configs:
-			for i in range(cfg[0]):
-				var t := WarTile.new()
-				t.tile_type = WarTile.TileType.BONUS
-				t.side = side
-				t.strength = cfg[1]
-				t.special_effect = cfg[2]
-				pool.append(t)
-		bonus_tile_pool[side] = pool
+	bonus_tile_pool = {Enums.Side.BRITAIN: [], Enums.Side.FRANCE: []}
+	var entries = JSON.parse_string(FileAccess.get_file_as_string("res://data/war_tiles.json"))
+	for entry in entries:
+		if entry.war != current_war_id: continue
+		var tile = WarTile.new()
+		tile.id = entry.id
+		tile.tile_type = WarTile.TileType.BONUS
+		tile.side = int(entry.side)
+		tile.strength = int(entry.strength)
+		tile.special_effect = int(entry.effect)
+		tile.display_name = entry.name
+		tile.image = entry.image
+		tile.war = _war_id_to_enum(entry.war)
+		bonus_tile_pool[tile.side].append(tile)
 
 
 func purchase_bonus_war_tile(side: Enums.Side, theater_id: String) -> bool:
@@ -75,7 +72,7 @@ func purchase_bonus_war_tile(side: Enums.Side, theater_id: String) -> bool:
 
 func military_upgrade(side: Enums.Side, theater_id: String) -> bool:
 	# Replace basic war tile in theater with newly drawn one
-	if current_war_id == "" or basic_war_tiles[side].is_empty():
+	if current_war_id == "" or not basic_war_tiles.has(side) or basic_war_tiles[side].is_empty():
 		return false
 	if not (theater_id in basic_tile_in_theater):
 		return false
@@ -134,6 +131,8 @@ func _load_wars() -> void:
 			th.name = t["name"]
 			th.name_ko = t.get("name_ko", "")
 			th.region = _parse_region(t["region"])
+			for region in t.get("regions", [t["region"]]):
+				th.regions.append(_parse_region(region))
 			for k in t.get("bonus_strength", []):
 				th.bonus_strength_keys.append(k)
 			th.spoils_table = t.get("spoils", [])
@@ -183,6 +182,9 @@ func get_war_for_after_turn(turn: int) -> String:
 func setup_war(war_id: String) -> void:
 	# Silent setup: place basic war tiles for upcoming war. Does NOT show UI.
 	current_war_id = war_id
+	_create_bonus_pool()
+	_resolved_war_id = ""
+	_cached_results = []
 	current_theater_index = 0
 	bonus_war_tiles_in_theater.clear()
 	basic_tile_in_theater.clear()
@@ -218,63 +220,51 @@ func calculate_theater_strength(theater_id: String, side: Enums.Side) -> int:
 	return _calculate_army_strength(theater_id, side) + _calculate_bonus_strength(theater, side)
 
 
-func _calculate_bonus_strength(theater: TheaterData, side: Enums.Side) -> int:
-	# Per §7.1.3: count alliances + Forts + Squadrons + ministry keywords + conflict markers
-	# matching this theater's bonus_strength keys. Use war_dots to match per-war.
-	var bonus := 0
-	var opponent: Enums.Side = Enums.Side.FRANCE if side == Enums.Side.BRITAIN else Enums.Side.BRITAIN
-	var current_war_enum: Enums.War = _war_id_to_enum(current_war_id)
-
-	for sid in GameManager.state.spaces:
-		var ss: SpaceState = GameManager.state.spaces[sid]
+func _calculate_bonus_strength(theater: TheaterData, side: Enums.Side, public_only: bool=false) -> int:
+	var bonus = 0
+	var opponent = _opp(side)
+	for ss in GameManager.state.spaces.values():
 		var data: SpaceData = ss.data
 		if ss.has_conflict_marker:
-			# A flagged space with conflict marker grants strength to the OPPOSITE side
-			if data.region == theater.region and ss.controlled_by != Enums.Side.NONE:
-				if ss.controlled_by == opponent and "conflict_marker" in theater.bonus_strength_keys:
-					bonus += 1
+			if data.region in theater.regions and ss.controlled_by == opponent and "conflict_marker" in theater.bonus_strength_keys:
+				bonus += 1
 			continue
-
-		# Alliance contribution per-war via war_dots
-		if data.is_alliance and ss.controlled_by == side:
-			# Check key match for region
-			var region_key := "alliance_" + _region_short(data.region)
-			if region_key in theater.bonus_strength_keys:
-				if data.war_dots.is_empty() or current_war_enum in data.war_dots:
-					bonus += 1
-			# Specific country keys (e.g., "alliance_spain")
-			for key in theater.bonus_strength_keys:
-				if key.begins_with("alliance_") and not key in ["alliance_europe","alliance_north_america","alliance_caribbean","alliance_india"]:
-					var country_part := key.substr(9)
-					if country_part in sid:
-						if data.war_dots.is_empty() or current_war_enum in data.war_dots:
-							bonus += 1
-
-		# Naval (Squadron) contribution
-		if data.space_type == Enums.SpaceType.NAVAL and ss.controlled_by == side:
-			var region_key := "squadron_" + _region_short(data.region)
-			if region_key in theater.bonus_strength_keys:
+		if ss.controlled_by != side: continue
+		for key in theater.bonus_strength_keys:
+			if key.begins_with("alliance_") and data.is_alliance and data.id.begins_with(key.substr(9)):
 				bonus += 1
-
-		# Fort contribution (intact only)
-		if data.space_type == Enums.SpaceType.FORT and ss.controlled_by == side and not ss.is_fort_damaged:
-			var region_key := "fort_" + _region_short(data.region)
-			if region_key in theater.bonus_strength_keys:
+			elif key.begins_with("squadron_") and data.space_type == Enums.SpaceType.NAVAL and key.substr(9) == _region_short(data.region):
 				bonus += 1
-
-		# Local Alliance
-		if data.is_local_alliance and ss.controlled_by == side:
-			var key := "local_alliance_" + _region_short(data.region)
-			if key in theater.bonus_strength_keys:
+			elif key.begins_with("fort_") and data.space_type == Enums.SpaceType.FORT and not ss.is_fort_damaged and key.substr(5) == _region_short(data.region):
 				bonus += 1
-
-	# Ministry keyword bonuses
+			elif key == "keyword_sons_of_liberty" and data.id.begins_with("sons_of_liberty"):
+				bonus += 1
 	for key in theater.bonus_strength_keys:
 		if key.begins_with("keyword_"):
-			var keyword := key.substr(8).capitalize()
-			if GameManager.state.get_player(side).has_keyword(keyword):
-				bonus += 1
+			var keyword = key.substr(8).replace("_", " ").capitalize()
+			for card in GameManager.state.get_player(side).ministry_cards:
+				if not card.is_revealed: continue
+				if card.has_keyword(keyword):
+					bonus += 1
+	if "atlantic_dominance" in theater.bonus_strength_keys and WarFlow.atlantic_side == side:
+		bonus += 2
 	return bonus
+
+func is_maximum_spoils(theater_id: String, side: Enums.Side, margin: int) -> bool:
+	# 전장과 진영마다 최대 보상에 필요한 격차가 다르다 (예: 스페인 4+, 중부 유럽 WAS 3+).
+	if not current_war_id in wars or side == Enums.Side.NONE: return false
+	for theater in wars[current_war_id].theaters:
+		if theater.id != theater_id: continue
+		var threshold = -1
+		for row in theater.spoils_table:
+			var spec: String = row.margin
+			if spec.begins_with("br_") and side != Enums.Side.BRITAIN: continue
+			if spec.begins_with("fr_") and side != Enums.Side.FRANCE: continue
+			spec = spec.trim_prefix("br_").trim_prefix("fr_")
+			var minimum = int(spec.split("-")[0].trim_suffix("+"))
+			threshold = maxi(threshold, minimum)
+		return threshold > 0 and margin >= threshold
+	return false
 
 
 func _war_id_to_enum(war_id: String) -> Enums.War:
@@ -338,6 +328,8 @@ func resolve_theater(theater_id: String) -> Dictionary:
 
 func _calculate_army_strength(theater_id: String, side: Enums.Side) -> int:
 	var s := 0
+	# Byng 마커 앞면의 +2는 지정 전장 영국 전력에 더한다.
+	if GameManager.state.byng_theater == theater_id and side == Enums.Side.BRITAIN: s += 2
 	if theater_id in basic_tile_in_theater and side in basic_tile_in_theater[theater_id]:
 		var basic: WarTile = basic_tile_in_theater[theater_id][side]
 		s += basic.strength
@@ -380,20 +372,20 @@ func _apply_single_tile_effect(tile: WarTile, theater: TheaterData = null) -> vo
 	var opponent: Enums.Side = Enums.Side.FRANCE if tile.side == Enums.Side.BRITAIN else Enums.Side.BRITAIN
 	match tile.special_effect:
 		WarTile.SpecialEffect.DEBT:
-			GameManager.state.get_player(opponent).take_debt(1)
+			GameManager.state.get_player(opponent).incur_debt(1)
 		WarTile.SpecialEffect.DAMAGE_FORT_OR_REMOVE_SQUADRON:
 			# Per §7.1.2: damage opposing Fort in theater, or remove opposing Squadron from theater
 			if theater != null:
 				for sid in GameManager.state.spaces:
 					var ss: SpaceState = GameManager.state.spaces[sid]
-					if ss.data.region != theater.region: continue
+					if ss.data.region not in theater.regions: continue
 					if ss.data.space_type == Enums.SpaceType.FORT and ss.controlled_by == opponent and not ss.is_fort_damaged:
 						ss.is_fort_damaged = true
 						return
 				# Else squadron in theater
 				for sid in GameManager.state.spaces:
 					var ss: SpaceState = GameManager.state.spaces[sid]
-					if ss.data.region != theater.region: continue
+					if ss.data.region not in theater.regions: continue
 					if ss.data.space_type == Enums.SpaceType.NAVAL and ss.controlled_by == opponent:
 						var op := GameManager.state.get_player(opponent)
 						if op.squadrons_on_map > 0:
@@ -409,7 +401,7 @@ func _apply_single_tile_effect(tile: WarTile, theater: TheaterData = null) -> vo
 				var fallback_market: SpaceState = null
 				for sid in GameManager.state.spaces:
 					var ss: SpaceState = GameManager.state.spaces[sid]
-					if ss.data.region != theater.region: continue
+					if ss.data.region not in theater.regions: continue
 					if ss.data.space_type == Enums.SpaceType.MARKET and ss.controlled_by == opponent and not ss.has_conflict_marker:
 						# Check isolation impact: simplified — accept any
 						ss.unflag(tile.side)
@@ -417,7 +409,7 @@ func _apply_single_tile_effect(tile: WarTile, theater: TheaterData = null) -> vo
 				# Else Political in theater region
 				for sid in GameManager.state.spaces:
 					var ss: SpaceState = GameManager.state.spaces[sid]
-					if ss.data.region != theater.region: continue
+					if ss.data.region not in theater.regions: continue
 					if ss.data.space_type == Enums.SpaceType.POLITICAL and ss.controlled_by == opponent and not ss.has_conflict_marker:
 						ss.unflag(tile.side)
 						return
@@ -518,21 +510,10 @@ func _auto_unflag(side: Enums.Side, reward: String) -> void:
 
 
 func resolve_full_war() -> Array:
-	var results := []
-	var war: WarData = wars[current_war_id]
-	# Determine first-resolver: closer to auto-victory (VP-distance from 15)
-	# If VP=15, the player who went first in preceding peace turn resolves first
-	for theater in war.theaters:
-		var result := resolve_theater(theater.id)
-		result["theater_id"] = theater.id
-		result["theater_name"] = theater.name
-		results.append(result)
-	_auto_spend_cp()
-	_cleanup_conflict_markers()
-	# Per §7.5: return basic war tiles to player pools (only basics; bonus tiles removed)
-	_return_war_tiles_to_pools()
-	war_ended.emit(current_war_id)
-	return results
+	if _resolved_war_id == current_war_id and current_war_id != "": return _cached_results
+	# UI는 WarFlow.start(false)를 사용한다. 이 진입점은 자동 완주 검증용이다.
+	if not WarFlow.active: WarFlow.start(true)
+	return _cached_results
 
 
 func _return_war_tiles_to_pools() -> void:
