@@ -42,6 +42,8 @@ func _ready() -> void:
 	GameManager.phase_changed.connect(_on_phase_changed)
 	GameManager.status_message.connect(_on_status_message)
 	LocaleManager.locale_changed.connect(_on_locale_changed)
+	AIController.thinking_changed.connect(_refresh_ai_status)
+	MinistryDecisions.changed.connect(func(): AIController.request_turn())
 	if has_node("/root/EventEffects"):
 		EventEffects.pending_choices_changed.connect(_on_event_choices_changed)
 		EventEffects.effects_resolved.connect(_on_event_effects_resolved)
@@ -57,7 +59,9 @@ func _ready() -> void:
 	session_overlay=preload("res://scripts/ui/session_overlay.gd").new()
 	$UILayer.add_child(session_overlay)
 	WarFlow.changed.connect(func():
-		if WarFlow.active and not WarFlow.choice.is_empty(): _guard_private_side(WarFlow.choice.side))
+		if WarFlow.active and not WarFlow.choice.is_empty():
+			_guard_private_side(WarFlow.choice.side)
+			AIController.request_turn())
 
 	# Top prompt-bar buttons
 	pass_btn.pressed.connect(_on_pass)
@@ -118,6 +122,7 @@ func _on_locale_changed(_new_locale: String) -> void:
 	if GameManager.state:
 		var key = "prompt_select_tile" if ActionController.current_tile == null else "prompt_play_actions"
 		prompt_label.text = LocaleManager.tf(key,[LocaleManager.side(GameManager.state.phasing_player)])
+	_refresh_ai_status()
 
 
 func _on_log_hover_spaces(space_ids: Array) -> void:
@@ -150,6 +155,7 @@ func _on_save() -> void:
 
 
 func _on_menu() -> void:
+	AIController.suspend()
 	menu_requested.emit()
 
 
@@ -207,6 +213,9 @@ func _on_action_required(side: Enums.Side, action: String) -> void:
 
 
 func _check_ai(side: Enums.Side, what: String) -> void:
+	if AIController.strategy_mode:
+		if is_visible_in_tree(): AIController.request_turn()
+		return
 	if MinistryDecisions.has_pending(): return
 	if not AIController.enabled or AIController.ai_side != side:
 		return
@@ -250,6 +259,9 @@ func _on_card_clicked(card) -> void:
 
 
 func _on_pass() -> void:
+	if AIController.thinking:
+		AIController.decide_now()
+		return
 	# While an Event effect is awaiting a target, the Pass button acts as "Skip Effect".
 	if has_node("/root/EventEffects") and EventEffects.has_pending():
 		EventEffects.skip_choice(0)
@@ -258,6 +270,7 @@ func _on_pass() -> void:
 
 
 func _on_event_choices_changed(_choices: Array) -> void:
+	AIController.request_turn()
 	if not EventEffects.pending_choices.is_empty():
 		var p=EventEffects.pending_choices[0].params
 		_guard_private_side(p.get("chooser",p.get("side",GameManager.state.phasing_player)))
@@ -265,6 +278,16 @@ func _on_event_choices_changed(_choices: Array) -> void:
 	prompt_label.text = LocaleManager.t("prompt_event_choice")
 	pass_btn.text = LocaleManager.t("btn_skip_effect")
 	pass_btn.visible = not EventEffects.pending_choices.is_empty() and EventEffects.pending_choices[0].params.get("optional",false)
+	if AIController.enabled and AIController.Commands.chooser()==AIController.ai_side: pass_btn.visible=false
+
+func _refresh_ai_status() -> void:
+	if AIController.thinking:
+		_prompt_is_dynamic=true
+		prompt_label.text=AIController.status_text()
+		pass_btn.text=LocaleManager.tx("지금 결정")
+		pass_btn.visible=true
+	elif pass_btn.text==LocaleManager.tx("지금 결정"):
+		pass_btn.hide()
 
 
 func _on_event_effects_resolved() -> void:

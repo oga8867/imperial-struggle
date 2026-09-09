@@ -317,5 +317,9 @@
   "카리브 함대": "Caribbean squadrons",
   "뽑은 타일의 교체·유지 선택을 먼저 완료하세요.": "Finish choosing whether to replace or keep the drawn tile first.",
   "대기 함대 없음": "No squadrons waiting",
+  "AI 계산 중 · %d초 · %d개 계획 비교": "AI thinking · %ds · %d plans compared",
+  "지금 결정": "Decide now",
+  "AI · 기본 (빠른 판단)": "AI · Basic (quick decisions)",
+  "AI · 전략 (라운드당 최대 %d초 계산)": "AI · Strategic (up to %ds of search per round)",
   "해군 상자: 지금 배치 가능한 함대 %d척\n귀환 예정 %d척 · 영구 제거 %d척": "Navy Box: %d squadrons ready to deploy\nReturning later: %d · Permanently removed: %d"
 }

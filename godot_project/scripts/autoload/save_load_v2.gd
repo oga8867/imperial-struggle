@@ -6,7 +6,7 @@ const SAVE_DIR := "user://saves"
 const AUTOSAVE_NAME := "autosave"
 const Codec = preload("res://scripts/models/session_codec.gd")
 const FIELDS := {
-	"GameManager": ["state", "_discard_pending_sides", "_ministry_pending_sides", "_initiative_first_player_pending", "_swept_awards_winner", "_swept_demand_winner", "_initial_territories"],
+	"GameManager": ["state", "_discard_pending_sides", "_pending_discards", "_ministry_pending_sides", "_initiative_first_player_pending", "_swept_awards_winner", "_swept_demand_winner", "_initial_territories"],
 	"GameData": ["ministries"],
 	"ActionController": [],
 	"WarFlow": [],
@@ -16,7 +16,7 @@ const FIELDS := {
 	"AwardManager": ["turn_awards", "remaining_awards"],
 	"MinistryEffects": ["watt_active_for_britain", "active_flags"],
 	"MinistryDecisions": ["pending", "pre_tile_action_used"],
-	"AIController": ["enabled", "ai_side"],
+	"AIController": ["enabled", "ai_side", "strategy_mode", "budget_seconds", "round_key", "search_spent_ms"],
 	"GameLog": ["entries", "current_turn_section"],
 }
 var last_error := ""
@@ -29,6 +29,7 @@ func _path(name: String) -> String:
 	return "%s/%s.json" % [SAVE_DIR, name]
 
 func save_game(name: String = AUTOSAVE_NAME) -> bool:
+	AIController.checkpoint_time()
 	last_error = ""
 	var path = _path(name)
 	if path == "" or GameManager.state == null: return false
@@ -78,12 +79,19 @@ func _fields_for(node_name: String) -> Array:
 	return names
 
 func _serialize() -> Dictionary:
+	return encode_snapshot(capture_model())
+
+func capture_model() -> Dictionary:
+	# 참조만 모은 원본 모델이다. 검색·관찰용 사본은 반드시 Codec으로 복제한다.
 	var snapshot = {}
 	for node_name in FIELDS:
 		var node = get_node("/root/" + node_name)
 		var fields = {}
 		for field in _fields_for(node_name): fields[field] = node.get(field)
 		snapshot[node_name] = fields
+	return snapshot
+
+func encode_snapshot(snapshot: Dictionary) -> Dictionary:
 	var codec = Codec.new()
 	var payload = codec.encode(snapshot)
 	if not codec.valid:
@@ -101,11 +109,15 @@ func _deserialize(data: Dictionary) -> bool:
 	# 기록을 저장하기 전의 v2도 게임 자체는 온전하다. 없는 기록은 빈 이력으로 복원한다.
 	if not snapshot.has("GameLog"): snapshot["GameLog"] = {"entries": [], "current_turn_section": 1}
 	if not snapshot.has("MinistryDecisions"): snapshot["MinistryDecisions"]={"pending":{},"pre_tile_action_used":false}
+	if not snapshot.GameManager.has("_pending_discards"): snapshot.GameManager._pending_discards = {}
+	for key in {"strategy_mode":false,"budget_seconds":20,"round_key":"","search_spent_ms":0}:
+		if not snapshot.AIController.has(key): snapshot.AIController[key]={"strategy_mode":false,"budget_seconds":20,"round_key":"","search_spent_ms":0}[key]
 	for node_name in FIELDS:
 		if not snapshot.get(node_name) is Dictionary: return false
 		for field in _fields_for(node_name):
 			if snapshot[node_name].has(field) and not Codec.compatible(get_node("/root/"+node_name),field,snapshot[node_name][field]): return false
 	if not snapshot.GameManager.get("state") is GameState: return false
+	AIController.cancel()
 	for node_name in FIELDS:
 		var node = get_node("/root/" + node_name)
 		for field in _fields_for(node_name):

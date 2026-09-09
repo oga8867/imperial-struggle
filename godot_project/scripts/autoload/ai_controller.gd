@@ -1,316 +1,206 @@
-extends Node
+extends "res://scripts/ai/baseline_ai.gd"
 
-# Basic AI for solo play. Plays one side based on heuristics.
+# 기본 AI는 비교 기준으로 그대로 보존한다. 전략 모드만 독립 프로세스에 계산을 맡긴다.
+signal thinking_changed
+const Observation = preload("res://scripts/ai/observation.gd")
+const Commands = preload("res://scripts/ai/commands.gd")
+const Eval = preload("res://scripts/ai/evaluation.gd")
+var strategy_mode = false
+var budget_seconds = 20
+var round_key = ""
+var search_spent_ms = 0
+var thinking = false
+var last_report: Dictionary = {}
+var _pid = -1
+var _job_path = ""
+var _job_id = ""
+var _job_deadline = 0
+var _charged_at = 0
+var _context: GameState
+var _active = false
+var _paused = false
+var _plan: Array = []
+var _next_step = 0
+var _last_poll = 0
+var _fallback_seen: Dictionary = {}
+var _sequence = 0
 
-signal ai_action_taken(description: String)
-
-var ai_side: Enums.Side = Enums.Side.NONE
-var enabled: bool = false
-
-
-func enable_for(side: Enums.Side) -> void:
-	ai_side = side
-	enabled = true
-
+func enable_for(side: Enums.Side, strategic: bool = false) -> void:
+	cancel()
+	super.enable_for(side)
+	strategy_mode = strategic
+	round_key = ""
+	search_spent_ms = 0
+	_paused = false
 
 func disable() -> void:
-	enabled = false
+	cancel()
+	super.disable()
 
+func suspend() -> void:
+	cancel()
+	_paused = true
 
-func is_ai_turn() -> bool:
-	if not enabled:
-		return false
-	if GameManager.state == null:
-		return false
-	return GameManager.state.phasing_player == ai_side
+func resume() -> void:
+	_paused = false
+	request_turn()
 
+func cancel() -> void:
+	checkpoint_time()
+	if _pid>0 and OS.is_process_running(_pid): OS.kill(_pid)
+	_pid = -1
+	if _job_path!="" and FileAccess.file_exists(_job_path): DirAccess.remove_absolute(_job_path)
+	thinking = false
+	_active = false
+	_plan.clear()
+	_context = null
+	thinking_changed.emit()
 
-func decide_investment_tile() -> InvestmentTile:
-	# AI는 향후 득점·전쟁 키워드를 위해 자기 라운드에 미리 공개하기로 결정한다.
-	for card in GameManager.state.get_player(ai_side).ministry_cards.duplicate():
-		if MinistryDecisions.can_reveal(card,ai_side): card.reveal()
-	# Pick the highest Major action AP tile
-	var tiles: Array = GameManager.state.available_investment_tiles
-	if tiles.is_empty():
-		return null
-	var best: InvestmentTile = null
-	var best_score := -999
-	for t in tiles:
-		var score := _score_tile(t)
-		if score > best_score:
-			best_score = score
-			best = t
-	return best
+func checkpoint_time() -> void:
+	if not thinking: return
+	var now = Time.get_ticks_msec()
+	search_spent_ms += maxi(0,now-_charged_at)
+	_charged_at = now
 
+func request_turn() -> void:
+	if not enabled or not strategy_mode or _paused or "--ai-worker" in OS.get_cmdline_user_args(): return
+	if GameManager.state==null or Commands.chooser()!=ai_side: return
+	if GameManager.state.current_turn_phase!=Enums.TurnPhase.ACTION_PHASE and not WarFlow.active: return
+	if GameManager.state.winner!=Enums.Side.NONE: return
+	_context = GameManager.state
+	_active = true
+	var key = "%d:%d:%s" % [_context.current_turn,_context.current_action_round,WarManager.current_war_id if WarFlow.active else "peace"]
+	if key!=round_key:
+		round_key=key
+		search_spent_ms=0
+		_fallback_seen.clear()
+	_next_step = Time.get_ticks_msec()+100
 
-func _score_tile(t: InvestmentTile) -> int:
-	# Heuristic: prefer high major AP, prefer Economic/Diplomatic over Military early game,
-	# strongly prefer event-eligible tiles if hand has good events
-	var score := t.major_action_points * 3
-	if t.has_event_symbol:
-		score += 2
-	if t.has_military_upgrade:
-		score += 1
-
-	# Prefer non-military in peace turns where opponent has more flags
-	var player := GameManager.state.get_player(ai_side)
-	var opponent := GameManager.state.get_opponent(ai_side)
-	if t.major_action_type == Enums.ActionType.MILITARY:
-		if GameManager.state.current_turn >= 5:
-			score += 2
-	return score
-
-
-func decide_event_play(card: EventCard) -> bool:
-	# Simple: play if base text helps us, skip otherwise
-	if card == null:
-		return false
-	# Prefer playing if we'd otherwise discard it
-	return true
-
-
-func decide_action_round() -> void:
-	if MinistryDecisions.has_pending(): return
-	if ActionController.current_tile==null: return
-	if ActionController.upgrade_drawn:
-		_finish_upgrade()
-	if ActionController.bonus_drawn:
-		var legal=ActionController.bonus_allowed_theaters
-		for id in legal:
-			if ActionController.place_bonus_tile(id): break
-	# 라운드 시작 전용 내각을 이벤트보다 먼저 검토한다.
-	if not ActionController.action_started:
-		for c in GameManager.state.get_player(ai_side).ministry_cards.duplicate():
-			if c.id in ["M-1","M-21"] and MinistryEffects.can_activate(c,ai_side):
-				MinistryEffects.activate_manual(c,ai_side)
-				while EventEffects.has_pending():
-					if not _resolve_pending(): return
-	# 1. Decide event play
-	if ActionController.state == ActionController.ActionState.AWAITING_EVENT:
-		var card := _pick_event_to_play()
-		if card != null:
-			ActionController.play_event(card, true)
-			# Resolve pending choices
-			while EventEffects.has_pending():
-				if not _resolve_pending(): return
-		else:
-			ActionController.skip_event()
-
-	while EventEffects.has_pending():
-		if not _resolve_pending(): return
-	# 이벤트 AP를 주요 행동에 합산하거나 독립 행동으로 먼저 사용한다.
-	for i in ActionController.event_grants.size():
-		var grant = ActionController.event_grants[i]
-		if grant.type == ActionController.current_tile.major_action_type:
-			ActionController.assign_event_grant(i,"major")
-	for i in ActionController.event_grants.size():
-		if ActionController.event_grants[i].pool.begins_with("event_"):
-			ActionController.switch_to_event(i)
-			_spend_current()
-	ActionController.switch_to_major()
-	_spend_current()
-
-	# 3. Switch to Minor and spend
-	ActionController.switch_to_minor()
-	_spend_current()
-	# 6턴 군사 변환으로 방금 생긴 별도 AP도 소비한다.
-	for i in ActionController.event_grants.size():
-		var grant=ActionController.event_grants[i]
-		if grant.pool.begins_with("event_") and grant.amount>0 and grant.pool not in ActionController.finished_pools:
-			ActionController.switch_to_event(i)
-			_spend_current()
-
-	# 4. Military upgrade if available
-	if ActionController.current_tile and ActionController.current_tile.has_military_upgrade:
-		if ActionController.begin_upgrade(_pick_upgrade_theater()) and ActionController.upgrade_drawn:
-			_finish_upgrade()
-
-	# 5. End the round
-	ActionController.end_action_round()
-	ai_action_taken.emit("AI completed action round")
-
-func _finish_upgrade() -> void:
-	var old=WarManager.basic_tile_in_theater[ActionController.upgrade_theater][ai_side]
-	var drawn=ActionController.upgrade_drawn
-	var swap=drawn.strength>old.strength
-	ActionController.finish_upgrade(swap,ActionController.can_remove_upgrade_tile() and (old.strength if swap else drawn.strength)<=0)
-
-
-func _pick_event_to_play() -> EventCard:
-	var p := GameManager.state.get_player(ai_side)
-	if p.hand.is_empty():
-		return null
-	# Pick the card whose major_action matches our tile's, or any if none matches
-	var tile = ActionController.current_tile
-	var candidates=p.hand.filter(func(c):return ActionController._can_play_event(c))
-	candidates.sort_custom(func(a,b):return int(EventEffects.bonus_condition_met(a,ai_side,false))>int(EventEffects.bonus_condition_met(b,ai_side,false)))
-	if not candidates.is_empty(): return candidates[0]
-	return null
-
-
-func _resolve_pending() -> bool:
-	if not EventEffects.has_pending():
-		return false
-	var choice = EventEffects.pending_choices[0]
-	if choice.params.get("chooser",ai_side) != ai_side: return false
-	var options=EventEffects.choice_options()
-	if not options.is_empty():
-		options.sort_custom(func(a,b):return _choice_score(choice,a)>_choice_score(choice,b))
-		return EventEffects.resolve_option(options[0].id)
-	# Find a valid space matching the choice constraints
-	var targets=[]
-	for sid in GameManager.state.spaces:
-		if EventEffects.is_valid_target(sid):
-			var ss=GameManager.state.spaces[sid]
-			var score=_score_target(ss)
-			if "conflict" in choice.type: score+=12 if ss.controlled_by==WarManager._opp(ai_side) else (-15 if ss.controlled_by==ai_side else 0)
-			if choice.params.get("from","")=="friendly": score=-score
-			targets.append({"id":sid,"score":score})
-	targets.sort_custom(func(a,b):return a.score>b.score)
-	if not targets.is_empty(): return EventEffects.resolve_choice(0,targets[0].id)
-	return false
-
-func _choice_score(choice: Dictionary,option: Dictionary) -> int:
-	if option.id=="skip":
-		if choice.type=="score_commodity" and GameManager._count_commodity_markets(ai_side,choice.params.commodity)<=GameManager._count_commodity_markets(WarManager._opp(ai_side),choice.params.commodity): return 100
-		return -100
-	if option.has("theater"):
-		# 상대 타일의 뒷면을 고를 때 전력을 조회하지 않는다.
-		if choice.type in ["remove_bonus","war_loss"]: return 10
-		return _theater_priority(option.theater)
-	if option.has("commodity"): return GameManager._count_commodity_markets(ai_side,option.commodity)-GameManager._count_commodity_markets(WarManager._opp(ai_side),option.commodity)
-	if option.has("card"): return -int(EventEffects.bonus_condition_met(option.card,ai_side,false))*10
-	if GameManager.state.spaces.has(option.id): return _score_target(GameManager.state.spaces[option.id])
-	return 0
-
-func _theater_priority(id: String) -> int:
-	# 비공개 상대 기본/보너스 타일을 읽지 않고 공개 지도 전력과 내 타일만 사용한다.
-	var th=WarManager.get_upcoming_theaters().filter(func(t):return t.id==id)[0]
-	var own=WarManager._calculate_army_strength(id,ai_side)+WarManager._calculate_bonus_strength(th,ai_side)
-	var opposing_map=WarManager._calculate_bonus_strength(th,WarManager._opp(ai_side),true)
-	return 20-absi(own-opposing_map-2)*2
-
-
-func _try_buy_war_tiles() -> void:
-	if WarManager.get_upcoming_war_id() == "":
+func _process(_delta: float) -> void:
+	if not _active or not enabled or not strategy_mode or _paused: return
+	if GameManager.state!=_context or GameManager.state.winner!=Enums.Side.NONE:
+		cancel()
 		return
-	var theaters = WarManager.get_upcoming_theaters()
-	if theaters.is_empty():
+	if thinking:
+		checkpoint_time()
+		var now = Time.get_ticks_msec()
+		if now-_last_poll<100: return
+		_last_poll=now
+		_read_result()
+		thinking_changed.emit()
+		if now>=_job_deadline or not OS.is_process_running(_pid) or last_report.get("done",false): _finish_job()
 		return
-	for attempt in 2:
-		var legal=ActionController.bonus_purchase_theaters()
-		legal.sort_custom(func(a,b):return _theater_priority(a)>_theater_priority(b))
-		var bought=false
-		for id in legal:
-			if ActionController.purchase_bonus_war_tile(id): bought=true; break
-		if not bought: break
+	if Commands.chooser()!=ai_side:
+		_active=false
+		return
+	if Time.get_ticks_msec()<_next_step: return
+	if not _plan.is_empty():
+		var command = _plan.pop_front()
+		if not Commands.apply(command,ai_side): _plan.clear()
+		elif Commands.boundary(command): _plan.clear()
+		_next_step=Time.get_ticks_msec()+160
+		return
+	if search_spent_ms < budget_seconds*1000-600:
+		_start_job()
+	else:
+		_fast_step()
 
+func _start_job() -> void:
+	var remaining = budget_seconds*1000-search_spent_ms
+	var allocation = mini(remaining,9000 if ActionController.current_tile==null and not WarFlow.active else 3000)
+	if remaining<4500: allocation=remaining-150
+	if allocation<300: _fast_step(); return
+	thinking=true
+	_charged_at=Time.get_ticks_msec()
+	_sequence+=1
+	_job_id="%d-%d-%d" % [OS.get_process_id(),Time.get_ticks_usec(),_sequence]
+	var dir="user://ai_jobs"
+	DirAccess.make_dir_recursive_absolute(dir)
+	_job_path=ProjectSettings.globalize_path(dir.path_join(_job_id+".json"))
+	# 시계에서 독립 seed를 만든다. 실제 게임의 난수열은 소비하지 않는다.
+	var sample_seed=Time.get_ticks_usec() ^ (_sequence*3571)
+	var snapshots=[]
+	for i in 3: snapshots.append(Observation.build(ai_side,sample_seed+i*7919))
+	var job={"id":_job_id,"side":ai_side,"seed":sample_seed,"budget_ms":maxi(100,allocation-500),"snapshots":snapshots}
+	var file=FileAccess.open(_job_path,FileAccess.WRITE)
+	if file==null:
+		thinking=false
+		_fast_step()
+		return
+	file.store_string(JSON.stringify(job))
+	file.close()
+	last_report={}
+	_job_deadline=_charged_at+allocation
+	var args=PackedStringArray(["--headless","--path",ProjectSettings.globalize_path("res://"),"--log-file",_job_path+".log","res://scenes/ai_worker.tscn","--","--ai-worker",_job_path])
+	_pid=OS.create_process(OS.get_executable_path(),args,false)
+	if _pid<0: _finish_job()
+	thinking_changed.emit()
 
-func _pick_upgrade_theater() -> String:
-	var theaters = WarManager.get_upcoming_theaters()
-	if theaters.is_empty():
-		return ""
-	# Pick the theater where our basic tile has lowest strength
-	var worst_id := ""
-	var worst_str := 999
-	for theater in theaters:
-		var tile = WarManager.basic_tile_in_theater.get(theater.id, {}).get(ai_side)
-		if tile and tile.strength < worst_str:
-			worst_str = tile.strength
-			worst_id = theater.id
-	return worst_id
+func _read_result() -> void:
+	if not FileAccess.file_exists(_job_path+".result"): return
+	var report=JSON.parse_string(FileAccess.get_file_as_string(_job_path+".result"))
+	if report is Dictionary and report.get("job_id","")==_job_id: last_report=report
 
+func _finish_job() -> void:
+	checkpoint_time()
+	if _pid>0 and OS.is_process_running(_pid): OS.kill(_pid)
+	_pid=-1
+	_read_result()
+	thinking=false
+	_plan=last_report.get("plan",[]).duplicate(true)
+	thinking_changed.emit()
+	if _plan.is_empty(): _fast_step()
+	_next_step=Time.get_ticks_msec()+100
+	# 이 프로세스가 만든 입력만 삭제한다. 결과와 로그는 진단 자료다.
+	if FileAccess.file_exists(_job_path): DirAccess.remove_absolute(_job_path)
 
-func _find_best_shift_target(action_type: Enums.ActionType) -> String:
-	var opponent: Enums.Side = GameManager.state.get_opponent(ai_side).side
-	var allowed_types: Array = []
-	match action_type:
-		Enums.ActionType.ECONOMIC:
-			allowed_types = [Enums.SpaceType.MARKET]
-		Enums.ActionType.DIPLOMATIC:
-			allowed_types = [Enums.SpaceType.POLITICAL]
-		Enums.ActionType.MILITARY:
-			allowed_types = [Enums.SpaceType.FORT, Enums.SpaceType.NAVAL]
-			if MinistryEffects.active_flags.get("jacobite",false): allowed_types.append(Enums.SpaceType.POLITICAL)
+func decide_now() -> void:
+	# 기다리기를 그만두어도 가장 최근의 완료된 계획 또는 합법적인 빠른 선택을 쓴다.
+	search_spent_ms=budget_seconds*1000
+	if thinking: _finish_job()
+	else: _fast_step()
 
-	var candidates: Array = []
-	for sid in GameManager.state.spaces:
-		var ss: SpaceState = GameManager.state.spaces[sid]
-		if ss.data.space_type in allowed_types:
-			if ActionController.can_shift_space(ss):
-				var score := _score_target(ss)
-				candidates.append([sid, score])
-	if candidates.is_empty():
-		return ""
-	candidates.sort_custom(func(a, b): return a[1] > b[1])
-	return candidates[0][0]
+func _fast_step() -> void:
+	var options=Commands.options(ai_side)
+	if options.is_empty(): _active=false; return
+	options.sort_custom(func(a,b):return a.rank>b.rank)
+	var context_key=str([round_key,ActionController.major_ap_remaining,ActionController.minor_ap_remaining,ActionController.event_grants,GameManager.state.vp,GameManager.state.get_player(ai_side).current_debt,GameManager.state.get_player(ai_side).treaty_points])
+	var picked={}
+	for command in options:
+		var key=context_key+str(command)
+		if _fallback_seen.has(key): continue
+		picked=command
+		_fallback_seen[key]=true
+		break
+	if picked.is_empty():
+		picked=options.filter(func(c):return c.kind=="end")[0] if options.any(func(c):return c.kind=="end") else options[0]
+	Commands.apply(picked,ai_side)
+	_next_step=Time.get_ticks_msec()+100
 
+func status_text() -> String:
+	return LocaleManager.tx("AI 계산 중 · %d초 · %d개 계획 비교") % [search_spent_ms/1000,int(last_report.get("iterations",0))]
 
-func _score_target(ss: SpaceState) -> int:
-	var score := 0
-	# Prefer empty spaces (cheaper to flag)
-	if ss.is_empty():
-		score += 5
-	# Prefer cheap ones
-	score -= ss.data.base_cost
-	# Prefer prestige spaces
-	if ss.data.is_prestige:
-		score += 4
-	# Prefer alliance spaces
-	if ss.data.is_alliance:
-		score += 3
-	# Prefer markets matching global demand
-	if ss.data.space_type == Enums.SpaceType.MARKET:
-		if ss.data.commodity in GameManager.state.current_global_demand:
-			score += 3
-	# Prefer conflict-marker spaces (cheaper)
-	if ss.has_conflict_marker:
-		score += 2
-	return score
-
+func decide_discard() -> Array:
+	var hand=GameManager.state.get_player(ai_side).hand.duplicate()
+	if strategy_mode: hand.sort_custom(func(a,b):return Eval.card_value(a,ai_side)>Eval.card_value(b,ai_side))
+	return hand.slice(0,3) if strategy_mode else hand.slice(maxi(0,hand.size()-3))
 
 func decide_ministry_selection() -> Array:
-	# Pick first 2 available ministry cards
-	var available := GameData.get_ministries_for_era(ai_side, GameManager.state.current_era)
-	if available.size() <= 2:
-		return available.duplicate()
-	available.sort_custom(func(a,b):return _ministry_score(a)>_ministry_score(b))
-	return [available[0], available[1]]
+	if not strategy_mode: return super.decide_ministry_selection()
+	var cards=GameData.get_ministries_for_era(ai_side,GameManager.state.current_era)
+	if cards.size()<2: return cards.duplicate()
+	var best=[]
+	var best_score=-INF
+	for i in cards.size():
+		for j in range(i+1,cards.size()):
+			var pair=[cards[i],cards[j]]
+			var score=float(super._ministry_score(cards[i])+super._ministry_score(cards[j]))
+			for card in pair: score+=Eval.passive_ministry_value(card,ai_side)*0.4
+			# 같은 키워드를 중복 보유하는 것보다 현재 손패의 서로 다른 보너스를 여는 쌍.
+			for event in GameManager.state.get_player(ai_side).hand:
+				if pair.any(func(c):return c.has_keyword(event.bonus_condition)): score+=4.0
+			if score>best_score: best_score=score; best=pair
+	return best
 
-func _ministry_score(card: MinistryCard) -> int:
-	var weights={"M-1":8,"M-2":6,"M-3":7,"M-5":8,"M-6":5,"M-7":7,"M-8":8,"M-11":8,"M-12":8,"M-13":6,"M-14":5,"M-15":9,"M-17":9,"M-18":7,"M-19":9,"M-20":5,"M-22":8,"M-24":7,"M-25":9,"M-26":8}
-	var score=weights.get(card.id,3)
-	for c in GameManager.state.get_player(ai_side).hand:
-		if c.bonus_condition in card.keywords: score+=2
-	return score
-
-func _spend_current() -> void:
-	var ac=ActionController
-	if ac.pool_key() in ac.finished_pools or (ac.state==ac.ActionState.SPENDING_MINOR and ac.minor_action_used_first_expense): return
-	for c in GameManager.state.get_player(ai_side).ministry_cards.duplicate():
-		if c.id in ["M-5","M-8","M-9","M-11","M-15","M-16","M-20","M-22"] and MinistryEffects.can_activate(c,ai_side):
-			MinistryEffects.activate_manual(c,ai_side)
-			while EventEffects.has_pending():
-				if not _resolve_pending(): return
-	for adv in AdvantageManager.advantages.values():
-		if not AdvantageManager.can_activate(adv.id): continue
-		var rule=AdvantageManager.effect_rules[adv.id]
-		if rule.kind=="discount" and rule.type!=ac.current_action_type(): continue
-		if rule.kind=="debt" and GameManager.state.get_player(ai_side).current_debt==0: continue
-		if AdvantageManager.activate(adv.id):
-			while EventEffects.has_pending():
-				if not _resolve_pending(): return
-	if ac.current_action_type()==Enums.ActionType.MILITARY and GameManager.state.current_turn==6:
-		for i in 10:
-			if not ac.convert_turn6_military(Enums.ActionType.ECONOMIC): break
-		return
-	while ActionController.ap_for_current() > 0:
-		# 손패가 소진되면 다음 라운드의 이벤트 선택지를 확보한다. UI와 동일한
-		# 외교 지출 경로이므로 보조 행동·제한 점수·빈 더미 조건을 우회하지 않는다.
-		if GameManager.state.get_player(ai_side).hand.is_empty() and ac.can_draw_event():
-			ac.draw_event_card()
-			continue
-		var target = _find_best_shift_target(ActionController.current_action_type())
-		if target == "" or not ActionController.attempt_shift(target): break
-	if ac.can_draw_event(): ac.draw_event_card()
-	if ActionController.current_action_type() == Enums.ActionType.MILITARY: _try_buy_war_tiles()
+func _exit_tree() -> void:
+	cancel()

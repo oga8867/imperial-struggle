@@ -65,6 +65,7 @@ func _refresh() -> void:
 			button.custom_minimum_size = Vector2(278,70)
 			button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 			button.pressed.connect(func(): WarFlow.choose(option.id))
+			button.disabled=AIController.enabled and AIController.ai_side==WarFlow.choice.side
 			grid.add_child(button)
 	if completed:
 		_text(LocaleManager.tx("전쟁 후 승점: %d · 모든 전장의 선택이 완료되었습니다.") % GameManager.state.vp,22)

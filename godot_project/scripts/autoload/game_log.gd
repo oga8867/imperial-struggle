@@ -10,6 +10,7 @@ var current_turn_section: int = 1
 
 
 func log_entry(side: Enums.Side, kind: String, text: String, space_ids: Array = []) -> void:
+	if "--ai-worker" in OS.get_cmdline_user_args(): return
 	var st = GameManager.state if GameManager else null
 	var entry := {
 		"turn": st.current_turn if st else 0,
@@ -26,6 +27,7 @@ func log_entry(side: Enums.Side, kind: String, text: String, space_ids: Array = 
 
 
 func log_separator(text: String) -> void:
+	if "--ai-worker" in OS.get_cmdline_user_args(): return
 	var entry := {
 		"turn": GameManager.state.current_turn if GameManager and GameManager.state else 0,
 		"round": 0,

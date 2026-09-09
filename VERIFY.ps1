@@ -23,6 +23,8 @@ $testCases = @(
     @{ Name = 'ministry_regression'; Pattern = 'MINISTRY REGRESSION: 39 passed, 0 failed' },
     @{ Name = 'diplomacy_regression'; Pattern = 'DIPLOMACY REGRESSION: 33 passed, 0 failed' },
     @{ Name = 'locale_regression'; Pattern = 'LOCALE REGRESSION: 20 passed, 0 failed' },
+    @{ Name = 'ai_regression'; Pattern = 'AI REGRESSION: 28 passed, 0 failed' },
+    @{ Name = 'ai_runtime_regression'; Pattern = 'AI RUNTIME REGRESSION: 8 passed, 0 failed' },
     @{ Name = 'campaign_regression'; Pattern = 'CAMPAIGN REGRESSION: 12 completed' },
     @{ Name = 'ui_smoke'; Pattern = '=== UI SMOKE PASS ===' },
     @{ Name = 'ui_smoke_en'; Scene = 'ui_smoke'; English = $true; Pattern = '=== UI SMOKE PASS ===' }

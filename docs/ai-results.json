@@ -1,0 +1,91 @@
+{
+  "checked_on": "2026-09-10",
+  "engine": "Godot 4.7.2, Windows",
+  "method": "Paired seeds with strategic side swapped; development 1500 ms and deep 20000 ms search budgets reported separately. Actual worker lifecycle is covered by runtime regression. Small sample, not a human rating.",
+  "wins": 5,
+  "games": 6,
+  "source_sha256": {
+    "godot_project/scripts/ai/baseline_ai.gd": "83ba7f98863ea60e4bec47478fc0251ccb2ce3ceced4efcc0d5b8b8fbf285c7d",
+    "godot_project/scripts/ai/commands.gd": "da33982b63c31490c9908923b53c1f310e8d3ea68492c623c555a28be09bf972",
+    "godot_project/scripts/ai/evaluation.gd": "f4b9a81feed3de84acb1530c4064230bbebfe8c32b6fdbf119f2af7fcd091a50",
+    "godot_project/scripts/ai/observation.gd": "d82c0d101621d1be4b7a89e1919ab40abb7519a4b63cc0d23edd65029112b3dd",
+    "godot_project/scripts/ai/search.gd": "ae0ce9e4539c2bb6ddeb64d229244b6056615dc9d464c6acc97281f64f03476d",
+    "godot_project/scripts/ai/worker.gd": "1fd91143914897577f294cd95f89e7f20251f1b02702c8e8954bdedbe008b6df",
+    "godot_project/scripts/autoload/ai_controller.gd": "174f5bdc6b571a5390ac7fb1a7f5997574e8f9bf91c2441700ca8f3b6b3485ab"
+  },
+  "matches": [
+    {
+      "elapsed_ms": 35421,
+      "round_budget_ms": 1500,
+      "searches": 28,
+      "seed": 71237,
+      "simulated_actions": 253,
+      "strategic_side": 1,
+      "strategic_win": true,
+      "turn": 4,
+      "vp": 0,
+      "winner": 1
+    },
+    {
+      "elapsed_ms": 26399,
+      "round_budget_ms": 1500,
+      "searches": 20,
+      "seed": 71237,
+      "simulated_actions": 227,
+      "strategic_side": 2,
+      "strategic_win": true,
+      "turn": 4,
+      "vp": 30,
+      "winner": 2
+    },
+    {
+      "elapsed_ms": 23098,
+      "round_budget_ms": 1500,
+      "searches": 15,
+      "seed": 89119,
+      "simulated_actions": 165,
+      "strategic_side": 1,
+      "strategic_win": false,
+      "turn": 3,
+      "vp": 35,
+      "winner": 2
+    },
+    {
+      "elapsed_ms": 51838,
+      "round_budget_ms": 1500,
+      "searches": 42,
+      "seed": 89119,
+      "simulated_actions": 414,
+      "strategic_side": 2,
+      "strategic_win": true,
+      "turn": 6,
+      "vp": 35,
+      "winner": 2
+    },
+    {
+      "elapsed_ms": 148935,
+      "round_budget_ms": 20000,
+      "searches": 19,
+      "seed": 20260910,
+      "simulated_actions": 4376,
+      "strategic_side": 1,
+      "strategic_win": true,
+      "turn": 3,
+      "vp": -3,
+      "winner": 1
+    },
+    {
+      "elapsed_ms": 154084,
+      "round_budget_ms": 20000,
+      "searches": 21,
+      "seed": 20260910,
+      "simulated_actions": 5738,
+      "strategic_side": 2,
+      "strategic_win": true,
+      "turn": 3,
+      "vp": 32,
+      "winner": 2
+    }
+  ],
+  "source_hash_normalization": "UTF-8 without BOM, LF newlines"
+}

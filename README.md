@@ -1,8 +1,8 @@
 # Imperial Struggle / 제국의 투쟁
 
-An unofficial Godot adaptation of GMT Games' Imperial Struggle, with English and Korean interfaces, solo play against a basic AI, and local two-player hotseat play.
+An unofficial Godot adaptation of GMT Games' Imperial Struggle, with English and Korean interfaces, solo play against basic or strategic AI, and local two-player hotseat play.
 
-GMT Games의 보드게임 Imperial Struggle을 Godot로 구현한 비공식 프로젝트입니다. 영어·한국어 UI, 기본 AI와의 혼자 하기, 한 컴퓨터에서 번갈아 하는 2인 플레이를 지원합니다.
+GMT Games의 보드게임 Imperial Struggle을 Godot로 구현한 비공식 프로젝트입니다. 영어·한국어 UI, 기본·전략 AI와의 혼자 하기, 한 컴퓨터에서 번갈아 하는 2인 플레이를 지원합니다.
 
 [English](#english) · [한국어](#한국어) · [한국어 상세 실행 안내](README_KO.md) · [Validation / 검증](docs/VALIDATION.md)
 
@@ -12,7 +12,7 @@ GMT Games의 보드게임 Imperial Struggle을 Godot로 구현한 비공식 프�
 
 ### What you can play
 
-- Play Britain or France against a basic AI, or share one computer in local hotseat mode with private handoff screens.
+- Play Britain or France against basic or strategic AI, or share one computer in local hotseat mode with private handoff screens.
 - Follow the full-game sequence of six Peace Turns and four wars, with automatic victory checks and final scoring.
 - Use 41 Event cards, 26 Ministry cards, and 22 Advantages through the game's common rules and choice system.
 - Compare your dealt hand while choosing Ministries. Keep Ministries hidden until you choose a rules-permitted reveal, including advance reveal during your own Action Round.
@@ -21,6 +21,8 @@ GMT Games의 보드게임 Imperial Struggle을 Godot로 구현한 비공식 프�
 - See waiting squadrons as counters and numbers in both the central Navy Box panel and the printed Navy Box on the map. Counts update after construction, deployment and loading.
 - Inspect cards above the Used Cards list, pan and zoom the original map, and save or resume pending card and war decisions.
 - Switch between English and Korean from the title menu. The language preference persists across launches.
+
+Strategic AI uses a shared 10/20/30-second search budget per Action Round in a separate rules-engine process. Actual hidden opponent cards and draw order are excluded. Save while thinking, pause from the menu, or choose Decide now.
 
 ### Run on Windows
 
@@ -57,15 +59,15 @@ Use Save before exiting. Returning to the menu is not an automatic save. The cur
 
 ### Validation and current limits
 
-The current validation snapshot includes 284 passing individual checks, 12 completed campaigns, and both English and Korean game-scene and visual/resume checks. See [the validation details](docs/VALIDATION.md) for what those checks establish and how to rerun them.
+The current validation snapshot includes 320 passing individual checks, 12 completed campaigns, and both English and Korean game-scene and visual/resume checks. See [the validation details](docs/VALIDATION.md) for what those checks establish and how to rerun them.
 
-This is a playable learning project with a basic AI. It does not include online multiplayer, selectable AI difficulty, a scenario/optional-rules settings screen, or an installer. Testing does not cover every combination of card effects or every operating system and resolution. Online play is planned for a later version.
+This is a playable learning project with basic and strategic AI. Automated comparisons against the original AI do not establish expert human strength. It does not include online multiplayer, a scenario/optional-rules settings screen, or an installer. Testing does not cover every combination of card effects or every operating system and resolution. Online play is planned for a later version.
 
 ## 한국어
 
 ### 플레이할 수 있는 기능
 
-- 영국·프랑스로 기본 AI와 대전하거나, 한 컴퓨터에서 비공개 교대 화면을 사용해 2인으로 플레이합니다.
+- 영국·프랑스로 기본·전략 AI와 대전하거나, 한 컴퓨터에서 비공개 교대 화면을 사용해 2인으로 플레이합니다.
 - 평화 6턴과 전쟁 4개의 전체 게임 흐름, 자동 승리와 최종 득점을 연결했습니다.
 - 이벤트 41개, 내각 26개, 이점 22개의 효과와 필요한 선택을 처리합니다.
 - 내각 선택 중 이미 받은 손패를 비교하고, 자기 행동 라운드의 허용된 시점에 공개 여부를 선택합니다. 미리 공개도 가능합니다.
@@ -90,11 +92,13 @@ Godot 경로를 지정하면 위 PowerShell 예시의 `RUN.BAT`로도 실행할 
 
 종료 전 저장 버튼을 누르세요. 메뉴로 이동하는 것만으로 저장되지는 않습니다. 단일 저장 슬롯을 사용하며 직전 파일은 백업으로 보존합니다. 상세 조작과 저장 위치는 [한국어 실행 안내](README_KO.md)에 정리했습니다.
 
+전략 AI는 라운드 전체의 10·20·30초 예산으로 행동 순서를 비교합니다. 상대 비공개 카드와 실제 뽑기 순서를 제외한 별도 게임에서 계산하며, 메뉴 중단·계산 중 저장·재개·지금 결정을 지원합니다.
+
 ### 검증과 현재 범위
 
-개별 검사 284개, 캠페인 12판, 한국어·영어 UI 진행 및 실제 화면·저장 재개 검사를 통과했습니다. 모든 카드 조합과 모든 PC 환경을 전수 검증했다는 뜻은 아닙니다. [검증 기록](docs/VALIDATION.md)에서 세부 범위와 재실행 방법을 확인할 수 있습니다.
+개별 검사 320개, 캠페인 12판, 한국어·영어 UI 진행 및 실제 화면·저장 재개 검사를 통과했습니다. 모든 카드 조합과 모든 PC 환경을 전수 검증했다는 뜻은 아닙니다. [검증 기록](docs/VALIDATION.md)에서 세부 범위와 재실행 방법을 확인할 수 있습니다.
 
-현재 AI는 기본 상대입니다. 온라인 대전, 난이도 선택, 시나리오·선택 규칙 설정, 설치형 배포본은 포함하지 않습니다. 온라인 대전은 후속 버전으로 계획하고 있습니다.
+기본 AI와 전략 AI를 선택할 수 있습니다. 기존 AI와의 자동 대결이 숙련자 상대 실력을 증명하지는 않습니다. 온라인 대전, 시나리오·선택 규칙 설정, 설치형 배포본은 포함하지 않습니다. 온라인 대전은 후속 버전으로 계획하고 있습니다.
 
 ## Project guide / 프로젝트 문서
 
@@ -105,6 +109,7 @@ Godot 경로를 지정하면 위 PowerShell 예시의 `RUN.BAT`로도 실행할 
 | [RULES_IMPLEMENTATION.md](RULES_IMPLEMENTATION.md) | Official rules sources, implementation and limitations / 규칙 근거·구현·한계 |
 | [PRD.md](PRD.md) | Product scope and roadmap / 제품 계획 |
 | [docs/VALIDATION.md](docs/VALIDATION.md) | Reproducible validation snapshot / 검증 결과 |
+| [docs/AI_IMPLEMENTATION.md](docs/AI_IMPLEMENTATION.md) | Strategic AI architecture and learning guide / 전략 AI 실행·구조·학습 |
 | [NOTICE.md](NOTICE.md) | Original creators and third-party materials / 원작·자료 출처 |
 
 The runnable project is in `godot_project/`. The repository also retains reference material from the earlier project. Generated Godot caches, temporary work, validation profiles, and game saves are excluded from version control.

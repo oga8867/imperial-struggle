@@ -8,6 +8,8 @@ var _file: FileAccess
 
 
 func _ready() -> void:
+	# 탐색용 별도 프로세스는 사용자의 실제 플레이 기록을 열거나 지우지 않는다.
+	if "--ai-worker" in OS.get_cmdline_user_args(): return
 	# Open in WRITE mode (truncates) at start of each session
 	_file = FileAccess.open(LOG_PATH, FileAccess.WRITE)
 	if _file:

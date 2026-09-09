@@ -38,7 +38,7 @@ func offer(side: int,ids: Array,command: Dictionary) -> bool:
 			candidates.append(id)
 	if candidates.is_empty(): return false
 	# AI도 자신의 라운드에서 공개하는 같은 모델 함수를 사용한다.
-	if AIController.enabled and AIController.ai_side==side:
+	if AIController.enabled and AIController.ai_side==side and not AIController.strategy_mode:
 		for id in candidates: MinistryEffects._card(side,id).reveal()
 		return false
 	pending={"side":side,"ids":candidates,"declined":[],"command":command}

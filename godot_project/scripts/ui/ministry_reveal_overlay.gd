@@ -67,6 +67,7 @@ func _ready() -> void:
 
 func refresh() -> void:
 	visible=MinistryDecisions.has_pending()
+	if visible and AIController.enabled and MinistryDecisions.pending.side==AIController.ai_side: visible=false
 	if not visible: return
 	get_parent().move_child(self,get_parent().get_child_count()-1)
 	var request=MinistryDecisions.pending

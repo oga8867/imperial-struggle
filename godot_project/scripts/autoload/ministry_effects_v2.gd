@@ -86,6 +86,7 @@ func ability_labels(card: MinistryCard) -> Array:
 	return LABELS.get(card.id,[])
 
 func can_activate(card: MinistryCard,side: int,index: int=0) -> bool:
+	if index<0 or index>=ability_labels(card).size(): return false
 	var ac=ActionController
 	if card not in GameManager.state.get_player(side).ministry_cards or not MinistryDecisions.own_round(side) or MinistryDecisions.has_pending(): return false
 	if EventEffects.has_pending() or ac.upgrade_drawn or ac.bonus_drawn: return false

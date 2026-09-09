@@ -11,6 +11,9 @@ var state: GameState
 
 # Pending sets for phases that need user input
 var _discard_pending_sides: Array = []
+# §4.1.6: 양쪽이 선택을 마칠 때까지 버린 카드도 비공개 정보다.
+# 손패에서는 즉시 빼되 공개 버림 더미에는 마지막 선택 뒤 한꺼번에 옮긴다.
+var _pending_discards: Dictionary = {}
 var _ministry_pending_sides: Array = []
 var _initiative_first_player_pending: bool = false
 
@@ -27,11 +30,13 @@ func _ready() -> void:
 
 
 func start_new_game() -> void:
+	AIController.cancel()
 	state = GameState.new()
 	GameLog.clear()
 	MinistryDecisions.reset()
 	# Autoload는 장면을 바꿔도 살아 있으므로 새 게임마다 이전 판의 상태를 지운다.
 	_discard_pending_sides.clear()
+	_pending_discards.clear()
 	_ministry_pending_sides.clear()
 	_initiative_first_player_pending = false
 	_swept_awards_winner = Enums.Side.NONE
@@ -360,18 +365,21 @@ func _discard_down_to_three(_player: PlayerState) -> void:
 
 func _begin_hand_discard_phase() -> void:
 	_discard_pending_sides.clear()
+	_pending_discards.clear()
 	for side in [Enums.Side.BRITAIN, Enums.Side.FRANCE]:
 		if state.get_player(side).hand.size() > 3: _discard_pending_sides.append(side)
 	_request_next_discard()
 
 func _request_next_discard() -> void:
 	if _discard_pending_sides.is_empty():
+		for discarded in _pending_discards.values():
+			state.event_discard_pile.append_array(discarded)
+		_pending_discards.clear()
 		_begin_ministry_phase()
 		return
 	var side = _discard_pending_sides[0]
 	if AIController.enabled and AIController.ai_side == side:
-		var hand = state.get_player(side).hand
-		complete_discard(side, hand.slice(hand.size()-3))
+		complete_discard(side, AIController.decide_discard())
 	else:
 		player_action_required.emit(side, "discard_events")
 
@@ -385,7 +393,8 @@ func complete_discard(side: Enums.Side, keep: Array) -> bool:
 	for card in hand.duplicate():
 		if not card in keep:
 			hand.erase(card)
-			state.event_discard_pile.append(card)
+			if not _pending_discards.has(side): _pending_discards[side] = []
+			_pending_discards[side].append(card)
 	_discard_pending_sides.pop_front()
 	_request_next_discard()
 	return true

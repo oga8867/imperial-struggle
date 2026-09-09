@@ -7,6 +7,7 @@ const GameSessionScene := preload("res://scenes/game_session.tscn")
 
 var current_session: Node = null
 var resume_btn: Button
+var ai_mode_select: OptionButton
 @onready var new_game_btn: Button = $MainMenu/CenterContainer/VBox/NewGameBtn
 @onready var solo_br_btn: Button = $MainMenu/CenterContainer/VBox/SoloBRBtn
 @onready var solo_fr_btn: Button = $MainMenu/CenterContainer/VBox/SoloFRBtn
@@ -43,6 +44,12 @@ func _ready() -> void:
 		GameManager.resume_session())
 	$MainMenu/CenterContainer/VBox.add_child(resume_btn)
 	$MainMenu/CenterContainer/VBox.move_child(resume_btn,5)
+	ai_mode_select=OptionButton.new()
+	ai_mode_select.custom_minimum_size=Vector2(580,42)
+	ai_mode_select.add_theme_font_size_override("font_size",18)
+	$MainMenu/CenterContainer/VBox.add_child(ai_mode_select)
+	$MainMenu/CenterContainer/VBox.move_child(ai_mode_select,5)
+	_refresh_ai_options(2)
 	_refresh_texts()
 	_apply_theme()
 	_show_main_menu()
@@ -51,6 +58,13 @@ func _ready() -> void:
 
 func _on_locale_changed(_new_locale: String) -> void:
 	_refresh_texts()
+	if ai_mode_select: _refresh_ai_options(ai_mode_select.selected)
+
+func _refresh_ai_options(selected: int) -> void:
+	ai_mode_select.clear()
+	ai_mode_select.add_item(LocaleManager.tx("AI · 기본 (빠른 판단)"))
+	for seconds in [10,20,30]: ai_mode_select.add_item(LocaleManager.tx("AI · 전략 (라운드당 최대 %d초 계산)") % seconds)
+	ai_mode_select.select(selected)
 
 
 func _refresh_texts() -> void:
@@ -76,6 +90,7 @@ func _apply_theme() -> void:
 
 
 func _show_main_menu() -> void:
+	AIController.suspend()
 	if resume_btn: resume_btn.visible=current_session!=null
 	main_menu.visible = true
 	game_board.visible = false
@@ -85,6 +100,7 @@ func _show_main_menu() -> void:
 func _show_game_board() -> void:
 	main_menu.visible = false
 	game_board.visible = true
+	AIController.resume()
 
 
 func _on_new_game(ai_side: int) -> void:
@@ -99,7 +115,8 @@ func _on_new_game(ai_side: int) -> void:
 	if ai_side == Enums.Side.NONE:
 		AIController.disable()
 	else:
-		AIController.enable_for(ai_side)
+		AIController.enable_for(ai_side,ai_mode_select.selected>0)
+		AIController.budget_seconds=[0,10,20,30][ai_mode_select.selected]
 
 	if current_session.has_signal("menu_requested"):
 		current_session.menu_requested.connect(_show_main_menu)

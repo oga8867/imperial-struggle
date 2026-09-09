@@ -180,7 +180,7 @@ func _execute(operation: Dictionary) -> void:
 	choice = operation.duplicate(true)
 	choice.options = options
 	choice.prompt = prompt
-	if automatic or (AIController.enabled and AIController.ai_side == side):
+	if automatic or (AIController.enabled and AIController.ai_side == side and not AIController.strategy_mode):
 		_apply_choice(options[0])
 	else:
 		changed.emit()
@@ -216,7 +216,7 @@ func _apply_choice(option: Dictionary) -> void:
 			if ss.data.space_type == Enums.SpaceType.TERRITORY and ss.controlled_by == WarManager._opp(side) and WarManager.territory_refusals.get(ss.controlled_by,0) < 2:
 				var defender = ss.controlled_by
 				choice = {"kind":"refusal","side":defender,"attacker":side,"target":ss.data.id,"options":[{"id":"accept","label":"영토를 양도"},{"id":"refuse","label":"양도 거부 · 상대에게 %d VP" % (3 if WarManager.territory_refusals.get(defender,0)==0 else 5)}],"prompt":ss.data.name_ko+" · 정복점수는 이미 소비됐습니다. 영토 양도를 거부하시겠습니까?"}
-				if automatic or (AIController.enabled and AIController.ai_side == defender): _apply_choice(choice.options[0])
+				if automatic or (AIController.enabled and AIController.ai_side == defender and not AIController.strategy_mode): _apply_choice(choice.options[0])
 			else:
 				_capture(ss,side,option.get("source",""))
 		"refusal":

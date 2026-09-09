@@ -22,7 +22,7 @@ static func decorate(menu: Control) -> void:
 	center.offset_left = 80
 	var body: VBoxContainer = center.get_node("VBox")
 	body.custom_minimum_size.x = 580
-	body.add_theme_constant_override("separation",14)
+	body.add_theme_constant_override("separation",10)
 	var eyebrow = Label.new()
 	eyebrow.text = "1697 — 1789    /    THE SECOND HUNDRED YEARS’ WAR"
 	eyebrow.add_theme_color_override("font_color",Color("c6ac78"))
